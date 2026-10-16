@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b141d" />
   <meta name="description" content="Explore a Civilization-inspired world atlas with clickable countries, cities and source-aware country profiles." />
   <title>Atlas of Nations | World Strategy Map</title>
-  <meta name="app-revision" content="0.1.1-mobile-pan" />
+  <meta name="app-revision" content="0.2.0-mobile-dossier" />
   <style>
 :root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9ebea;background:#09141c;font-size:14px;font-synthesis:none;--gold:#e7c481;--muted:#90a2a9;--line:#293942;--panel:#0d1b23;--dark:#08121a}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}a{color:var(--gold)}.app-shell{height:100dvh;display:flex;flex-direction:column;min-height:530px;background:#0a151d}.topbar{height:78px;min-height:78px;background:#101e28;border-bottom:1px solid #3a4850;display:flex;align-items:center;justify-content:space-between;padding:0 26px;gap:16px}.brand{display:flex;align-items:center;gap:13px;min-width:max-content}.brand-mark{width:44px;height:44px;border:1px solid #aa8b57;display:grid;place-items:center;font-size:29px;color:var(--gold);transform:rotate(45deg)}.brand-mark:first-letter{transform:rotate(-45deg)}.brand-title{font-size:19px;letter-spacing:.19em;font-weight:800;color:#f3e5c3}.brand-title span{font-weight:400;color:#f2f1e7}.brand-subtitle{margin-top:4px;font-size:9px;letter-spacing:.24em;font-weight:650;color:#94a5ae}.brand-version{color:#657e8b}.header-middle{font-size:10px;letter-spacing:.13em;color:#879ba7;text-align:center}.pulse-dot,.green-dot,.status-pill i{width:7px;height:7px;border-radius:50%;display:inline-block;background:#81c7a5;box-shadow:0 0 9px #81c7a575;margin-right:7px}.header-divider{margin:0 12px;color:#556a74}.header-actions{display:flex;gap:12px;align-items:center}.icon-button,.panel-close{border:1px solid #465861;background:transparent;color:#c7d2d2;width:32px;height:32px;border-radius:4px;font-size:19px}.icon-button:hover,.panel-close:hover{color:var(--gold);border-color:var(--gold)}.notion-link{font-size:10px;color:#cdb581;border:1px solid #65583e;padding:11px 12px;text-decoration:none;letter-spacing:.08em;font-weight:750;white-space:nowrap}.notion-link:hover{background:#3a3327}.main-layout{display:grid;grid-template-columns:252px minmax(250px,1fr) 355px;min-height:0;flex:1}.sidebar{position:relative;background:#0b1822;border-right:1px solid var(--line);padding:27px 17px;overflow-y:auto;scrollbar-width:thin}.sidebar-heading{font-size:10px;color:#728e9d;letter-spacing:.17em;font-weight:800;margin:0 6px 13px}.search-area{position:relative;margin-bottom:29px}.search-symbol{position:absolute;left:13px;top:4px;font-size:26px;color:#8195a3}#search{width:100%;background:#152731;color:#e6eaec;border:1px solid #30434e;border-radius:4px;height:44px;padding:0 12px 0 39px;outline:none;font-size:12px}#search::placeholder{color:#899da7}#search:focus{border-color:#ba9e6e}.search-results{position:absolute;top:47px;left:0;right:0;max-height:275px;overflow:auto;background:#172832;border:1px solid #556677;z-index:20;box-shadow:0 18px 25px #0008}.search-result{border:0;border-bottom:1px solid #2c414e;color:#ebeeee;background:transparent;padding:9px 11px;width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px}.search-result:hover{background:#28414d}.search-result small{color:#9babb4;font-size:10px}.hidden{display:none!important}.lens-heading{display:flex;justify-content:space-between}.heading-dot{height:5px;width:5px;background:var(--gold);display:inline-block}.lens-list{display:flex;flex-direction:column;gap:5px;margin-bottom:22px}.lens{height:44px;width:100%;display:flex;align-items:center;gap:12px;padding:0 9px;border:1px solid transparent;border-left:3px solid transparent;background:transparent;color:#95a8b1;text-align:left}.lens:hover{background:#1b2b37;color:#f4e7cd}.lens.active{background:#20303a;border-left-color:#e4c383;color:#f3deb0}.lens-icon{font-size:20px;width:24px;text-align:center}.lens-name{flex:1;font-size:12px;font-weight:650}.lens-shortcut{font-size:10px;opacity:.48}.sidebar-separator{border-top:1px solid #2d414d;margin:16px 3px 24px}.toggle-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 4px;font-size:12px;color:#a5b6bb;cursor:pointer}.toggle-row input{position:absolute;opacity:0;pointer-events:none}.toggle-ui{position:relative;width:34px;height:19px;border-radius:20px;background:#34464d;flex-shrink:0}.toggle-ui:before{content:"";position:absolute;top:3px;left:3px;width:13px;height:13px;background:#8599a0;border-radius:50%;transition:transform .2s}.toggle-row input:checked+.toggle-ui{background:#79683e}.toggle-row input:checked+.toggle-ui:before{transform:translateX(15px);background:#ead5a7}.toggle-row input:focus-visible+.toggle-ui{outline:2px solid var(--gold)}.coverage-card{background:#142530;border:1px solid #2c444f;padding:16px;margin:5px 0 30px}.coverage-value strong{font-size:27px;color:#e7dcc5;font-weight:700}.coverage-value span{color:#8da1aa;font-size:10px}.coverage-sub{margin-top:7px;font-size:11px;color:#acc1ca}.coverage-sub strong{color:#e0c38d}.coverage-progress{height:4px;margin:15px 0;background:#334750}.coverage-progress i{display:block;width:2.5%;height:100%;background:#d6b878}.coverage-card p{font-size:10px;line-height:1.55;color:#768e99;margin:0}.sidebar-foot{font-size:9px;letter-spacing:.1em;color:#5d7685;line-height:1.8}.sidebar-foot span{color:var(--gold);padding:0 4px}.map-stage{position:relative;min-width:0;background:#0b1b26;display:flex;flex-direction:column;overflow:hidden}.map-head{padding:28px 29px 14px;display:flex;justify-content:space-between;gap:10px}.eyebrow{font-size:10px;letter-spacing:.21em;font-weight:800;color:#d6bb83}.eyebrow-diamond{margin:0 8px;color:#667d88}.map-head h1{font-family:Georgia,"Times New Roman",serif;font-size:31px;letter-spacing:.01em;font-weight:400;margin:12px 0 0;color:#eef0eb}.accent-dot{color:var(--gold)}.map-head-right{display:flex;align-items:end;gap:9px;flex-direction:column;justify-content:center}.status-pill{font-size:9px;letter-spacing:.1em;background:#16312f;border:1px solid #406256;color:#9fcfba;padding:7px 8px}.status-pill i{width:5px;height:5px}.map-head-right #map-coords{font-family:monospace;font-size:10px;color:#8196a4;white-space:nowrap}.map-viewport{position:relative;overflow:hidden;flex:1;min-height:280px;cursor:grab;touch-action:none;background:radial-gradient(ellipse at 47% 42%,#153142 0%,#102532 55%,#0b1b26 100%);outline:0}.map-viewport:active{cursor:grabbing}.map-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#33536524 1px,transparent 1px),linear-gradient(90deg,#33536524 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}#world-svg{position:absolute;inset:0;width:100%;height:100%;user-select:none;cursor:inherit}#map-countries path{stroke:#567482;stroke-width:.58;stroke-linejoin:round;vector-effect:non-scaling-stroke;fill:#294450;transition:fill .15s;cursor:pointer}#map-countries path:hover{fill:#b29663!important;stroke:#f3d5a5;stroke-width:1.25}#map-countries path.selected{stroke:#ffe0a0;stroke-width:1.5;fill:#8b7150!important;filter:drop-shadow(0 0 2px #f9dc8d)}#map-countries path.missing{fill:#1e3642}#map-countries path.available{fill:#335360}#map-countries path[data-lens-color]{fill:var(--lens-fill)}.city-dot{fill:#e1c48f;stroke:#20313b;stroke-width:2.1;vector-effect:non-scaling-stroke;cursor:pointer}.city-dot:hover{fill:#fff;stroke:#f1c67b}.unmapped-dot{fill:#476778;stroke:#c2c3ab;stroke-width:.65;vector-effect:non-scaling-stroke;cursor:pointer}.unmapped-dot:hover{fill:#c6a975}.selected-marker{fill:#ffdc91!important;stroke:#ffffff;stroke-width:2!important;filter:drop-shadow(0 0 4px #ffdda9)}.map-text{font-size:10px;letter-spacing:.065em;fill:#e6d8b4;font-family:Inter,sans-serif;stroke:#10212b;stroke-width:2.3px;paint-order:stroke;pointer-events:none}.city-text{font-size:9px;fill:#c8b99a}.map-toolbar{position:absolute;right:19px;bottom:25px;display:flex;flex-direction:column;background:#152732;border:1px solid #4a616b;box-shadow:0 10px 30px #0007;z-index:5}.map-toolbar button{width:36px;height:39px;background:transparent;color:#e7e7de;border:0;font-size:22px;line-height:1}.map-toolbar button:hover{background:#324957;color:var(--gold)}.zoom-line{height:1px;background:#334a53;margin:0 7px}.map-corner-label{position:absolute;left:28px;bottom:23px;font-size:10px;letter-spacing:.14em;color:#869daa;font-weight:750}.small-star{color:#dfc48e;font-size:18px;margin-right:8px}.map-watermark{position:absolute;right:80px;top:8px;opacity:.12;font-family:Georgia,serif;font-size:36px;pointer-events:none}.map-tooltip{position:absolute;left:0;top:0;z-index:10;background:#132833;border:1px solid #b79c69;padding:7px 11px;color:#f3e0b6;font-size:12px;box-shadow:0 8px 24px #0008;pointer-events:none;white-space:nowrap}.map-footer{height:46px;border-top:1px solid #29414c;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#8aa0aa;font-size:10px;letter-spacing:.05em;gap:10px}.legend-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 5px 0 12px}.legend-dot:first-child{margin-left:0}.legend-dot.known{background:#7fa1a4}.legend-dot.missing{background:#253b47;border:1px solid #75939b}.legend-dot.city{background:#edc788}.footer-instruction span{color:var(--gold);margin:0 7px}.detail-panel{background:#101f29;border-left:1px solid #354954;overflow:auto;scrollbar-width:thin;min-width:0}.detail-topline{height:49px;padding:0 21px;border-bottom:1px solid #344751;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#d3b781;letter-spacing:.2em;font-weight:800}.panel-close{width:27px;height:27px;font-size:14px}.detail-body{padding:24px}.detail-eyebrow{font-size:10px;color:#9baeb4;letter-spacing:.13em;font-weight:700}.detail-name{font-family:Georgia,serif;font-size:35px;font-weight:normal;line-height:1.03;margin:10px 0 8px;color:#fcf1d8}.detail-chip{display:inline-block;background:#34434a;color:#f3d49a;padding:5px 8px;font-size:10px;font-weight:750;letter-spacing:.08em}.detail-description{font-size:12px;color:#a7bac1;line-height:1.75;margin:13px 0 19px}.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}.stat-card{background:#172d39;border:1px solid #34515e;padding:12px;min-height:75px}.stat-label{font-size:9px;color:#9ab0b8;letter-spacing:.12em}.stat-number{font-size:21px;color:#f0e6d2;font-weight:700;margin-top:9px}.stat-note{font-size:10px;color:#94a9b3;margin-top:4px}.detail-rule{border:0;border-top:1px solid #364851;margin:18px 0}.section-label{color:#dabb87;font-size:10px;letter-spacing:.17em;font-weight:800;margin-bottom:9px}.fact-list{display:flex;flex-direction:column;gap:10px}.fact{display:flex;justify-content:space-between;gap:10px;padding-bottom:9px;border-bottom:1px solid #293e49;font-size:12px}.fact-label{color:#91a4ae}.fact-value{color:#e3e5df;text-align:right}.detail-tabs{display:flex;gap:5px;overflow-x:auto;padding:0 0 10px;margin:12px -4px 9px;scrollbar-width:thin}.detail-tabs button{padding:8px 10px;white-space:nowrap;border:1px solid #3d515c;background:#182b35;color:#9caeb8;font-size:10px;letter-spacing:.04em;border-radius:2px}.detail-tabs button.active{background:#554b36;border-color:#d4b778;color:#f8e8c5}.tab-content{font-size:12px;line-height:1.75;color:#c2d0d0}.tab-content p{margin-top:8px}.not-yet{border:1px dashed #54707a;color:#a4b3b7;padding:14px;line-height:1.65;background:#142732}.tag{display:inline-block;background:#263d45;border:1px solid #41606b;color:#d2e0dc;margin:4px 4px 0 0;padding:4px 8px;border-radius:2px;font-size:10px}.source-box{margin-top:18px;padding:11px 12px;background:#202e31;border-left:2px solid #d3b075;color:#aebdbd;font-size:10px;line-height:1.6}.source-box a{word-break:break-word}.empty-hero{margin:38px 0;text-align:center}.empty-compass{font-family:Georgia,serif;font-size:78px;color:#b69a66;margin-bottom:14px;opacity:.8}.empty-hero h2{font-family:Georgia,serif;font-size:24px;font-weight:400;color:#f0eadc;margin:0 0 13px}.empty-hero p{font-size:12px;line-height:1.8;color:#94a9b4;max-width:250px;margin:auto}.empty-hero .tiny-rule{height:1px;background:#60717a;width:55px;margin:25px auto}.empty-hero .shortcut{font-size:10px;color:#d8bf87;letter-spacing:.12em}.bottom-status{height:30px;min-height:30px;background:#07121a;border-top:1px solid #35434b;padding:0 19px;display:flex;justify-content:space-between;align-items:center;color:#7a929b;font-size:9px;letter-spacing:.09em}.green-dot{width:5px;height:5px}.bottom-status span:first-child{white-space:nowrap}dialog{background:#101e29;border:1px solid #947c53;max-width:min(490px,calc(100vw - 40px));padding:25px 28px;color:#c4d4d4;box-shadow:0 24px 140px #000c}dialog::backdrop{background:#01090dcc}.modal-heading{display:flex;justify-content:space-between}dialog h2{font-family:Georgia,serif;font-weight:normal;color:#f4e6c8;font-size:25px}dialog p{font-size:12px;line-height:1.8}dialog code{color:#e9c994}.primary-button{background:#be9c5b;border:0;color:#111d24;font-size:11px;font-weight:800;letter-spacing:.1em;padding:12px 16px;margin-top:14px}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 @media(max-width:1190px){.main-layout{grid-template-columns:215px minmax(260px,1fr) 315px}.sidebar{padding:22px 11px}.map-head{padding:25px 18px 10px}.map-head h1{font-size:27px}.map-footer{padding:0 18px}.detail-body{padding:20px}.header-middle{display:none}}
@@ -16,8 +16,129 @@
 @media(max-height:650px) and (min-width:651px){.topbar{height:58px;min-height:58px}.detail-panel{top:59px}.sidebar{padding-top:13px}.sidebar-heading{margin-bottom:8px}.search-area{margin-bottom:13px}.lens{height:36px}.lens-list{margin-bottom:10px}.map-head{padding-top:15px}.map-head h1{font-size:24px;margin-top:4px}}
 
 
-.swipe-hint{display:none;pointer-events:none}
-@media(max-width:650px){.swipe-hint{display:block;position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:3;white-space:nowrap;color:#f3dfaf;background:#102530dc;border:1px solid #8f7c55;border-radius:20px;padding:6px 11px;font-size:10px;letter-spacing:.035em}}
+/* Version 0.2 mobile-first enhancements — map stays visible while reading details. */
+.mobile-lens-toggle,.mobile-map-tip,.mobile-label,.panel-backdrop{display:none}
+.mobile-layer-drawer{display:contents}
+@media(max-width:650px){
+  html,body{height:100%;overscroll-behavior:none}
+  .app-shell{min-height:0;height:100dvh}
+  .topbar{height:54px;min-height:54px;padding:0 14px;gap:6px}
+  .brand{gap:9px}.brand-mark{height:28px;width:28px;font-size:17px}.brand-title{font-size:12px;letter-spacing:.12em}.brand-subtitle{font-size:7px;letter-spacing:.08em}
+  .header-actions{gap:8px}.header-actions .icon-button{min-height:42px;min-width:42px;border-radius:10px;font-size:21px}
+  .notion-link{min-height:42px;min-width:63px;display:flex;align-items:center;justify-content:center;font-size:0;padding:0 7px;border-radius:9px}
+  .notion-link::after{content:"NOTION ↗";font-size:10px}
+  .main-layout{min-height:0;flex:1;overflow:hidden}
+  .sidebar{z-index:41;flex:0 0 auto;position:relative;padding:9px 12px;overflow:visible;background:#111f29;display:flex;gap:8px;align-items:center;border-bottom-color:#384b56}
+  .search-area{flex:1;min-width:0;margin:0}
+  #search{height:46px;font-size:16px;border-radius:11px;padding-left:40px}
+  .search-symbol{top:3px}.search-results{top:50px;left:0;right:0;z-index:100;max-height:48dvh;border-radius:10px}
+  .search-result{min-height:47px;align-items:center;font-size:14px}
+  .mobile-lens-toggle{flex:0 0 auto;display:flex;gap:7px;align-items:center;justify-content:center;height:46px;min-width:103px;border-radius:11px;border:1px solid #7d7155;color:#f3d9a3;background:#263844;padding:0 10px;font-size:12px}
+  .mobile-lens-toggle strong{font-size:12px;white-space:nowrap}
+  .mobile-lens-toggle #active-mobile-lens{display:none}
+  .mobile-layer-drawer{display:none;position:absolute;top:calc(100% - 1px);left:12px;right:12px;z-index:80;background:#142832;border:1px solid #6f634a;border-radius:0 0 14px 14px;box-shadow:0 18px 55px #000c;padding:15px;max-height:70dvh;overflow:auto;overscroll-behavior:contain}
+  .sidebar.layers-open .mobile-layer-drawer{display:block}
+  .mobile-layer-drawer .sidebar-heading{display:block;font-size:11px;margin:0 0 10px;color:#e7c98b}
+  .mobile-layer-drawer .lens-list{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:0;padding:0;overflow:visible}
+  .mobile-layer-drawer .lens{height:50px;min-width:0;border:1px solid #374f5c;border-radius:9px;padding:0 10px;gap:9px}
+  .mobile-layer-drawer .lens.active{border:1px solid #cfac6c;background:#394437}
+  .mobile-layer-drawer .lens-name{font-size:12px}.mobile-layer-drawer .lens-icon{font-size:21px;width:22px}.mobile-layer-drawer .lens-shortcut{display:none}
+  .mobile-layer-drawer .toggle-row{display:flex;font-size:14px;min-height:45px;padding:12px 5px}
+  .mobile-layer-drawer .sidebar-separator{display:block;margin:14px 0}
+  .map-head{padding:9px 13px 7px;min-height:51px}
+  .map-head h1{font-size:19px;line-height:1.2;margin:3px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(100vw - 28px)}
+  .eyebrow{font-size:8px;letter-spacing:.11em}
+  .map-stage{flex:1;min-height:0}
+  .map-viewport{min-height:0;flex:1;touch-action:none}
+  .map-footer{display:none}
+  .bottom-status{display:none}
+  .map-toolbar{bottom:48px;right:14px;border-radius:12px;overflow:hidden}
+  .map-toolbar button{width:46px;height:46px;font-size:24px}
+  .map-corner-label{bottom:18px;left:13px;font-size:9px}
+  .mobile-map-tip{display:block;position:absolute;z-index:4;top:13px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:9px 13px;border-radius:20px;color:#f5e3bf;background:#12232be0;border:1px solid #a88d58;font-size:12px;letter-spacing:.03em;pointer-events:none;box-shadow:0 5px 20px #0007}
+  .mobile-map-tip span{color:#e9c382}
+  .map-watermark{font-size:19px;right:10px;top:7px}
+  .panel-backdrop{display:block;position:fixed;inset:0;background:#030b10a8;z-index:49;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,visibility .22s ease}
+  .panel-backdrop.open{opacity:1;visibility:visible;pointer-events:auto}
+  .detail-panel{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:50;width:100%;max-width:none;height:min(76dvh,730px);max-height:calc(100dvh - 45px);background:#10222d;border:1px solid #60727a;border-bottom:0;border-radius:21px 21px 0 0;box-shadow:0 -20px 65px #000e;display:flex;flex-direction:column;overflow:hidden;transform:translateY(106%);transition:transform .25s ease;touch-action:pan-y;padding-bottom:env(safe-area-inset-bottom,0px)}
+  .detail-panel.open{transform:translateY(0)}
+  .detail-topline{height:61px;min-height:61px;padding:16px 18px 0;position:relative;touch-action:pan-y;font-size:10px;letter-spacing:.08em;cursor:grab}
+  .detail-topline::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);height:5px;width:47px;border-radius:6px;background:#84979b}
+  .detail-topline .desktop-label{display:none}.detail-topline .mobile-label{display:inline}
+  .detail-panel .panel-close{display:grid;place-items:center;width:40px;height:40px;min-width:40px;border-radius:50%;font-size:18px}
+  .detail-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:16px 18px 22px;font-size:14px;-webkit-overflow-scrolling:touch}
+  .detail-name{font-size:clamp(28px,8vw,38px)}
+  .detail-eyebrow{font-size:10px}.detail-description{font-size:13px;line-height:1.6}
+  .detail-tabs{position:sticky;top:-16px;z-index:2;background:#10222d;padding:11px 0;margin:12px -2px 10px;gap:7px;scrollbar-width:none}
+  .detail-tabs button{min-height:42px;font-size:12px;border-radius:9px;padding:9px 14px}
+  .stat-row{gap:9px}.stat-card{padding:13px}.stat-number{font-size:23px}
+  .tab-content{font-size:13px;line-height:1.75}.source-box,.not-yet{font-size:12px}
+  dialog{padding:18px;max-height:85dvh;overflow-y:auto}
+}
+@media(max-width:370px){.brand-title{font-size:11px}.mobile-lens-toggle{min-width:90px;padding:0 7px}.mobile-lens-toggle strong{font-size:11px}.mobile-layer-drawer .lens-list{grid-template-columns:1fr 1fr}}
+@media(max-width:650px) and (max-height:520px){.map-head{min-height:43px;padding:7px 12px 5px}.map-head h1{font-size:16px}.mobile-map-tip{display:none}.detail-panel{height:86dvh}}
+@media(prefers-reduced-motion:reduce){.detail-panel,.panel-backdrop{transition:none}}
+
+/* V0.2 country dossier: clean mobile panel, legible metrics and thumb-friendly tabs. */
+.dashboard-hero{background:linear-gradient(127deg,#1a333d,#0e232f 62%,#13282f);border:1px solid #446270;border-radius:16px;padding:17px 17px 14px;margin-bottom:14px;position:relative;overflow:hidden}
+.dashboard-hero::before{content:"✦";position:absolute;right:15px;top:-29px;font-size:100px;color:#e7c481;opacity:.065;pointer-events:none}
+.hero-identity{display:flex;align-items:center;gap:12px}
+.hero-flag{font-size:39px;line-height:1.15;display:grid;place-items:center;width:56px;height:51px;border-radius:10px;background:#294351;box-shadow:inset 0 0 0 1px #647579;flex:0 0 auto}
+.hero-text{flex:1;min-width:0}
+.hero-eyebrow{letter-spacing:.12em;text-transform:uppercase;font-weight:850;color:#d9b97d;font-size:9px}
+.hero-name{font:normal clamp(25px,2.6vw,33px)/1.05 Georgia,serif;color:#fff0d7;margin:5px 0 6px;overflow-wrap:anywhere}
+.hero-sub{font-size:11px;color:#a8bec5;line-height:1.45}
+.hero-meta{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0 3px}
+.hero-pill{border:1px solid #426170;background:#213942;color:#d3e0da;padding:6px 8px;border-radius:7px;font-size:10px}
+.hero-pill.warning{border-color:#947d4d;color:#f5d59c;background:#453c2b}
+.hero-action{border:1px solid #d2aa68;border-radius:8px;color:#1a2428;background:#e0bf84;min-height:40px;padding:0 11px;font-size:11px;font-weight:800;letter-spacing:.02em;margin-top:13px}
+.hero-action:hover{background:#f2d69f}
+.dossier-caption{color:#91aeb7;font-size:10px;letter-spacing:.1em;font-weight:800;text-transform:uppercase;margin:14px 0 9px}
+.status-banner{background:#222f33;border:1px solid #675d49;color:#e2cfaa;border-radius:10px;padding:10px 12px;font-size:11px;line-height:1.55;margin:12px 0}
+.status-banner strong{color:#f4dfb5}
+.stat-row.dossier-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:13px 0}
+.dossier-stats .stat-card{border:1px solid #3b5260;background:linear-gradient(180deg,#223845,#162d39);border-radius:11px;padding:13px;min-width:0;min-height:90px}
+.dossier-stats .stat-number{font-size:clamp(17px,3vw,25px);line-height:1.12;overflow-wrap:anywhere}
+.dossier-stats .stat-note{font-size:9px;line-height:1.4}
+.topic-pills{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 14px}
+.topic-pill{text-align:left;display:flex;align-items:center;gap:10px;min-height:49px;background:#1b3440;color:#e1e6e3;border:1px solid #3a5964;border-radius:11px;padding:10px 11px;font-size:12px;font-weight:700}
+.topic-pill:hover,.topic-pill:focus-visible{background:#314c58;border-color:#d4bb85}
+.topic-pill-icon{font-size:19px;color:#e7c58e;min-width:25px}
+.topic-pill .arrow{margin-left:auto;color:#c9ab70;font-size:18px}
+.dossier-section{background:#132833;border:1px solid #304b58;border-radius:12px;padding:14px 15px;margin:13px 0}
+.dossier-section h3{font-size:13px;letter-spacing:.02em;color:#f2dfb8;margin:0 0 9px}
+.dossier-section p{font-size:12px;line-height:1.7;color:#b7c9cd;margin:7px 0}
+.dossier-section .fact:last-child{border-bottom:0}
+.dossier-section a{word-break:break-word}
+.source-links{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+.source-links a{background:#203946;border:1px solid #395562;border-radius:8px;padding:11px;min-height:42px;font-size:11px;text-decoration:none;color:#f0d49a}
+.dossier-tabs{margin:8px -2px 10px;gap:6px}
+.dossier-tabs button{display:flex;align-items:center;gap:6px;min-height:39px;padding:8px 11px;font-size:11px;border-radius:8px}
+.dossier-tabs button .tab-icon{font-size:13px}
+.dossier-tabs button.active{border-color:#edc683;background:#4c4437}
+.city-shortcuts{display:grid;gap:9px;grid-template-columns:1fr 1fr}
+.city-shortcut{border:1px solid #3c5964;background:#1b3340;color:#e6e4d7;text-align:left;border-radius:10px;padding:12px 11px;min-height:59px;font-size:12px}
+.city-shortcut small{display:block;color:#a2b7bd;font-size:10px;margin-top:5px}
+.city-shortcut:focus-visible,.city-shortcut:hover{border-color:#e2c387;background:#294755}
+.dashboard-notice{font-size:11px;color:#a6b9c0;line-height:1.7;margin:10px 0}
+.detail-panel .detail-body{overflow-x:hidden}
+@media(max-width:650px){
+  .detail-panel{height:min(79dvh,760px)}
+  .detail-topline{height:58px;min-height:58px}
+  .detail-body{padding:11px 15px 25px}
+  .dashboard-hero{padding:16px 14px 13px;border-radius:14px}
+  .hero-flag{font-size:34px;width:49px;height:47px}
+  .hero-name{font-size:26px}
+  .detail-tabs.dossier-tabs{position:sticky;top:-11px;z-index:4;padding:10px 0 12px;background:#10222d;margin:9px -1px 9px;scrollbar-width:none;scroll-snap-type:x proximity}
+  .dossier-tabs button{min-height:44px;font-size:12px;padding:9px 12px;scroll-snap-align:start}
+  .dossier-stats .stat-card{min-height:95px;padding:11px}
+  .dossier-stats .stat-number{font-size:22px}
+  .topic-pill{min-height:54px}
+  .city-shortcuts{grid-template-columns:1fr 1fr}
+}
+@media(min-width:651px) and (max-width:920px){.detail-panel{overflow:hidden;display:flex;flex-direction:column}.detail-body{min-height:0;flex:1;overflow-y:auto}}
+@media(max-width:350px){.topic-pills,.city-shortcuts{grid-template-columns:1fr}.hero-name{font-size:24px}}
+
 </style>
 </head>
 <body>
@@ -25,7 +146,7 @@
     <header class="topbar">
       <div class="brand" aria-label="World Strategy Map">
         <div class="brand-mark" aria-hidden="true">✦</div>
-        <div><div class="brand-title">ATLAS <span>OF NATIONS</span></div><div class="brand-subtitle">WORLD STRATEGY MAP <span class="brand-version">/ PROTOTYPE 0.1</span></div></div>
+        <div><div class="brand-title">ATLAS <span>OF NATIONS</span></div><div class="brand-subtitle">WORLD STRATEGY MAP <span class="brand-version">/ ATLAS 0.2</span></div></div>
       </div>
       <div class="header-middle"><span class="pulse-dot"></span> HISTORICAL & RESEARCH DATA <span class="header-divider">/</span> NOT LIVE</div>
       <div class="header-actions">
@@ -42,6 +163,8 @@
           <input id="search" autocomplete="off" placeholder="Search nation or city..." aria-expanded="false" aria-controls="search-results" />
           <div id="search-results" class="search-results hidden" role="listbox"></div>
         </div>
+        <button id="mobile-lens-toggle" class="mobile-lens-toggle" type="button" aria-expanded="false" aria-controls="mobile-layer-drawer"><span aria-hidden="true">☷</span><strong>Map layers</strong><span id="active-mobile-lens">Political map</span><span aria-hidden="true">⌄</span></button>
+        <div id="mobile-layer-drawer" class="mobile-layer-drawer">
         <div class="sidebar-heading lens-heading">MAP LENS <span class="heading-dot"></span></div>
         <div id="lens-buttons" class="lens-list" role="group" aria-label="Choose map data lens">
           <button class="lens active" data-lens="political"><span class="lens-icon">◎</span><span class="lens-name">Political Map</span><span class="lens-shortcut">01</span></button>
@@ -55,6 +178,7 @@
         <div class="sidebar-heading">MAP ELEMENTS</div>
         <label class="toggle-row"><span>Capital & major cities</span><input id="cities-toggle" type="checkbox" checked /><span class="toggle-ui"></span></label>
         <label class="toggle-row"><span>Geography labels</span><input id="labels-toggle" type="checkbox" checked /><span class="toggle-ui"></span></label>
+        </div>
         <div class="sidebar-separator"></div>
         <div class="sidebar-heading">CURRENT COVERAGE</div>
         <div class="coverage-card"><div class="coverage-value"><strong id="mapped-total">—</strong><span> / territories mapped</span></div><div class="coverage-sub"><strong>6</strong> country research profiles</div><div class="coverage-progress"><i></i></div><p>Unresearched places remain selectable. Blank data does not mean zero.</p></div>
@@ -66,7 +190,8 @@
           <div class="map-head-right"><span class="status-pill"><i></i> RESEARCH MODE</span><span id="map-coords">LAT 00.0° &nbsp; LON 00.0°</span></div>
         </div>
         <div id="map-viewport" class="map-viewport" tabindex="0" aria-label="World map, drag to pan and scroll or pinch to zoom">
-          <div class="map-grid" aria-hidden="true"></div><div class="swipe-hint" aria-hidden="true">← Drag the map left or right →</div>
+          <div class="map-grid" aria-hidden="true"></div>
+          <div id="mobile-map-tip" class="mobile-map-tip" aria-hidden="true">Tap a country to explore <span>↗</span></div>
           <svg id="world-svg" viewBox="0 0 1200 600" role="img" aria-label="Selectable countries and territories">
             <defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="8" stroke="#233747" stroke-width="1" /></pattern></defs>
             <g id="map-countries"></g>
@@ -75,13 +200,14 @@
           </svg>
           <div class="map-toolbar"><button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><div class="zoom-line"></div><button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><div class="zoom-line"></div><button id="zoom-reset" aria-label="Reset map view" title="Reset map view">⌖</button></div>
           <div class="map-corner-label"><span class="small-star">✧</span> <span id="scale-label">GLOBAL VIEW</span></div>
-          <div class="map-watermark">ATLAS / 001</div>
+          <div class="map-watermark">ATLAS / 002</div>
           <div id="map-tooltip" class="map-tooltip hidden"></div>
         </div>
         <div class="map-footer"><div><span class="legend-dot known"></span> Research profile <span class="legend-dot missing"></span> Geography only <span class="legend-dot city"></span> City / capital</div><div class="footer-instruction">DRAG TO PAN <span>·</span> SCROLL TO ZOOM <span>·</span> TAP A PLACE</div></div>
       </section>
-      <aside id="detail-panel" class="detail-panel">
-        <div class="detail-topline"><span>INTELLIGENCE DOSSIER</span><button id="panel-close" class="panel-close" title="Close details" aria-label="Close details">✕</button></div>
+      <div id="panel-backdrop" class="panel-backdrop" aria-hidden="true"></div>
+      <aside id="detail-panel" class="detail-panel" aria-label="Country or city details">
+        <div id="sheet-handle" class="detail-topline"><span><span class="desktop-label">INTELLIGENCE DOSSIER</span><span class="mobile-label">PLACE DETAILS · SWIPE DOWN TO CLOSE</span></span><button id="panel-close" class="panel-close" title="Close details" aria-label="Close details">✕</button></div>
         <div id="detail-content" class="detail-body"></div>
       </aside>
     </main>
@@ -95,7 +221,7 @@ window.WORLD_MARKER_ONLY = [{"id":"ASM","name":"American Samoa","capital":"Pago 
 
 </script>
   <script>
-/* World Strategy Map v0.1: no frameworks, no external calls, no private APIs. */
+/* World Strategy Map v0.2: no frameworks, no external calls, no private APIs. */
 (() => {
   'use strict';
   const $ = (id) => document.getElementById(id);
@@ -157,14 +283,14 @@ window.WORLD_MARKER_ONLY = [{"id":"ASM","name":"American Samoa","capital":"Pago 
     const label=lens==='political'?'GLOBAL VIEW':`${lensNames[lens]} · SIX SAMPLE NATIONS`;$('scale-label').textContent=label;
     if(state.selected)renderDetails();
   }
-  function pathText(text,x,y,cls='map-text'){const t=el('text',{x,y,class:cls,'text-anchor':'middle'});t.textContent=text;return t;}
+  function pathText(text,x,y,cls='map-text'){const t=el('text',{x,y,class:cls,'text-anchor':'middle'});const z=Math.max(1,1200/state.view.w);t.style.fontSize=(cls.includes('city-text')?9:10)/z+'px';t.style.strokeWidth=(2.3/z)+'px';t.textContent=text;return t;}
   function drawMarkers(){markerLayer.innerHTML='';labelLayer.innerHTML='';const zoom=1200/state.view.w;
-    if(state.showCities){for(const city of cities){const p=geoXY(city.lon,city.lat);const circle=el('circle',{cx:p.x,cy:p.y,r:(zoom>2?2.9:2.2),'class':`city-dot ${state.selected?.type==='city'&&state.selected.name===city.name?'selected-marker':''}`,tabindex:'0',role:'button','aria-label':`${city.name}, ${index.get(city.country)?.name||city.country}`});
+    if(state.showCities){for(const city of cities){const p=geoXY(city.lon,city.lat);const circle=el('circle',{cx:p.x,cy:p.y,r:(zoom>2?5:3.2)/Math.max(1,zoom),'class':`city-dot ${state.selected?.type==='city'&&state.selected.name===city.name?'selected-marker':''}`,tabindex:'0',role:'button','aria-label':`${city.name}, ${index.get(city.country)?.name||city.country}`});
       circle.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;selectCity(city);});circle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectCity(city);}});
       circle.addEventListener('pointermove',e=>tooltip(e,city.name));circle.addEventListener('pointerleave',hideTooltip);markerLayer.appendChild(circle);
       if(state.showLabels&&(zoom>2.3||state.selected?.type==='city'&&state.selected.name===city.name)){labelLayer.appendChild(pathText(city.name,p.x,p.y-6,'map-text city-text'));}
     }}
-    for(const c of extraPlaces){if(!c.center||c.center.length!==2)continue;const p=geoXY(...c.center);const circle=el('circle',{cx:p.x,cy:p.y,r:1.6,class:'unmapped-dot',tabindex:'0',role:'button','aria-label':`${c.name} (boundary not included)`});circle.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;selectCountry(c.id);});circle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectCountry(c.id);}});circle.addEventListener('pointermove',e=>tooltip(e,c.name+' · point only'));circle.addEventListener('pointerleave',hideTooltip);markerLayer.appendChild(circle);}
+    for(const c of extraPlaces){if(!c.center||c.center.length!==2)continue;const p=geoXY(...c.center);const circle=el('circle',{cx:p.x,cy:p.y,r:2.2/Math.max(1,zoom),class:'unmapped-dot',tabindex:'0',role:'button','aria-label':`${c.name} (boundary not included)`});circle.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;selectCountry(c.id);});circle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectCountry(c.id);}});circle.addEventListener('pointermove',e=>tooltip(e,c.name+' · point only'));circle.addEventListener('pointerleave',hideTooltip);markerLayer.appendChild(circle);}
     if(state.showLabels){for(const id of Object.keys(data)){const c=index.get(id);if(!c)continue;const p=geoXY(...(c.center||[0,0]));let name=c.name;if(name==='United States')name='UNITED STATES';const label=pathText(name.toUpperCase(),p.x,p.y+10);label.setAttribute('opacity',zoom>1.2?'1':'.82');labelLayer.appendChild(label);} }
   }
   function tooltip(ev,name){if(state.dragging)return;const rect=vp.getBoundingClientRect();const t=$('map-tooltip');t.textContent=name;t.style.left=Math.min(rect.width-190,ev.clientX-rect.left+13)+'px';t.style.top=Math.max(8,ev.clientY-rect.top-38)+'px';t.classList.remove('hidden');}
@@ -213,9 +339,35 @@ window.WORLD_MARKER_ONLY = [{"id":"ASM","name":"American Samoa","capital":"Pago 
   function statBox(label,value,note){return `<div class="stat-card"><div class="stat-label">${html(label.toUpperCase())}</div><div class="stat-number">${html(value)}</div><div class="stat-note">${html(note)}</div></div>`;}
   function field(label,value){return `<div class="fact"><div class="fact-label">${html(label)}</div><div class="fact-value">${html(value)}</div></div>`;}
   function missing(what){return `<div class="not-yet"><strong>Not yet researched</strong><br>${html(what)}<br><small>We'll display dated, sourced information here after verification. An empty field does not mean zero.</small></div>`;}
-  function panelTabs(tabs){return `<div class="detail-tabs" role="tablist">${tabs.map(([id,label])=>`<button role="tab" data-tab="${id}" class="${state.tab===id?'active':''}" aria-selected="${state.tab===id}">${html(label)}</button>`).join('')}</div>`;}
+  const FLAGS={USA:'🇺🇸',CHN:'🇨🇳',DEU:'🇩🇪',IND:'🇮🇳',BRA:'🇧🇷',NGA:'🇳🇬'};
+  const MAIN_TABS=[['overview','Overview','⌂'],['people','People','♟'],['economy','Economy','◆'],['resources','Resources','◇'],['military','Defense','⚑'],['trade','Trade','⇄'],['technology','Technology','⚛'],['civics','Civics','▦'],['cities','Cities','⌖'],['infrastructure','Infrastructure','▤'],['history','History','◷'],['news','News','◉']];
+  const RESEARCH_PAGE='https://app.notion.com/p/4b689290c04341cf830f702adb9a6896';
+  const OFFICIAL_SOURCE_LINKS=[['U.S. Census Bureau','https://www.census.gov/'],['World Bank Data','https://data.worldbank.org/country/united-states'],['SIPRI Military Expenditure','https://www.sipri.org/databases/milex'],['U.S. Geological Survey','https://www.usgs.gov/centers/national-minerals-information-center'],['Congress.gov','https://www.congress.gov/']];
+  function panelTabs(tabs){return `<div class="detail-tabs dossier-tabs" role="tablist" aria-label="Explore place topics">${tabs.map(([id,label,icon])=>`<button type="button" role="tab" data-tab="${id}" class="${state.tab===id?'active':''}" aria-selected="${state.tab===id}" tabindex="${state.tab===id?0:-1}"><span class="tab-icon" aria-hidden="true">${icon||'◇'}</span>${html(label)}</button>`).join('')}</div>`;}
+  function infoSection(title,body){return `<section class="dossier-section"><h3>${html(title)}</h3>${body}</section>`;}
+  function officialLinks(){return `<div class="source-links">${OFFICIAL_SOURCE_LINKS.map(([name,url])=>`<a href="${url}" rel="noopener noreferrer" target="_blank">↗ ${html(name)}</a>`).join('')}</div><div class="dashboard-notice">Source portals are provided for follow-up research. The pilot figures shown here were carried from an earlier report and have <strong>not</strong> been rechecked against these live sources.</div>`;}
+  function overviewTopics(){const names=[['people','People','♟'],['economy','Economy','◆'],['military','Defense','⚑'],['resources','Resources','◇'],['trade','Trade','⇄'],['technology','Technology','⚛'],['civics','Civics','▦'],['cities','Cities','⌖']];return `<div class="topic-pills">${names.map(([id,title,icon])=>`<button type="button" class="topic-pill" data-goto-tab="${id}"><span class="topic-pill-icon" aria-hidden="true">${icon}</span>${title}<span class="arrow" aria-hidden="true">›</span></button>`).join('')}</div>`;}
+  function cityShortcuts(id){const entries=cities.filter(x=>x.country===id);return entries.length?`<div class="city-shortcuts">${entries.map((c,i)=>`<button type="button" class="city-shortcut" data-city-index="${i}">${html(c.name)}<small>${c.type==='capital'?'Capital · location point':'Major city · location point'} ↗</small></button>`).join('')}</div><div class="dashboard-notice">City points are approximate. Local statistics have not yet been imported.</div>`:missing('Individual cities and regions are not yet in the local dataset.');}
+  function unitedStatesTab(c,d){
+    const estimate=`<div class="status-banner"><strong>Research snapshot · 2025</strong><br>Figures below are approximate and came from our October 2026 research notes. They have not been independently verified against original source series.</div>`;
+    if(state.tab==='overview')return `${estimate}<div class="dossier-caption">COUNTRY AT A GLANCE</div><div class="stat-row dossier-stats">${statBox('Population',compact(d.population),'Illustrative · '+d.year)}${statBox('Nominal GDP',money(d.gdp),'Illustrative · '+d.year)}${statBox('Defense spending',money(d.defense),'Illustrative · '+d.year)}${statBox('Capital',c.capital||'Washington, D.C.','Geographic reference')}</div>${infoSection('Strategic overview',`<p>${html(d.notes)}</p><div class="fact-list">${field('Region',continent(c))}${field('Government (structural)','Federal constitutional republic')}${field('Currency','U.S. dollar (USD)')}${field('Country profile status','Illustrative / source audit pending')}</div>`)}<div class="dossier-caption">EXPLORE THE UNITED STATES</div>${overviewTopics()}${infoSection('Research sources',`<p>Explore official source portals to validate each dataset before we publish current statistics.</p>${officialLinks()}`)}`;
+    if(state.tab==='people')return `${estimate}<div class="stat-row dossier-stats">${statBox('Population',compact(d.population),'Illustrative · 2025')}${statBox('Area (dataset)',c.area?fmt(c.area)+' km²':'—','Older geographic source')}</div>${infoSection('People & regions',`<div class="fact-list">${field('Capital',c.capital||'Washington, D.C.')}${field('Geographic divisions','50 states and a federal district')}${field('Census population release','Awaiting verification')}${field('Regional age and migration','Not collected')}</div><p>Next: Census age structure, urbanization, migration, labor force, state-level demographic series and census/metro definitions.</p>`)}${infoSection('Source portals',`<div class="source-links"><a href="https://www.census.gov/" target="_blank" rel="noopener noreferrer">↗ U.S. Census Bureau</a><a href="https://population.un.org/wpp/" target="_blank" rel="noopener noreferrer">↗ UN Population Prospects</a></div>`)}`;
+    if(state.tab==='economy')return `${estimate}<div class="stat-row dossier-stats">${statBox('Nominal GDP',money(d.gdp),'Illustrative · 2025')}${statBox('Population',compact(d.population),'Illustrative · 2025')}</div>${infoSection('Economic structure','<p>Large services sector, substantial industrial production, agriculture, technology, energy and financial services. These are qualitative descriptions, not measured sector shares.</p>')}${infoSection('What comes next',missing('State-level GDP and employment, purchasing-power-parity GDP, real growth, inflation, income distribution, and verified manufacturing output.'))}${infoSection('Official-source pointers','<div class="source-links"><a href="https://www.bea.gov/" rel="noopener noreferrer" target="_blank">↗ Bureau of Economic Analysis</a><a href="https://www.bls.gov/" rel="noopener noreferrer" target="_blank">↗ Bureau of Labor Statistics</a></div>')}`;
+    if(state.tab==='resources')return `${estimate}${infoSection('Identified categories',`<p>Qualitative resource and production categories from the research notes; this does not establish reserves or annual output.</p>${d.resources.map(x=>`<span class="tag">${html(x)}</span>`).join('')}`)}${infoSection('Missing measures',missing('Quantified production and reserves by mineral, refining capacity, electricity generation by source, site geometry, land-use changes, water withdrawal and farm output.'))}${infoSection('Research link','<a href="https://www.usgs.gov/centers/national-minerals-information-center" rel="noopener noreferrer" target="_blank">↗ USGS mineral statistics</a>')}`;
+    if(state.tab==='military')return `${estimate}<div class="stat-row dossier-stats">${statBox('Spending',money(d.defense),'Illustrative · 2025')}${statBox('Personnel','—','Not sourced in prototype')}</div>${infoSection('Public defense data','<p>Planned: publicly documented service branches, broad facility regions, historical platform inventories, major procurement and defense agreements.</p>'+missing('National personnel series, dated equipment inventories and verified broad-location public bases.'))}${infoSection('Scope and sources','<p>We do not show sensitive positions or live operational military movements.</p><a href="https://www.sipri.org/databases/milex" rel="noopener noreferrer" target="_blank">↗ SIPRI defense spending</a>')}`;
+    if(state.tab==='trade')return `${infoSection('International relationships',`<p>${html(d.diplomacy)}</p>`)}${infoSection('Planned trade map',missing('U.S. exports/imports by partner country, commodity code, trade value and reporting year; customs tariffs and source caveats.'))}${infoSection('Reference','<a href="https://comtradeapi.un.org/" target="_blank" rel="noopener noreferrer">↗ UN Comtrade API</a>')}`;
+    if(state.tab==='technology')return `${infoSection('Research vs. manufacturing','<p>The eventual technology dashboard will distinguish discoveries, domestic design, domestic production, deployment, and import dependence. Technology tree unlocks exist only in Game Mode.</p>')}${infoSection('Examples of tracks to research','<div><span class="tag">Semiconductors</span><span class="tag">AI & computing</span><span class="tag">Space systems</span><span class="tag">Medicine</span><span class="tag">Energy</span></div>'+missing('Verified per-technology U.S. capabilities, manufacturing quantities, patent series and adoption dates.'))}${infoSection('Research workspace','<a href="https://app.notion.com/p/3fbdf812c34e814186dac285dec9ec35" rel="noopener noreferrer" target="_blank">↗ Technology & Civics Notion database</a>')}`;
+    if(state.tab==='civics')return `${infoSection('Institutional structure','<div class="fact-list">'+field('Constitutional framework','Federal constitutional republic')+field('Legislature','Bicameral Congress (House & Senate)')+field('Executive','President and federal administration')+field('Judiciary','Federal court system and Supreme Court')+'</div><p>These are descriptive structural facts, not a political rating or recommendation.</p>')}${infoSection('Laws and policy timelines',missing('Individual statutes, amendments, government budgets, election dates and their current legal status need dated primary-source verification.'))}${infoSection('Primary references','<div class="source-links"><a href="https://www.congress.gov/" rel="noopener noreferrer" target="_blank">↗ Congress.gov</a><a href="https://www.usa.gov/branches-of-government" rel="noopener noreferrer" target="_blank">↗ USAGov: branches of government</a></div>')}`;
+    if(state.tab==='cities')return `${infoSection('Tap a city to explore',cityShortcuts('USA'))}${infoSection('Regional coverage',missing('State and county geometries, population centers, housing, transit, ports, regional industry and urban infrastructure details.'))}`;
+    if(state.tab==='infrastructure')return `${infoSection('Infrastructure map layers planned','<p>Electric grid and power plants, roads, rail, seaports, airports, pipelines, water systems, major industry and broadband infrastructure.</p>')}${infoSection('Data not connected',missing('Operational details, public facility geometry, regional capacity statistics and measured network connectivity.'))}${infoSection('Research sources','<div class="source-links"><a href="https://www.eia.gov/" rel="noopener noreferrer" target="_blank">↗ U.S. Energy Information Administration</a><a href="https://www.bts.gov/" rel="noopener noreferrer" target="_blank">↗ Bureau of Transportation Statistics</a></div>')}`;
+    if(state.tab==='history')return `${infoSection('Historical timelines','<p>This tab will show dated population, economic, civic, technology and diplomatic changes. Historical news events remain separate from simulated gameplay decisions.</p>')}${infoSection('Current status',missing('Linked historical observations and year-by-year change series.'))}`;
+    return `${infoSection('World events',missing('The nightly Notion event log is not yet connected to this standalone website. Reports must be reviewed and tied to dated sources before becoming map events.'))}${infoSection('Research workspace','<a href="https://app.notion.com/p/efa665d48c3b44488e1ded4507a72e54" rel="noopener noreferrer" target="_blank">↗ World news & change log</a>')}`;
+  }
   function countryTab(c,d){const src=`<div class="source-box">${html(REPORT)}<br><strong>Figures are approximate.</strong> Source families listed in Notion include World Bank and SIPRI; original-series revalidation is still pending.<br><a href="https://app.notion.com/p/4b689290c04341cf830f702adb9a6896" target="_blank" rel="noopener noreferrer">Open country research database ↗</a></div>`;
     if(!d)return missing(`There is no imported country research profile for ${c.name}. Basic geography is shown from an older packaged country dataset.`)+`<div class="source-box">Geographical source: countryinfo 0.1.2, MIT license. Borders may be incomplete or disputed.</div>`;
+    if(state.tab==='people')return `<div class="stat-row dossier-stats">${statBox('Population',compact(d.population),'Illustrative · '+d.year)}${statBox('Area (dataset)',c.area?fmt(c.area)+' km²':'—','Geographic source')}</div>${missing('Age structure, migration, household size, language, education and city population, independently sourced.')}${src}`;
+    if(state.tab==='cities')return `${infoSection('Curated city markers',cityShortcuts(c.id))}${src}`;
+    if(state.tab==='infrastructure'||state.tab==='history')return `${missing('Dated and location-specific '+state.tab+' records have not yet been imported.')}${src}`;
     if(state.tab==='overview')return `<div class="stat-row">${statBox('Population',compact(d.population),'Estimated · '+d.year)}${statBox('Nominal GDP',money(d.gdp),'Approximate · '+d.year)}${statBox('Military spending',money(d.defense),'Approximate · '+d.year)}${statBox('Data fields','3','Illustrative headline metrics')}</div><div class="section-label">STRATEGIC PROFILE</div><p>${html(d.notes)}</p><div class="section-label">SOURCE & CONFIDENCE</div><p>Population, GDP and military expenditure are copied from prior research summaries. They are not independently audited here.</p>${src}`;
     if(state.tab==='economy')return `<div class="stat-row">${statBox('Nominal GDP',money(d.gdp),'Research approximation · 2025')}${statBox('Population',compact(d.population),'Research approximation · 2025')}</div><div class="section-label">ECONOMIC DATA STILL NEEDED</div>${missing('PPP GDP, GDP per capita, manufacturing output, inflation, regional income, trade partners and time series.')}${src}`;
     if(state.tab==='resources')return `<div class="section-label">QUALITATIVE RESOURCE PROFILE</div><p>These are broad categories, not verified volumes of reserves or output.</p><div>${d.resources.map(x=>`<span class="tag">${html(x)}</span>`).join('')}</div><hr class="detail-rule">${missing('Quantified commodity reserves, production, processing, power generation and geolocated sites are not imported.')}${src}`;
@@ -225,15 +377,28 @@ window.WORLD_MARKER_ONLY = [{"id":"ASM","name":"American Samoa","capital":"Pago 
     if(state.tab==='civics')return `${missing('Dated public institutions, laws, elections, policy status, civic structures and budgets. No political rankings are generated.')}<p><a href="https://app.notion.com/p/3fbdf812c34e814186dac285dec9ec35" rel="noopener noreferrer" target="_blank">Explore Technology & Civics research ↗</a></p>`;
     return missing('Recent world-event records have not yet been connected to the website. The nightly Notion research review is a separate workflow.')+`<p><a href="https://app.notion.com/p/efa665d48c3b44488e1ded4507a72e54" target="_blank" rel="noopener noreferrer">Notion news change log ↗</a></p>`;
   }
-  function renderDetails(){const c=state.selected;
-    if(!c){$('detail-content').innerHTML=`<div class="empty-hero"><div class="empty-compass">✧</div><h2>Your world awaits.</h2><p>Select a country on the map or use the search bar to begin exploring geography, economic power and international connections.</p><div class="tiny-rule"></div><div class="shortcut">6 COUNTRIES WITH RESEARCH PROFILES</div></div>`;return;}
-    if(c.type==='country'){const country=index.get(c.id),d=data[c.id],tabs=[['overview','Overview'],['economy','Economy'],['resources','Resources'],['military','Defense'],['trade','Trade'],['technology','Technology'],['civics','Civics'],['news','News']];
-      $('detail-content').innerHTML=`<div class="detail-eyebrow">${html(continent(country).toUpperCase())} · ${html(country.id)}</div><h2 class="detail-name">${html(country.name)}</h2><span class="detail-chip">${d?'ILLUSTRATIVE RESEARCH':'GEOGRAPHY ONLY'}</span><div class="detail-description">${country.capital?`Capital (geographic source): ${html(country.capital)}<br>`:''}${country.area?`Area: ${fmt(country.area)} km²<br>`:''}${boundarySet.has(country.id)?'Selectable approximate boundary':'Marker only — boundary not available in bundled data'}</div>${panelTabs(tabs)}<div class="tab-content">${countryTab(country,d)}</div>`;
-    }else{const parent=index.get(c.country);const relevant=data[c.country];
-      $('detail-content').innerHTML=`<div class="detail-eyebrow">${html(parent?.name?.toUpperCase()||c.country)} · ${c.type==='capital'?'CAPITAL CITY':'CITY'}</div><h2 class="detail-name">${html(c.name)}</h2><span class="detail-chip">LOCATION REFERENCE</span><p class="detail-description">Approximate city point for map exploration. This prototype does not invent city population, city GDP, local troop presence or other statistics.</p>${panelTabs([['overview','Overview'],['economy','Economy'],['technology','Technology'],['civics','Civics'],['news','News']])}<div class="tab-content">${state.tab==='overview'?`<div class="section-label">BASIC GEOGRAPHY</div><div class="fact-list">${field('Country',parent?.name||c.country)}${field('Approx. coordinates',`${c.lat.toFixed(3)}°, ${c.lon.toFixed(3)}°`)}${field('City-level population','Not collected')}${field('City economy','Not collected')}</div><hr class="detail-rule">${missing('City-specific infrastructure, housing, industry, transport, healthcare, education, climate and culture.')}`:missing(`City-level ${state.tab} indicators are not in the current pilot dataset.`)}<div class="source-box">City markers are manually curated approximate reference coordinates, not surveyed sites. No city-specific observations have been imported.${relevant?`<br><button id="see-parent" class="primary-button">VIEW COUNTRY PROFILE →</button>`:''}</div></div>`;
-      $('see-parent')?.addEventListener('click',()=>selectCountry(c.country));
+  function renderDetails(){const item=state.selected;
+    if(!item){$('detail-content').innerHTML=`<div class="empty-hero"><div class="empty-compass">✧</div><h2>Choose your nation.</h2><p>Tap any country or search for a place to explore people, economy, technology, civics and more.</p><div class="tiny-rule"></div><div class="shortcut">6 ILLUSTRATIVE COUNTRY PROFILES</div></div>`;return;}
+    if(item.type==='country'){
+      const country=index.get(item.id),d=data[item.id];if(!country)return;
+      const tabs=MAIN_TABS;
+      const header=`<div class="dashboard-hero"><div class="hero-identity"><div class="hero-flag" aria-label="${html(country.name)} flag or map symbol">${FLAGS[item.id]||'✦'}</div><div class="hero-text"><div class="hero-eyebrow">${html(continent(country))} · ${html(country.id)}</div><h2 class="hero-name">${html(country.name)}</h2><div class="hero-sub">${country.capital?'Capital · '+html(country.capital):'Capital not recorded in the map source'}</div></div></div><div class="hero-meta"><span class="hero-pill ${d?'warning':''}">${d?'◈ Illustrative data':'◇ Geography only'}</span>${country.area?`<span class="hero-pill">${fmt(country.area)} km²</span>`:''}<span class="hero-pill">${boundarySet.has(country.id)?'Outline mapped':'Point mapped'}</span></div><button id="focus-country" type="button" class="hero-action">⌖ Center on map</button></div>`;
+      let contents;
+      if(item.id==='USA')contents=unitedStatesTab(country,d);
+      else if(d)contents=countryTab(country,d);
+      else contents=missing(`No imported indicators for ${country.name} yet. The geographic record remains selectable and visible.`)+`<div class="source-box">Geography: countryinfo 0.1.2 (MIT), approximate/incomplete boundaries. Missing indicators mean uncollected—not zero.</div>`;
+      $('detail-content').innerHTML=`${header}${panelTabs(tabs)}<div class="tab-content">${contents}</div>`;
+      $('focus-country')?.addEventListener('click',()=>{const p=country.center||country.capitalCoords;if(p?.length===2)moveTo(...p,window.innerWidth<=650?500:310);if(window.innerWidth<=920)$('detail-panel').classList.remove('open');});
+    }else{
+      const parent=index.get(item.country);const relevant=data[item.country];
+      $('detail-content').innerHTML=`<div class="dashboard-hero"><div class="hero-eyebrow">${html(parent?.name||item.country)} · ${item.type==='capital'?'CAPITAL':'MAJOR CITY'}</div><h2 class="hero-name">${html(item.name)}</h2><div class="hero-meta"><span class="hero-pill">Location reference</span></div><button id="focus-city" type="button" class="hero-action">⌖ Center on city</button></div>${panelTabs([['overview','Overview','⌂'],['economy','Economy','◆'],['technology','Technology','⚛'],['civics','Civics','▦'],['news','News','◉']])}<div class="tab-content">${state.tab==='overview'?infoSection('City location',`<div class="fact-list">${field('Country',parent?.name||item.country)}${field('Approx. coordinates',`${item.lat.toFixed(3)}°, ${item.lon.toFixed(3)}°`)}${field('City population','Not collected')}${field('City economy','Not collected')}</div>`)+infoSection('Missing local details',missing('Neighborhoods, housing, industry, transport, health, universities, infrastructure and sourced local metrics.')):missing('City-level '+state.tab+' data has not been imported.')}<div class="source-box">City coordinates are approximate, manually curated geographic reference points.${relevant?`<br><button id="see-parent" class="hero-action">View ${html(parent?.name||item.country)} profile →</button>`:''}</div></div>`;
+      $('focus-city')?.addEventListener('click',()=>{moveTo(item.lon,item.lat,155);if(window.innerWidth<=920)$('detail-panel').classList.remove('open');});
+      $('see-parent')?.addEventListener('click',()=>selectCountry(item.country));
     }
-    $('detail-content').querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{state.tab=b.dataset.tab;renderDetails();}));
+    const body=$('detail-content');
+    body.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{state.tab=b.dataset.tab;renderDetails();body.scrollTop=0;requestAnimationFrame(()=>body.querySelector(`[data-tab="${state.tab}"]`)?.scrollIntoView({block:'nearest',inline:'center'}));}));
+    body.querySelectorAll('[data-goto-tab]').forEach(b=>b.addEventListener('click',()=>{state.tab=b.dataset.gotoTab;renderDetails();body.scrollTop=0;requestAnimationFrame(()=>body.querySelector(`[data-tab="${state.tab}"]`)?.scrollIntoView({block:'nearest',inline:'center'}));}));
+    body.querySelectorAll('[data-city-index]').forEach(b=>b.addEventListener('click',()=>{const country=state.selected?.id;const list=cities.filter(c=>c.country===country);const city=list[Number(b.dataset.cityIndex)];if(city)selectCity(city,true);}));
   }
   $('panel-close').onclick=()=>$('detail-panel').classList.remove('open');
   function hideSearch(){$('search-results').classList.add('hidden');$('search').setAttribute('aria-expanded','false');}
@@ -244,6 +409,59 @@ window.WORLD_MARKER_ONLY = [{"id":"ASM","name":"American Samoa","capital":"Pago 
   $('cities-toggle').addEventListener('change',e=>{state.showCities=e.target.checked;drawMarkers();});$('labels-toggle').addEventListener('change',e=>{state.showLabels=e.target.checked;drawMarkers();});
   const modal=$('about-modal');$('info-btn').onclick=()=>modal.showModal();$('modal-close').onclick=()=>modal.close();$('modal-done').onclick=()=>modal.close();
   $('mapped-total').textContent=String(countries.length+extraPlaces.length);
+
+  // Mobile accessibility & map-first experience (0.2).
+  const isCompactView=()=>window.matchMedia('(max-width:650px)').matches;
+  const layerToggle=$('mobile-lens-toggle'), sidebar=$('search').closest('.sidebar'), layerDrawer=$('mobile-layer-drawer');
+  const detailPanel=$('detail-panel'), sheetBackdrop=$('panel-backdrop');
+  const closeDetails=()=>{detailPanel.classList.remove('open');detailPanel.style.removeProperty('transform');detailPanel.style.removeProperty('transition');};
+  layerToggle.addEventListener('click',()=>{
+    const expanded=sidebar.classList.toggle('layers-open');
+    layerToggle.setAttribute('aria-expanded',String(expanded));
+  });
+  document.querySelectorAll('.lens').forEach(btn=>btn.addEventListener('click',()=>{
+    $('active-mobile-lens').textContent=btn.querySelector('.lens-name')?.textContent||'Political map';
+    sidebar.classList.remove('layers-open');layerToggle.setAttribute('aria-expanded','false');
+  }));
+  document.addEventListener('pointerdown',e=>{
+    if(sidebar.classList.contains('layers-open')&&!sidebar.contains(e.target)){
+      sidebar.classList.remove('layers-open');layerToggle.setAttribute('aria-expanded','false');
+    }
+  });
+  const syncDetails=()=>{
+    const active=isCompactView()&&detailPanel.classList.contains('open');
+    sheetBackdrop.classList.toggle('open',active);
+    sheetBackdrop.setAttribute('aria-hidden',String(!active));
+    if(active){detailPanel.setAttribute('role','dialog');detailPanel.setAttribute('aria-modal','true');$('mobile-map-tip').classList.add('hidden');}
+    else{detailPanel.removeAttribute('role');detailPanel.removeAttribute('aria-modal');}
+  };
+  new MutationObserver(syncDetails).observe(detailPanel,{attributes:true,attributeFilter:['class']});
+  sheetBackdrop.addEventListener('click',closeDetails);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&isCompactView()&&detailPanel.classList.contains('open'))closeDetails();});
+  window.addEventListener('resize',syncDetails);
+  // Swipe down only on the dedicated sheet handle; scrolling details remains native.
+  let sheetDrag=null;
+  const handle=$('sheet-handle');
+  handle.addEventListener('pointerdown',e=>{
+    if(!isCompactView()||!detailPanel.classList.contains('open')||e.target.closest('button'))return;
+    sheetDrag={pointer:e.pointerId,startY:e.clientY,dy:0};
+    try{handle.setPointerCapture(e.pointerId);}catch{}
+  });
+  handle.addEventListener('pointermove',e=>{
+    if(!sheetDrag||sheetDrag.pointer!==e.pointerId)return;
+    const dy=Math.max(0,e.clientY-sheetDrag.startY);
+    sheetDrag.dy=dy;
+    if(dy>3){detailPanel.style.transition='none';detailPanel.style.transform=`translateY(${dy}px)`;}
+  });
+  const endSheetDrag=e=>{
+    if(!sheetDrag||sheetDrag.pointer!==e.pointerId)return;
+    const dy=sheetDrag.dy;sheetDrag=null;
+    detailPanel.style.removeProperty('transform');detailPanel.style.removeProperty('transition');
+    if(dy>90)closeDetails();
+  };
+  handle.addEventListener('pointerup',endSheetDrag);
+  handle.addEventListener('pointercancel',endSheetDrag);
+  syncDetails();
   drawCountries();redraw();renderDetails();
 })();
 

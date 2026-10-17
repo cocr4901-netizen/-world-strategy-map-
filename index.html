@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b141d" />
   <meta name="description" content="Explore a Civilization-inspired world atlas with clickable countries, cities and source-aware country profiles." />
   <title>Atlas of Nations | World Strategy Map</title>
-  <meta name="app-revision" content="0.9.0-trade-supply-chain-ui" />
+  <meta name="app-revision" content="1.0.0-living-map-layers-demo" />
   <style>
 :root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9ebea;background:#09141c;font-size:14px;font-synthesis:none;--gold:#e7c481;--muted:#90a2a9;--line:#293942;--panel:#0d1b23;--dark:#08121a}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}a{color:var(--gold)}.app-shell{height:100dvh;display:flex;flex-direction:column;min-height:530px;background:#0a151d}.topbar{height:78px;min-height:78px;background:#101e28;border-bottom:1px solid #3a4850;display:flex;align-items:center;justify-content:space-between;padding:0 26px;gap:16px}.brand{display:flex;align-items:center;gap:13px;min-width:max-content}.brand-mark{width:44px;height:44px;border:1px solid #aa8b57;display:grid;place-items:center;font-size:29px;color:var(--gold);transform:rotate(45deg)}.brand-mark:first-letter{transform:rotate(-45deg)}.brand-title{font-size:19px;letter-spacing:.19em;font-weight:800;color:#f3e5c3}.brand-title span{font-weight:400;color:#f2f1e7}.brand-subtitle{margin-top:4px;font-size:9px;letter-spacing:.24em;font-weight:650;color:#94a5ae}.brand-version{color:#657e8b}.header-middle{font-size:10px;letter-spacing:.13em;color:#879ba7;text-align:center}.pulse-dot,.green-dot,.status-pill i{width:7px;height:7px;border-radius:50%;display:inline-block;background:#81c7a5;box-shadow:0 0 9px #81c7a575;margin-right:7px}.header-divider{margin:0 12px;color:#556a74}.header-actions{display:flex;gap:12px;align-items:center}.icon-button,.panel-close{border:1px solid #465861;background:transparent;color:#c7d2d2;width:32px;height:32px;border-radius:4px;font-size:19px}.icon-button:hover,.panel-close:hover{color:var(--gold);border-color:var(--gold)}.notion-link{font-size:10px;color:#cdb581;border:1px solid #65583e;padding:11px 12px;text-decoration:none;letter-spacing:.08em;font-weight:750;white-space:nowrap}.notion-link:hover{background:#3a3327}.main-layout{display:grid;grid-template-columns:252px minmax(250px,1fr) 355px;min-height:0;flex:1}.sidebar{position:relative;background:#0b1822;border-right:1px solid var(--line);padding:27px 17px;overflow-y:auto;scrollbar-width:thin}.sidebar-heading{font-size:10px;color:#728e9d;letter-spacing:.17em;font-weight:800;margin:0 6px 13px}.search-area{position:relative;margin-bottom:29px}.search-symbol{position:absolute;left:13px;top:4px;font-size:26px;color:#8195a3}#search{width:100%;background:#152731;color:#e6eaec;border:1px solid #30434e;border-radius:4px;height:44px;padding:0 12px 0 39px;outline:none;font-size:12px}#search::placeholder{color:#899da7}#search:focus{border-color:#ba9e6e}.search-results{position:absolute;top:47px;left:0;right:0;max-height:275px;overflow:auto;background:#172832;border:1px solid #556677;z-index:20;box-shadow:0 18px 25px #0008}.search-result{border:0;border-bottom:1px solid #2c414e;color:#ebeeee;background:transparent;padding:9px 11px;width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px}.search-result:hover{background:#28414d}.search-result small{color:#9babb4;font-size:10px}.hidden{display:none!important}.lens-heading{display:flex;justify-content:space-between}.heading-dot{height:5px;width:5px;background:var(--gold);display:inline-block}.lens-list{display:flex;flex-direction:column;gap:5px;margin-bottom:22px}.lens{height:44px;width:100%;display:flex;align-items:center;gap:12px;padding:0 9px;border:1px solid transparent;border-left:3px solid transparent;background:transparent;color:#95a8b1;text-align:left}.lens:hover{background:#1b2b37;color:#f4e7cd}.lens.active{background:#20303a;border-left-color:#e4c383;color:#f3deb0}.lens-icon{font-size:20px;width:24px;text-align:center}.lens-name{flex:1;font-size:12px;font-weight:650}.lens-shortcut{font-size:10px;opacity:.48}.sidebar-separator{border-top:1px solid #2d414d;margin:16px 3px 24px}.toggle-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 4px;font-size:12px;color:#a5b6bb;cursor:pointer}.toggle-row input{position:absolute;opacity:0;pointer-events:none}.toggle-ui{position:relative;width:34px;height:19px;border-radius:20px;background:#34464d;flex-shrink:0}.toggle-ui:before{content:"";position:absolute;top:3px;left:3px;width:13px;height:13px;background:#8599a0;border-radius:50%;transition:transform .2s}.toggle-row input:checked+.toggle-ui{background:#79683e}.toggle-row input:checked+.toggle-ui:before{transform:translateX(15px);background:#ead5a7}.toggle-row input:focus-visible+.toggle-ui{outline:2px solid var(--gold)}.coverage-card{background:#142530;border:1px solid #2c444f;padding:16px;margin:5px 0 30px}.coverage-value strong{font-size:27px;color:#e7dcc5;font-weight:700}.coverage-value span{color:#8da1aa;font-size:10px}.coverage-sub{margin-top:7px;font-size:11px;color:#acc1ca}.coverage-sub strong{color:#e0c38d}.coverage-progress{height:4px;margin:15px 0;background:#334750}.coverage-progress i{display:block;width:2.5%;height:100%;background:#d6b878}.coverage-card p{font-size:10px;line-height:1.55;color:#768e99;margin:0}.sidebar-foot{font-size:9px;letter-spacing:.1em;color:#5d7685;line-height:1.8}.sidebar-foot span{color:var(--gold);padding:0 4px}.map-stage{position:relative;min-width:0;background:#0b1b26;display:flex;flex-direction:column;overflow:hidden}.map-head{padding:28px 29px 14px;display:flex;justify-content:space-between;gap:10px}.eyebrow{font-size:10px;letter-spacing:.21em;font-weight:800;color:#d6bb83}.eyebrow-diamond{margin:0 8px;color:#667d88}.map-head h1{font-family:Georgia,"Times New Roman",serif;font-size:31px;letter-spacing:.01em;font-weight:400;margin:12px 0 0;color:#eef0eb}.accent-dot{color:var(--gold)}.map-head-right{display:flex;align-items:end;gap:9px;flex-direction:column;justify-content:center}.status-pill{font-size:9px;letter-spacing:.1em;background:#16312f;border:1px solid #406256;color:#9fcfba;padding:7px 8px}.status-pill i{width:5px;height:5px}.map-head-right #map-coords{font-family:monospace;font-size:10px;color:#8196a4;white-space:nowrap}.map-viewport{position:relative;overflow:hidden;flex:1;min-height:280px;cursor:grab;touch-action:none;background:radial-gradient(ellipse at 47% 42%,#153142 0%,#102532 55%,#0b1b26 100%);outline:0}.map-viewport:active{cursor:grabbing}.map-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#33536524 1px,transparent 1px),linear-gradient(90deg,#33536524 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}#world-svg{position:absolute;inset:0;width:100%;height:100%;user-select:none;cursor:inherit}#map-countries path{stroke:#567482;stroke-width:.58;stroke-linejoin:round;vector-effect:non-scaling-stroke;fill:#294450;transition:fill .15s;cursor:pointer}#map-countries path:hover{fill:#b29663!important;stroke:#f3d5a5;stroke-width:1.25}#map-countries path.selected{stroke:#ffe0a0;stroke-width:1.5;fill:#8b7150!important;filter:drop-shadow(0 0 2px #f9dc8d)}#map-countries path.missing{fill:#1e3642}#map-countries path.available{fill:#335360}#map-countries path[data-lens-color]{fill:var(--lens-fill)}.city-dot{fill:#e1c48f;stroke:#20313b;stroke-width:2.1;vector-effect:non-scaling-stroke;cursor:pointer}.city-dot:hover{fill:#fff;stroke:#f1c67b}.unmapped-dot{fill:#476778;stroke:#c2c3ab;stroke-width:.65;vector-effect:non-scaling-stroke;cursor:pointer}.unmapped-dot:hover{fill:#c6a975}.selected-marker{fill:#ffdc91!important;stroke:#ffffff;stroke-width:2!important;filter:drop-shadow(0 0 4px #ffdda9)}.map-text{font-size:10px;letter-spacing:.065em;fill:#e6d8b4;font-family:Inter,sans-serif;stroke:#10212b;stroke-width:2.3px;paint-order:stroke;pointer-events:none}.city-text{font-size:9px;fill:#c8b99a}.map-toolbar{position:absolute;right:19px;bottom:25px;display:flex;flex-direction:column;background:#152732;border:1px solid #4a616b;box-shadow:0 10px 30px #0007;z-index:5}.map-toolbar button{width:36px;height:39px;background:transparent;color:#e7e7de;border:0;font-size:22px;line-height:1}.map-toolbar button:hover{background:#324957;color:var(--gold)}.zoom-line{height:1px;background:#334a53;margin:0 7px}.map-corner-label{position:absolute;left:28px;bottom:23px;font-size:10px;letter-spacing:.14em;color:#869daa;font-weight:750}.small-star{color:#dfc48e;font-size:18px;margin-right:8px}.map-watermark{position:absolute;right:80px;top:8px;opacity:.12;font-family:Georgia,serif;font-size:36px;pointer-events:none}.map-tooltip{position:absolute;left:0;top:0;z-index:10;background:#132833;border:1px solid #b79c69;padding:7px 11px;color:#f3e0b6;font-size:12px;box-shadow:0 8px 24px #0008;pointer-events:none;white-space:nowrap}.map-footer{height:46px;border-top:1px solid #29414c;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#8aa0aa;font-size:10px;letter-spacing:.05em;gap:10px}.legend-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 5px 0 12px}.legend-dot:first-child{margin-left:0}.legend-dot.known{background:#7fa1a4}.legend-dot.missing{background:#253b47;border:1px solid #75939b}.legend-dot.city{background:#edc788}.footer-instruction span{color:var(--gold);margin:0 7px}.detail-panel{background:#101f29;border-left:1px solid #354954;overflow:auto;scrollbar-width:thin;min-width:0}.detail-topline{height:49px;padding:0 21px;border-bottom:1px solid #344751;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#d3b781;letter-spacing:.2em;font-weight:800}.panel-close{width:27px;height:27px;font-size:14px}.detail-body{padding:24px}.detail-eyebrow{font-size:10px;color:#9baeb4;letter-spacing:.13em;font-weight:700}.detail-name{font-family:Georgia,serif;font-size:35px;font-weight:normal;line-height:1.03;margin:10px 0 8px;color:#fcf1d8}.detail-chip{display:inline-block;background:#34434a;color:#f3d49a;padding:5px 8px;font-size:10px;font-weight:750;letter-spacing:.08em}.detail-description{font-size:12px;color:#a7bac1;line-height:1.75;margin:13px 0 19px}.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}.stat-card{background:#172d39;border:1px solid #34515e;padding:12px;min-height:75px}.stat-label{font-size:9px;color:#9ab0b8;letter-spacing:.12em}.stat-number{font-size:21px;color:#f0e6d2;font-weight:700;margin-top:9px}.stat-note{font-size:10px;color:#94a9b3;margin-top:4px}.detail-rule{border:0;border-top:1px solid #364851;margin:18px 0}.section-label{color:#dabb87;font-size:10px;letter-spacing:.17em;font-weight:800;margin-bottom:9px}.fact-list{display:flex;flex-direction:column;gap:10px}.fact{display:flex;justify-content:space-between;gap:10px;padding-bottom:9px;border-bottom:1px solid #293e49;font-size:12px}.fact-label{color:#91a4ae}.fact-value{color:#e3e5df;text-align:right}.detail-tabs{display:flex;gap:5px;overflow-x:auto;padding:0 0 10px;margin:12px -4px 9px;scrollbar-width:thin}.detail-tabs button{padding:8px 10px;white-space:nowrap;border:1px solid #3d515c;background:#182b35;color:#9caeb8;font-size:10px;letter-spacing:.04em;border-radius:2px}.detail-tabs button.active{background:#554b36;border-color:#d4b778;color:#f8e8c5}.tab-content{font-size:12px;line-height:1.75;color:#c2d0d0}.tab-content p{margin-top:8px}.not-yet{border:1px dashed #54707a;color:#a4b3b7;padding:14px;line-height:1.65;background:#142732}.tag{display:inline-block;background:#263d45;border:1px solid #41606b;color:#d2e0dc;margin:4px 4px 0 0;padding:4px 8px;border-radius:2px;font-size:10px}.source-box{margin-top:18px;padding:11px 12px;background:#202e31;border-left:2px solid #d3b075;color:#aebdbd;font-size:10px;line-height:1.6}.source-box a{word-break:break-word}.empty-hero{margin:38px 0;text-align:center}.empty-compass{font-family:Georgia,serif;font-size:78px;color:#b69a66;margin-bottom:14px;opacity:.8}.empty-hero h2{font-family:Georgia,serif;font-size:24px;font-weight:400;color:#f0eadc;margin:0 0 13px}.empty-hero p{font-size:12px;line-height:1.8;color:#94a9b4;max-width:250px;margin:auto}.empty-hero .tiny-rule{height:1px;background:#60717a;width:55px;margin:25px auto}.empty-hero .shortcut{font-size:10px;color:#d8bf87;letter-spacing:.12em}.bottom-status{height:30px;min-height:30px;background:#07121a;border-top:1px solid #35434b;padding:0 19px;display:flex;justify-content:space-between;align-items:center;color:#7a929b;font-size:9px;letter-spacing:.09em}.green-dot{width:5px;height:5px}.bottom-status span:first-child{white-space:nowrap}dialog{background:#101e29;border:1px solid #947c53;max-width:min(490px,calc(100vw - 40px));padding:25px 28px;color:#c4d4d4;box-shadow:0 24px 140px #000c}dialog::backdrop{background:#01090dcc}.modal-heading{display:flex;justify-content:space-between}dialog h2{font-family:Georgia,serif;font-weight:normal;color:#f4e6c8;font-size:25px}dialog p{font-size:12px;line-height:1.8}dialog code{color:#e9c994}.primary-button{background:#be9c5b;border:0;color:#111d24;font-size:11px;font-weight:800;letter-spacing:.1em;padding:12px 16px;margin-top:14px}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 @media(max-width:1190px){.main-layout{grid-template-columns:215px minmax(260px,1fr) 315px}.sidebar{padding:22px 11px}.map-head{padding:25px 18px 10px}.map-head h1{font-size:27px}.map-footer{padding:0 18px}.detail-body{padding:20px}.header-middle{display:none}}
@@ -329,7 +329,7 @@
 .trade-edge{fill:none;stroke-width:3;stroke-dasharray:7 5;opacity:.58;pointer-events:none}
 .trade-edge.active{stroke-width:7;stroke-dasharray:none;opacity:1}
 .trade-edge.faded{opacity:.07;stroke-width:2}
-.trade-edge-hit{fill:none;stroke:transparent;stroke-width:28;pointer-events:stroke;cursor:pointer}.trade-route-dot{fill:#172f3b;stroke-width:3;cursor:pointer;pointer-events:all}.trade-route-dot.faded{opacity:.12}.trade-route-dot:focus-visible{stroke:#fff;stroke-width:6;outline:none}.trade-drag-tip{font-size:10px;letter-spacing:.05em;color:#e7c68c;margin:0 0 6px;text-align:center}
+.trade-edge-hit{fill:none;stroke:transparent;stroke-width:25;pointer-events:stroke;cursor:pointer}
 .trade-node{cursor:pointer;outline:0}.trade-node circle{fill:#203a46;stroke:#91a9aa;stroke-width:3}
 .trade-node.active circle{fill:#4e4935;stroke:#ffe2a5;stroke-width:6}.trade-node text{fill:#f6e2b5;font:700 17px Inter,Arial,sans-serif;text-anchor:middle;pointer-events:none}
 .trade-node:focus-visible circle{stroke:#fff;stroke-width:8}
@@ -353,6 +353,24 @@
 @media(max-width:650px){.cc-trade-controls{grid-template-columns:1fr 1fr}.cc-trade-controls label:first-child{grid-column:1/-1}.cc-trade-controls select{font-size:13px}.trade-edge-list{grid-template-columns:repeat(2,minmax(0,1fr))}.trade-method-grid{grid-template-columns:1fr 1fr}.trade-overlay-control{flex-direction:column;align-items:stretch}.trade-demo-banner{top:59px;font-size:9px}.cc-trade-summary{font-size:11px}.trade-network-svg{min-width:540px}.cc-dossier-actions{display:flex;flex-wrap:wrap}.cc-dossier-actions button{flex:1;min-width:100px}}
 @media(max-width:365px){.trade-method-grid,.trade-edge-list{grid-template-columns:1fr}}
 
+
+/* Atlas 1.0: MAP-FIRST demonstration layers. Fixture geometry/traffic is fictional. */
+.living-map-controls{position:absolute;top:12px;left:12px;z-index:45;display:flex;gap:8px;align-items:center;max-width:calc(100% - 24px)}
+#living-layer-launch{display:flex;align-items:center;gap:8px;min-height:45px;padding:0 12px;border:1px solid #ae9667;background:#10232ce8;border-radius:9px;color:#ffe0a7;font-weight:800;box-shadow:0 5px 15px #07131cb0;touch-action:manipulation}
+#living-layer-launch[aria-expanded="true"]{background:#2b3838;border-color:#f1cc7c}
+#living-layer-count{font-size:10px;padding:3px 5px;color:#b9d7d5;background:#243b3f;border-radius:6px}
+.living-not-live{font-size:9px;font-weight:900;color:#f2ca91;letter-spacing:.08em;background:#14252cde;border:1px solid #796044;padding:8px 7px;border-radius:7px;white-space:nowrap}
+.living-layer-drawer{position:absolute;z-index:60;left:12px;top:67px;width:min(367px,calc(100% - 24px));max-height:min(66dvh,620px);overflow-y:auto;overscroll-behavior:contain;background:#091b24f7;color:#ecf2ee;border:1px solid #ba9d68;border-radius:13px;padding:13px;box-shadow:0 20px 40px #051017e8;touch-action:pan-y}
+.living-head{display:flex;justify-content:space-between;align-items:start;gap:10px;margin:0 0 8px}.living-head small{color:#bb9f78;font-size:9px;letter-spacing:.14em;font-weight:800}.living-head h3{font-family:Georgia,serif;font-size:21px;font-weight:500;line-height:1.1;margin:5px 0}
+#living-layer-close,#living-inspector-close{min-width:36px;min-height:36px;border:1px solid #58717a;background:#20333e;border-radius:8px;color:#ecf2ee;font-weight:900}
+.living-warning{background:#3c3027;color:#ffe1b6;border-left:3px solid #e8b86b;padding:10px;font-size:11px;line-height:1.55;margin:8px 0 13px;border-radius:4px}
+.living-checks{display:grid;gap:7px}.living-check-row{display:flex;align-items:center;gap:10px;border:1px solid #39505c;border-radius:8px;padding:10px;background:#102831;min-height:55px;cursor:pointer}.living-check-row input{width:20px;height:20px;flex:none;accent-color:#e2c27d}.living-check-row .living-kind{font-size:18px;color:#efc881;min-width:26px;text-align:center}.living-check-row strong{display:block;color:#f2ebd6;font-size:12px}.living-check-row small{display:block;color:#abc0c7;font-size:10px;line-height:1.5;margin-top:3px}
+.living-playback{margin-top:13px;border-top:1px solid #36515c;padding-top:13px}.living-playback>div:first-child{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:12px}.living-playback span{font-size:10px;color:#aebbc2}.living-playback input{display:block;width:100%;margin:12px 0;accent-color:#e1c17f}.living-actions{display:flex;gap:8px}.living-actions button,.living-route-item{color:#e9e2cf;background:#21343e;border:1px solid #576977;border-radius:8px;min-height:40px;padding:8px 10px;font-size:11px;cursor:pointer}.living-actions button:first-child{background:#5a4934;border-color:#ac8d5c}.living-drawer-section{margin-top:14px;border-top:1px solid #37515b;padding-top:11px}.living-drawer-section>strong{font-size:11px;color:#e9cb96}.living-route-item{display:block;width:100%;text-align:left;margin-top:6px;line-height:1.4}.living-route-item small{display:block;color:#a6bfbd}.living-foot{color:#a3b7bc;font-size:10px;line-height:1.6;margin-top:11px;padding-bottom:4px}
+.living-inspector{z-index:49;position:absolute;right:12px;bottom:12px;width:min(370px,calc(100% - 24px));max-height:min(58dvh,420px);overflow-y:auto;overscroll-behavior:contain;background:#0c202bed;color:#edf1eb;border:1px solid #b49b6e;box-shadow:0 12px 36px #020b0fe6;border-radius:12px;padding:13px;touch-action:pan-y}.living-inspector-head{display:flex;align-items:center;justify-content:space-between;gap:6px;border-bottom:1px solid #364b55;padding-bottom:8px;margin-bottom:8px;color:#ebc78f;font-size:10px;letter-spacing:.09em;font-weight:850}.living-inspector h3{font-family:Georgia,serif;margin:6px 0 8px;font-size:20px;line-height:1.15}.living-inspector p{font-size:12px;line-height:1.6;color:#cfdbd9}.living-inspector .living-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0}.living-meta div{background:#132e39;border:1px solid #3a5260;border-radius:8px;padding:9px;font-size:10px;color:#b7cbd0}.living-meta strong{display:block;color:#f2e6cb;font-size:11px;margin:5px 0}.living-evidence{background:#3c3027;border-left:3px solid #efbe78;padding:9px;color:#ffe3bb;font-size:10px;line-height:1.6;border-radius:4px}
+.living-symbol{cursor:pointer;stroke:#0a202b;stroke-width:2;paint-order:stroke;filter:drop-shadow(0 0 4px #0a111b);vector-effect:non-scaling-stroke}.living-symbol:focus-visible{stroke:#fff;stroke-width:4}.living-route-path{stroke-dasharray:6 6;vector-effect:non-scaling-stroke;pointer-events:none;opacity:.8}.living-route-hit{stroke:transparent;stroke-width:17;fill:none;pointer-events:stroke;cursor:pointer;vector-effect:non-scaling-stroke}
+.living-marker-text{font-size:9px;text-anchor:middle;dominant-baseline:central;fill:#101c23;font-weight:950;pointer-events:none;paint-order:stroke}.living-corridor-dot{stroke:#081923;stroke-width:2;vector-effect:non-scaling-stroke}
+@media(max-width:650px){.living-map-controls{top:11px;left:9px;gap:6px}#living-layer-launch{padding:0 9px;min-height:42px;font-size:12px}.living-not-live{font-size:8px;padding:7px 6px}.living-layer-drawer{left:7px;top:61px;width:calc(100% - 14px);max-height:min(67dvh,550px)}.living-inspector{left:8px;right:8px;bottom:8px;width:auto;max-height:min(54dvh,350px)}.living-marker-text{font-size:10px}.map-watermark{display:none}}
+@media(prefers-reduced-motion:reduce){.living-symbol,.living-route-path{animation:none!important}}
 </style>
 </head>
 <body>
@@ -360,9 +378,9 @@
     <header class="topbar">
       <div class="brand" aria-label="World Strategy Map">
         <div class="brand-mark" aria-hidden="true">✦</div>
-        <div><div class="brand-title">ATLAS <span>OF NATIONS</span></div><div class="brand-subtitle">WORLD STRATEGY MAP <span class="brand-version">/ ATLAS 0.8</span></div></div>
+        <div><div class="brand-title">ATLAS <span>OF NATIONS</span></div><div class="brand-subtitle">WORLD STRATEGY MAP <span class="brand-version">/ ATLAS 1.0</span></div></div>
       </div>
-      <div class="header-middle"><span class="pulse-dot"></span> REGIONAL EXPLORER <span class="header-divider">/</span> UI-FIRST</div>
+      <div class="header-middle"><span class="pulse-dot"></span> LIVING WORLD MAP <span class="header-divider">/</span> DEMO DATA</div>
       <div class="header-actions">
         <button type="button" id="cc-launch" class="cc-launch" title="Open Command Center" aria-label="Open Command Center">✧ Command Center</button>
         <button id="info-btn" class="icon-button" title="About this map" aria-label="About this map">ⓘ</button>
@@ -413,7 +431,7 @@
         <div class="sidebar-separator"></div>
         <div class="sidebar-heading">CURRENT COVERAGE</div>
         <div class="coverage-card"><div class="coverage-value"><strong id="mapped-total">—</strong><span> / territories mapped</span></div><div class="coverage-sub"><strong>6</strong> illustrative 2025 profiles · <strong>139</strong> mapped historical series · <span id="wdi-covered">0 WDI profiles loaded</span></div><div class="coverage-progress"><i></i></div><p>Unresearched places remain selectable. Blank data does not mean zero.</p></div>
-        <div class="sidebar-foot">ATLAS 0.9 <span>◆</span> SOURCES & STATUS ALWAYS VISIBLE & SOURCE-DATED</div>
+        <div class="sidebar-foot">ATLAS 1.0 <span>◆</span> SOURCES & STATUS ALWAYS VISIBLE & SOURCE-DATED</div>
       </aside>
       <section class="map-stage" aria-label="Interactive world map">
         <div class="map-head">
@@ -422,19 +440,37 @@
         </div>
         <div id="map-viewport" class="map-viewport" tabindex="0" aria-label="World map, drag to pan and scroll or pinch to zoom">
           <div class="map-grid" aria-hidden="true"></div>
+          <div class="living-map-controls">
+            <button id="living-layer-launch" type="button" aria-expanded="false" aria-controls="living-layer-drawer"><span aria-hidden="true">◫</span> World Layers <span id="living-layer-count">3 on</span></button>
+            <span class="living-not-live">DEMO · NOT LIVE</span>
+          </div>
+          <div id="living-layer-drawer" class="living-layer-drawer" hidden aria-label="Map overlay layers">
+            <div class="living-head"><div><small>ATLAS / 1.0 · WORLD LAYERS</small><h3>What do you want to see?</h3></div><button id="living-layer-close" aria-label="Close world layers" type="button">✕</button></div>
+            <p class="living-warning">ALL TRAFFIC, CORRIDORS AND MILITARY PINS ARE FICTIONAL UI EXAMPLES. No live AIS, ADS-B or military database is connected.</p>
+            <div id="living-checks" class="living-checks"></div>
+            <div class="living-playback"><div><strong>Movement preview</strong><span id="living-frame-label">Frame 0 / 100 · simulated</span></div><input id="living-frame" type="range" min="0" max="100" value="0" aria-label="Move demonstration traffic along synthetic routes"/><div class="living-actions"><button id="living-play" type="button">▶ Play demo</button><button id="living-reset" type="button">Reset layers</button></div></div>
+            <div class="living-drawer-section"><strong>Explore a demonstration corridor</strong><div id="living-route-list"></div></div>
+            <div class="living-foot">Circle = civilian vehicle · Anchor = example port · Diamond = broad military reference. Every marker explains its source status. Unknown does not mean zero.</div>
+          </div>
+          <section id="living-inspector" class="living-inspector" hidden aria-label="Map layer item details">
+            <div class="living-inspector-head"><span id="living-inspector-type">◈ MAP RECORD</span><button id="living-inspector-close" aria-label="Close map record" type="button">✕</button></div>
+            <div id="living-inspector-body"></div>
+          </section>
           <div id="mobile-map-tip" class="mobile-map-tip" aria-hidden="true">Tap a country to explore <span>↗</span></div>
           <div id="trade-demo-banner" class="trade-demo-banner" hidden>DEMO TRADE LINES · FICTIONAL</div>
           <svg id="world-svg" viewBox="0 0 1200 600" role="img" aria-label="Selectable countries and territories">
             <defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="8" stroke="#233747" stroke-width="1" /></pattern></defs>
             <g id="map-countries"></g>
+            <g id="living-corridors" aria-label="Fictional route concepts"></g>
             <g id="map-markers"></g>
             <g id="map-sites"></g>
+            <g id="living-points" aria-label="Demonstration map-layer markers"></g>
             <g id="map-trade-demo" aria-label="Fictional trade connections demonstration" pointer-events="none"></g>
             <g id="map-labels"></g>
           </svg>
           <div class="map-toolbar"><button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><div class="zoom-line"></div><button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><div class="zoom-line"></div><button id="zoom-reset" aria-label="Reset map view" title="Reset map view">⌖</button></div>
           <div class="map-corner-label"><button type="button" id="cc-map-launch" class="cc-map-launch" aria-label="Open Command Center" title="Open Command Center">✧ <span>COMMAND CENTER</span></button><span id="scale-label">GLOBAL VIEW</span></div>
-          <div class="map-watermark">ATLAS / 009</div>
+          <div class="map-watermark">ATLAS / 100</div>
           <div id="map-tooltip" class="map-tooltip hidden"></div>
         </div>
         <div class="map-footer"><div><span class="legend-dot known"></span> Research profile <span class="legend-dot missing"></span> Geography only <span class="legend-dot city"></span> City / capital <span class="site-legend-point">◉</span> Civilian site (research)</div><div class="footer-instruction">DRAG TO PAN <span>·</span> SCROLL TO ZOOM <span>·</span> TAP A PLACE</div></div>
@@ -775,7 +811,7 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
   }
   function tooltip(ev,name){if(state.dragging)return;const rect=vp.getBoundingClientRect();const t=$('map-tooltip');t.textContent=name;t.style.left=Math.min(rect.width-190,ev.clientX-rect.left+13)+'px';t.style.top=Math.max(8,ev.clientY-rect.top-38)+'px';t.classList.remove('hidden');}
   function hideTooltip(){$('map-tooltip').classList.add('hidden');}
-  function redraw(){svg.setAttribute('preserveAspectRatio',window.innerWidth<=650?'xMidYMid slice':'xMidYMid meet');svg.setAttribute('viewBox',`${state.view.x} ${state.view.y} ${state.view.w} ${state.view.h}`);drawMarkers();}
+  function redraw(){svg.setAttribute('preserveAspectRatio',window.innerWidth<=650?'xMidYMid slice':'xMidYMid meet');svg.setAttribute('viewBox',`${state.view.x} ${state.view.y} ${state.view.w} ${state.view.h}`);drawMarkers();livingDraw();}
   function viewClamp(){
     // A portrait viewport uses SVG "slice": the visible map is much narrower
     // than its 1200-unit viewBox. Constrain the VISIBLE rectangle, not the
@@ -814,9 +850,9 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
   vp.addEventListener('keydown',e=>{if(e.key==='+'||e.key==='='){e.preventDefault();zoom(.7);}if(e.key==='-'){e.preventDefault();zoom(1.4);}if(e.key==='ArrowLeft'){state.view.x-=state.view.w*.08;viewClamp();redraw();}if(e.key==='ArrowRight'){state.view.x+=state.view.w*.08;viewClamp();redraw();}if(e.key==='ArrowUp'){state.view.y-=state.view.h*.08;viewClamp();redraw();}if(e.key==='ArrowDown'){state.view.y+=state.view.h*.08;viewClamp();redraw();}});
   $('zoom-in').onclick=()=>zoom(.7);$('zoom-out').onclick=()=>zoom(1.4);$('zoom-reset').onclick=()=>{state.view={x:0,y:0,w:1200,h:600};redraw();};
   function moveTo(lon,lat,targetW=230){let p=geoXY(lon,lat),w=targetW;state.view={x:p.x-w/2,y:p.y-w/4,w,h:w/2};viewClamp();redraw();}
-  function selectCountry(id,focus=false){const c=index.get(id);if(!c)return;state.selected={type:'country',id};state.tab='overview';if(window.innerWidth<=920)$('detail-panel').classList.add('open');$('selection-status').textContent=`SELECTED: ${c.name.toUpperCase()}`;$('map-title').innerHTML=`Explore ${html(c.name)}<span class="accent-dot">.</span>`;hideSearch();renderDetails();updateLens();drawMarkers();if(focus){let center=c.center||c.capitalCoords;if(center)moveTo(...center,400);}}
-  function selectCity(city,focus=false){state.selected={type:'city',...city};state.tab='overview';if(window.innerWidth<=920)$('detail-panel').classList.add('open');$('selection-status').textContent=`SELECTED CITY: ${city.name.toUpperCase()}`;$('map-title').innerHTML=`Explore ${html(city.name)}<span class="accent-dot">.</span>`;hideSearch();renderDetails();updateLens();drawMarkers();if(focus)moveTo(city.lon,city.lat,155);}
-  function selectSite(site,focus=false){state.selected={type:'site',id:site.id};state.tab='overview';if(window.innerWidth<=920)$('detail-panel').classList.add('open');$('selection-status').textContent=`LOCATION: ${site.name.toUpperCase()}`;$('map-title').innerHTML=`Explore ${html(site.name)}<span class="accent-dot">.</span>`;hideSearch();renderDetails();updateLens();drawMarkers();if(focus)moveTo(site.lon,site.lat,180);}
+  function selectCountry(id,focus=false){livingClose();const c=index.get(id);if(!c)return;state.selected={type:'country',id};state.tab='overview';if(window.innerWidth<=920)$('detail-panel').classList.add('open');$('selection-status').textContent=`SELECTED: ${c.name.toUpperCase()}`;$('map-title').innerHTML=`Explore ${html(c.name)}<span class="accent-dot">.</span>`;hideSearch();renderDetails();updateLens();drawMarkers();if(focus){let center=c.center||c.capitalCoords;if(center)moveTo(...center,400);}}
+  function selectCity(city,focus=false){livingClose();state.selected={type:'city',...city};state.tab='overview';if(window.innerWidth<=920)$('detail-panel').classList.add('open');$('selection-status').textContent=`SELECTED CITY: ${city.name.toUpperCase()}`;$('map-title').innerHTML=`Explore ${html(city.name)}<span class="accent-dot">.</span>`;hideSearch();renderDetails();updateLens();drawMarkers();if(focus)moveTo(city.lon,city.lat,155);}
+  function selectSite(site,focus=false){livingClose();state.selected={type:'site',id:site.id};state.tab='overview';if(window.innerWidth<=920)$('detail-panel').classList.add('open');$('selection-status').textContent=`LOCATION: ${site.name.toUpperCase()}`;$('map-title').innerHTML=`Explore ${html(site.name)}<span class="accent-dot">.</span>`;hideSearch();renderDetails();updateLens();drawMarkers();if(focus)moveTo(site.lon,site.lat,180);}
   function statBox(label,value,note){return `<div class="stat-card"><div class="stat-label">${html(label.toUpperCase())}</div><div class="stat-number">${html(value)}</div><div class="stat-note">${html(note)}</div></div>`;}
   function field(label,value){return `<div class="fact"><div class="fact-label">${html(label)}</div><div class="fact-value">${html(value)}</div></div>`;}
   function missing(what){return `<div class="not-yet"><strong>Not yet researched</strong><br>${html(what)}<br><small>We'll display dated, sourced information here after verification. An empty field does not mean zero.</small></div>`;}
@@ -1096,7 +1132,7 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
   const ccRoot=$('cc-shell'),ccContent=$('cc-content'),ccTabRoot=$('cc-tabs');
   function ccEsc(s){return html(String(s??''));}
   function ccBadge(text){return `<span class="cc-source-tag">${ccEsc(text)}</span>`;}
-  function ccOpen(mode){ccLastFocus=document.activeElement;ccMode=mode||'home';if(state.selected?.type==='country'){ccA=state.selected.id;ccDossierCountry=state.selected.id;ccRegionCountry=state.selected.id;ccRegionName='';}else if(state.selected?.type==='city'){ccRegionCountry=state.selected.country;ccRegionName=CITY_PROFILE[state.selected.name]?.region||'';}ccRoot.hidden=false;document.body.style.overflow='hidden';ccRender();$('cc-close').focus();}
+  function ccOpen(mode){livingClose();ccLastFocus=document.activeElement;ccMode=mode||'home';if(state.selected?.type==='country'){ccA=state.selected.id;ccDossierCountry=state.selected.id;ccRegionCountry=state.selected.id;ccRegionName='';}else if(state.selected?.type==='city'){ccRegionCountry=state.selected.country;ccRegionName=CITY_PROFILE[state.selected.name]?.region||'';}ccRoot.hidden=false;document.body.style.overflow='hidden';ccRender();$('cc-close').focus();}
   function ccClose(){ccRoot.hidden=true;document.body.style.removeProperty('overflow');ccLastFocus?.focus?.();}
   function ccSwitch(m){ccMode=m;ccRender();ccContent.scrollTop=0;}
   function ccPanel(t){return `<div class="cc-hero"><span class="cc-eyebrow">Interactive interface prototype · no new factual claims</span><h2>${t}</h2><p class="cc-muted">These screens demonstrate the final navigation and output layout. Technology and civics nodes are fictional game-design concepts; they do not rank or classify real nations.</p><div class="cc-alert">◈ DATA STATUS: UI MOCK / STRUCTURAL MODEL. Official country statistics remain in their own dated tabs. Unknown does not mean zero.</div></div>`;}
@@ -1300,10 +1336,7 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
     const paths=TRADE_DEMO_EDGES.map((e,i)=>{
       const a=TRADE_DEMO_NODES.find(n=>n.id===e.from),b=TRADE_DEMO_NODES.find(n=>n.id===e.to);
       const visible=edges.some(x=>x.id===e.id);
-      const dx=b.x-a.x,dy=b.y-a.y,bulge=((i%3)-1)*24+32;
-      const qx=(a.x+b.x)/2-dy*.085,qy=(a.y+b.y)/2+dx*.085-bulge;
-      const mx=(.25*a.x+.5*qx+.25*b.x).toFixed(1),my=(.25*a.y+.5*qy+.25*b.y).toFixed(1);
-      return `<g><path d="${ccTradeCurve(a,b,i)}" class="trade-edge ${selected===e.id?'active':''} ${visible?'':'faded'}" stroke="${TRADE_COLORS[e.mode]}"/><path d="${ccTradeCurve(a,b,i)}" class="trade-edge-hit" data-cc-trade-edge="${e.id}" role="button" aria-label="Inspect fictional trade flow ${ccEsc(e.label)}"/><circle cx="${mx}" cy="${my}" r="13" class="trade-route-dot ${visible?'':'faded'}" stroke="${TRADE_COLORS[e.mode]}" data-cc-trade-edge="${e.id}" tabindex="0" role="button" aria-label="Select ${ccEsc(e.label)} fictional link"/></g>`;
+      return `<g><path d="${ccTradeCurve(a,b,i)}" class="trade-edge ${selected===e.id?'active':''} ${visible?'':'faded'}" stroke="${TRADE_COLORS[e.mode]}"/><path d="${ccTradeCurve(a,b,i)}" class="trade-edge-hit" data-cc-trade-edge="${e.id}" tabindex="0" role="button" aria-label="Inspect fictional trade flow ${ccEsc(e.label)}"/></g>`;
     }).join('');
     const nodes=TRADE_DEMO_NODES.map(n=>`<g class="trade-node ${ccTradeFocus===n.id?'active':''}" data-cc-trade-country="${n.id}" tabindex="0" role="button" aria-label="Filter mock routes involving ${ccEsc(index.get(n.id)?.name||n.id)}"><circle cx="${n.x}" cy="${n.y}" r="38"/><text x="${n.x}" y="${n.y+5}">${n.id}</text></g>`).join('');
     let inspector=sel?`<span class="cc-eyebrow">Fictional demo · ${ccEsc(sel.product)} / ${ccEsc(sel.mode)}</span><h3>${ccEsc(index.get(sel.from)?.name||sel.from)} → ${ccEsc(index.get(sel.to)?.name||sel.to)}</h3><p>${ccEsc(sel.label)}. <strong>This route, its cargo and its path are invented for interaction testing.</strong></p><div class="cc-trade-route-meta"><span>Transport mode: ${ccEsc(sel.mode)}</span><span>Value: not supplied</span><span>Year: fictional demo</span></div><p class="cc-trade-note">${ccEsc(sel.hub)}. Transfer locations are conceptual and do not claim actual cargo movements.</p><h4>Supply chain — inspect a step</h4><div class="trade-chain" role="group" aria-label="Supply chain concept stages">${sel.nodes.map((stage,i)=>`<button type="button" data-cc-trade-stage="${i}" aria-pressed="${ccTradeStage===i}"><b>0${i+1}</b><span>${ccEsc(stage)}</span></button>`).join('')}</div><div class="trade-step-detail"><b>STEP ${ccTradeStage+1}</b> · ${ccEsc(sel.nodes[ccTradeStage])}<p>${ccEsc(['Raw input and production observations by place/year.','Processing or manufacturing capacity, relevant product classifications and source dates.','Real transport mode, infrastructure and shipment evidence need separate confirmation.','Demand, end-market statistics, final goods or consumption metrics.'][Math.min(ccTradeStage,3)])}</p></div>`:
@@ -1365,6 +1398,131 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
     if(e.target.matches('[data-cc-overlay]')){const original=$(e.target.dataset.ccOverlay);if(original){original.checked=e.target.checked;original.dispatchEvent(new Event('change',{bubbles:true}));}return;}
     if(e.target.id==='cc-a'){ccA=e.target.value;ccRender();}if(e.target.id==='cc-b'){ccB=e.target.value;ccRender();}if(e.target.id==='cc-dip-focus'){ccDipFocus=e.target.value;ccRender();}if(e.target.id==='cc-dossier-country'){ccDossierCountry=e.target.value;ccRender();}if(e.target.id==='cc-year'){state.histYear=Number(e.target.value);$('historic-year').value=String(state.histYear);$('historic-year-label').textContent=String(state.histYear);updateLens();ccRender();}});
   // UI-first link within country panel. Keeps existing panels and sample figures unchanged.
+
+
+  /* ════════════════════════════════════════════════
+     ATLAS 1.0 / MAP-FIRST LAYER ENGINE. ALL ENTRIES
+     BELOW ARE FABRICATED DEMONSTRATION FIXTURES ONLY.
+     They are not AIS/ADS-B feeds or military records.
+  ════════════════════════════════════════════════ */
+  const LIVING_DEFS=[
+    {id:'ships',icon:'⛴',name:'Commercial ships',note:'Four simulated positions · NOT live AIS'},
+    {id:'corridors',icon:'〰',name:'Trade corridors',note:'Four symbolic paths · NOT real routes'},
+    {id:'ports',icon:'⚓',name:'Seaports & logistics',note:'Five approximate example anchors'},
+    {id:'bases',icon:'⬡',name:'Military facilities',note:'Five broad-country placeholders · not a base registry'},
+    {id:'forces',icon:'▣',name:'Public force structure',note:'Five national-level record placeholders'},
+    {id:'aircraft',icon:'✈',name:'Civilian aviation',note:'Three simulated positions · NOT live ADS-B'}
+  ];
+  const LIVING_CORRIDORS=[
+    {id:'corr-1',label:'Pacific freight connection · concept',points:[[-119,33],[-155,26],[174,30],[121,32]],description:'An invented country-to-country corridor to demonstrate future commercial route geometry and port-linked trade statistics.'},
+    {id:'corr-2',label:'North Atlantic corridor · concept',points:[[-74,40],[-44,47],[-9,51],[9,53]],description:'Conceptual trans-Atlantic line. Actual sea-lane routing and reported trade values would require independently sourced datasets.'},
+    {id:'corr-3',label:'Indian Ocean logistics · concept',points:[[73,19],[66,12],[80,1],[103,2]],description:'Fictional geometry to preview port, freight and customs report joins; not a tracked voyage.'},
+    {id:'corr-4',label:'South Atlantic corridor · concept',points:[[-45,-23],[-20,-27],[5,-31],[18,-34]],description:'Symbolic trade-design example. No shipping movement, importer/exporter or cargo amount is claimed.'}
+  ];
+  const LIVING_SHIPS=[
+    {id:'ship-1',name:'Sample cargo vessel A',category:'Container vessel concept',points:[[-125,34],[-157,29],[175,31],[142,30]],kind:'ships'},
+    {id:'ship-2',name:'Sample tanker B',category:'Tanker concept',points:[[-59,36],[-38,43],[-17,47],[4,51]],kind:'ships'},
+    {id:'ship-3',name:'Sample bulk carrier C',category:'Bulk carrier concept',points:[[71,20],[65,6],[82,1],[106,0]],kind:'ships'},
+    {id:'ship-4',name:'Sample coastal trader D',category:'Freight vessel concept',points:[[-39,-24],[-23,-28],[-3,-33],[18,-34]],kind:'ships'}
+  ];
+  const LIVING_AIR=[
+    {id:'air-1',name:'Sample commercial flight A',category:'Civil aviation concept',points:[[-97,39],[-59,47],[-31,52],[8,51]],kind:'aircraft'},
+    {id:'air-2',name:'Sample commercial flight B',category:'Civil aviation concept',points:[[73,19],[87,22],[111,27],[139,36]],kind:'aircraft'},
+    {id:'air-3',name:'Sample commercial flight C',category:'Civil aviation concept',points:[[-47,-23],[-34,-18],[-10,1],[4,7]],kind:'aircraft'}
+  ];
+  const LIVING_SITES=[
+    {id:'port-1',name:'Los Angeles maritime area · example',category:'Port / logistics',lon:-118.3,lat:33.7,kind:'ports',region:'USA · broad coastal area'},
+    {id:'port-2',name:'Hamburg waterfront · example',category:'Port / logistics',lon:10,lat:53.55,kind:'ports',region:'Germany · city-wide example'},
+    {id:'port-3',name:'Singapore port area · example',category:'Port / logistics',lon:104,lat:1.27,kind:'ports',region:'Singapore · city-wide example'},
+    {id:'port-4',name:'Mumbai commercial port zone · example',category:'Port / logistics',lon:72.9,lat:18.96,kind:'ports',region:'India · city-wide example'},
+    {id:'port-5',name:'Santos coastal port zone · example',category:'Port / logistics',lon:-46.3,lat:-23.9,kind:'ports',region:'Brazil · city-wide example'},
+    {id:'base-1',name:'U.S. coastal defense facility · research slot',category:'Military facility prototype',lon:-119,lat:35,kind:'bases',region:'USA · western region (illustrative)'},
+    {id:'base-2',name:'German defense installation · research slot',category:'Military facility prototype',lon:9.7,lat:49.8,kind:'bases',region:'Germany · broad central region (illustrative)'},
+    {id:'base-3',name:'Indian defense facility · research slot',category:'Military facility prototype',lon:76,lat:29,kind:'bases',region:'India · broad north region (illustrative)'},
+    {id:'base-4',name:'Brazilian defense facility · research slot',category:'Military facility prototype',lon:-49,lat:-20,kind:'bases',region:'Brazil · broad southeast region (illustrative)'},
+    {id:'base-5',name:'Nigerian defense facility · research slot',category:'Military facility prototype',lon:5,lat:8,kind:'bases',region:'Nigeria · broad central region (illustrative)'},
+    {id:'force-1',name:'United States public-force record slot',category:'National force structure',lon:-101,lat:40,kind:'forces',region:'USA · country-scale anchor, NOT a unit location'},
+    {id:'force-2',name:'German public-force record slot',category:'National force structure',lon:10,lat:51,kind:'forces',region:'Germany · country-scale anchor, NOT a unit location'},
+    {id:'force-3',name:'Indian public-force record slot',category:'National force structure',lon:79,lat:22,kind:'forces',region:'India · country-scale anchor, NOT a unit location'},
+    {id:'force-4',name:'Brazilian public-force record slot',category:'National force structure',lon:-51,lat:-13,kind:'forces',region:'Brazil · country-scale anchor, NOT a unit location'},
+    {id:'force-5',name:'Nigerian public-force record slot',category:'National force structure',lon:8,lat:10,kind:'forces',region:'Nigeria · country-scale anchor, NOT a unit location'}
+  ];
+  const LIVING_ALL=[...LIVING_CORRIDORS,...LIVING_SHIPS,...LIVING_AIR,...LIVING_SITES];
+  let livingOn=new Set(['ships','corridors','bases']),livingFrame=0,livingPlaying=false,livingTick=null,livingSelected=null;
+  const livingCorridorGroup=$('living-corridors'), livingPointGroup=$('living-points');
+  function livingBetween(route,part){
+    let t=Math.max(0,Math.min(1,part))*(route.points.length-1);
+    const n=Math.min(route.points.length-2,Math.floor(t)),f=t-n;
+    let a=route.points[n],b=route.points[n+1];
+    // Move across the shortest longitudinal difference when crossing the dateline.
+    let d=b[0]-a[0]; if(d>180)d-=360; else if(d< -180)d+=360;
+    let lon=a[0]+d*f; if(lon>180)lon-=360;if(lon< -180)lon+=360;
+    return [lon,a[1]+(b[1]-a[1])*f];
+  }
+  function livingPath(points){
+    // Break across the antimeridian; don't draw straight lines over the whole world.
+    let d='',lastLon=null;for(const [lon,lat] of points){const p=geoXY(lon,lat);const cmd=lastLon===null||Math.abs(lon-lastLon)>170?'M':'L';d+=`${cmd}${p.x.toFixed(1)},${p.y.toFixed(1)} `;lastLon=lon;}return d;
+  }
+  function livingLinkInfo(item){
+    const fixtureTitle=html(item.name||item.label||'Demonstration item');
+    let kind=item.kind||'corridors',position= item.points?livingBetween(item,livingFrame/100):[item.lon,item.lat];
+    const movement=kind==='ships'||kind==='aircraft';
+    return `<h3>${fixtureTitle}</h3><p>${html(item.description || (movement?'A simulated moving marker to test future public transport tracking. No genuine position or vehicle exists for this sample.':'A demonstration-only reference marker; the position is indicative of a broad region and does not identify a verified installation, unit, or operating site.'))}</p><div class="living-meta"><div>RECORD CATEGORY<strong>${html(item.category|| (kind==='corridors'?'Symbolic trade corridor':kind))}</strong></div><div>GEOGRAPHIC PRECISION<strong>${kind==='forces'?'National anchor only':kind==='bases'?'Broad region (mock)':movement?'Simulated coordinate':'Conceptual/approximate'}</strong></div><div>OBSERVATION TIME<strong>No real observation</strong></div><div>FEED STATUS<strong>Not connected</strong></div></div><p style="font-size:11px;color:#a9c6c7">${movement?'Playback frame: '+livingFrame+'/100 (fictional movement). ':''}${html(item.region||'No reported cargo, country trade value, military unit deployment or transport position is being asserted.')}</p><div class="living-evidence">EVIDENCE: MOCK FIXTURE · SOURCE: NONE · VERIFIED FACTS: NONE. For production, this card will require a reliable publisher, precise definitions, observation date and independent QA.</div>`;
+  }
+  function livingClose(){livingSelected=null;$('living-inspector').hidden=true;}
+  function livingSelect(item){livingSelected=item;closeDetails();const panel=$('living-inspector');$('living-inspector-type').textContent=`◆ ${item.kind==='aircraft'?'CIVIL AVIATION':item.kind==='ships'?'COMMERCIAL VESSEL':item.kind==='bases'?'MILITARY FACILITY':item.kind==='forces'?'PUBLIC FORCE DATA':item.kind==='ports'?'PORT / LOGISTICS':'TRADE CORRIDOR'} · DEMO ONLY`;$('living-inspector-body').innerHTML=livingLinkInfo(item);panel.hidden=false;const drawer=$('living-layer-drawer');drawer.hidden=true;$('living-layer-launch').setAttribute('aria-expanded','false');}
+  function livingDraw(){
+    if(!livingPointGroup||!livingCorridorGroup)return;
+    livingPointGroup.innerHTML='';livingCorridorGroup.innerHTML='';
+    let z=Math.max(1,1200/state.view.w),r=7.0/z;
+    if(livingOn.has('corridors')){
+      for(const item of LIVING_CORRIDORS){
+        const p=el('path',{d:livingPath(item.points),fill:'none',stroke:'#e5bd7b','stroke-width':'2.3',class:'living-route-path'});livingCorridorGroup.appendChild(p);
+        const hit=el('path',{d:livingPath(item.points),class:'living-route-hit',role:'button',tabindex:'0','aria-label':`${item.label}, fictional corridor`});
+        hit.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect(item);});hit.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect(item);}});livingCorridorGroup.appendChild(hit);
+      }
+    }
+    for(const item of [...LIVING_SHIPS,...LIVING_AIR,...LIVING_SITES]){
+      if(!livingOn.has(item.kind))continue;
+      const [lon,lat]=item.points?livingBetween(item,livingFrame/100):[item.lon,item.lat];
+      const p=geoXY(lon,lat),colors={ships:'#85d9db',aircraft:'#d9e69a',ports:'#e0c37f',bases:'#ecac79',forces:'#bb97e3'};
+      const ring=el('circle',{cx:p.x,cy:p.y,r:r*1.35,fill:colors[item.kind],stroke:'#091b24','stroke-width':1.5,class:'living-symbol',role:'button',tabindex:0,'aria-label':`${item.name} · demonstration only`});
+      ring.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect(item);});
+      ring.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect(item);}});
+      ring.addEventListener('pointermove',e=>tooltip(e,item.name+' · DEMO'));
+      ring.addEventListener('pointerleave',hideTooltip);
+      const title=el('title');title.textContent=`${item.name} · DEMO, no real feed`;ring.appendChild(title);
+      livingPointGroup.appendChild(ring);
+      const txt=el('text',{x:p.x,y:p.y,'font-size':Math.max(2.2,9/z),class:'living-marker-text'});
+      txt.textContent={ships:'⛴',aircraft:'✈',ports:'⚓',bases:'◆',forces:'▣'}[item.kind]||'•';livingPointGroup.appendChild(txt);
+    }
+    if(livingSelected && !$('living-inspector').hidden)$('living-inspector-body').innerHTML=livingLinkInfo(livingSelected);
+  }
+  function livingCounts(){return LIVING_DEFS.filter(x=>livingOn.has(x.id)).length;}
+  function livingRefreshDrawer(){
+    $('living-layer-count').textContent=livingCounts()+' on';
+    $('living-checks').innerHTML=LIVING_DEFS.map(item=>`<label class="living-check-row"><input type="checkbox" data-living-layer="${item.id}" ${livingOn.has(item.id)?'checked':''}/><span class="living-kind">${item.icon}</span><span><strong>${item.name}</strong><small>${item.note}</small></span></label>`).join('');
+    $('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;
+    $('living-frame').value=String(Math.round(livingFrame));
+    $('living-play').textContent=livingPlaying?'Ⅱ Pause demo':'▶ Play demo';
+    $('living-route-list').innerHTML=LIVING_CORRIDORS.map(item=>`<button class="living-route-item" data-living-route="${item.id}" type="button">${html(item.label)}<small>Tap to inspect · fictional geometry</small></button>`).join('');
+  }
+  function livingPause(){if(livingTick!==null)clearInterval(livingTick);livingTick=null;livingPlaying=false;$('living-play').textContent='▶ Play demo';}
+  function livingToggleDrawer(show){const open=typeof show==='boolean'?show:$('living-layer-drawer').hidden;$('living-layer-drawer').hidden=!open;$('living-layer-launch').setAttribute('aria-expanded',String(open));if(open){livingClose();livingRefreshDrawer();}}
+  $('living-layer-launch').addEventListener('click',e=>{e.stopPropagation();livingToggleDrawer();});
+  $('living-layer-close').addEventListener('click',e=>{e.stopPropagation();livingToggleDrawer(false);});
+  $('living-inspector-close').addEventListener('click',e=>{e.stopPropagation();livingClose();});
+  for(const id of ['living-layer-drawer','living-inspector','living-layer-launch']){
+    const node=$(id);node.addEventListener('pointerdown',e=>e.stopPropagation());node.addEventListener('pointermove',e=>e.stopPropagation());node.addEventListener('pointerup',e=>e.stopPropagation());node.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});
+  }
+  $('living-checks').addEventListener('change',e=>{const id=e.target.dataset.livingLayer;if(!id)return;if(e.target.checked)livingOn.add(id);else livingOn.delete(id);livingRefreshDrawer();livingDraw();});
+  $('living-reset').addEventListener('click',()=>{livingPause();livingOn=new Set(['ships','corridors','bases']);livingFrame=0;livingClose();livingRefreshDrawer();livingDraw();});
+  $('living-frame').addEventListener('input',e=>{livingFrame=Number(e.target.value);$('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;livingDraw();});
+  $('living-play').addEventListener('click',()=>{if(livingPlaying){livingPause();return;}livingPlaying=true;$('living-play').textContent='Ⅱ Pause demo';livingTick=setInterval(()=>{livingFrame=(livingFrame+1)%101;$('living-frame').value=String(Math.round(livingFrame));$('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;livingDraw();},300);});
+  $('living-route-list').addEventListener('click',e=>{const item=e.target.closest('[data-living-route]');if(!item)return;const route=LIVING_CORRIDORS.find(x=>x.id===item.dataset.livingRoute);if(route){livingOn.add('corridors');livingDraw();livingSelect(route);}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){livingClose();livingToggleDrawer(false);}});
+  // Never force the layer drawer closed merely because map background is tapped.
+  livingRefreshDrawer();
 
   syncDetails();
   drawCountries();redraw();renderDetails();ccTradeMapDraw();

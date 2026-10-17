@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b141d" />
   <meta name="description" content="Explore a Civilization-inspired world atlas with clickable countries, cities and source-aware country profiles." />
   <title>Atlas of Nations | World Strategy Map</title>
-  <meta name="app-revision" content="1.0.0-living-map-layers-demo" />
+  <meta name="app-revision" content="1.1.0-map-layers-2-ui" />
   <style>
 :root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9ebea;background:#09141c;font-size:14px;font-synthesis:none;--gold:#e7c481;--muted:#90a2a9;--line:#293942;--panel:#0d1b23;--dark:#08121a}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}a{color:var(--gold)}.app-shell{height:100dvh;display:flex;flex-direction:column;min-height:530px;background:#0a151d}.topbar{height:78px;min-height:78px;background:#101e28;border-bottom:1px solid #3a4850;display:flex;align-items:center;justify-content:space-between;padding:0 26px;gap:16px}.brand{display:flex;align-items:center;gap:13px;min-width:max-content}.brand-mark{width:44px;height:44px;border:1px solid #aa8b57;display:grid;place-items:center;font-size:29px;color:var(--gold);transform:rotate(45deg)}.brand-mark:first-letter{transform:rotate(-45deg)}.brand-title{font-size:19px;letter-spacing:.19em;font-weight:800;color:#f3e5c3}.brand-title span{font-weight:400;color:#f2f1e7}.brand-subtitle{margin-top:4px;font-size:9px;letter-spacing:.24em;font-weight:650;color:#94a5ae}.brand-version{color:#657e8b}.header-middle{font-size:10px;letter-spacing:.13em;color:#879ba7;text-align:center}.pulse-dot,.green-dot,.status-pill i{width:7px;height:7px;border-radius:50%;display:inline-block;background:#81c7a5;box-shadow:0 0 9px #81c7a575;margin-right:7px}.header-divider{margin:0 12px;color:#556a74}.header-actions{display:flex;gap:12px;align-items:center}.icon-button,.panel-close{border:1px solid #465861;background:transparent;color:#c7d2d2;width:32px;height:32px;border-radius:4px;font-size:19px}.icon-button:hover,.panel-close:hover{color:var(--gold);border-color:var(--gold)}.notion-link{font-size:10px;color:#cdb581;border:1px solid #65583e;padding:11px 12px;text-decoration:none;letter-spacing:.08em;font-weight:750;white-space:nowrap}.notion-link:hover{background:#3a3327}.main-layout{display:grid;grid-template-columns:252px minmax(250px,1fr) 355px;min-height:0;flex:1}.sidebar{position:relative;background:#0b1822;border-right:1px solid var(--line);padding:27px 17px;overflow-y:auto;scrollbar-width:thin}.sidebar-heading{font-size:10px;color:#728e9d;letter-spacing:.17em;font-weight:800;margin:0 6px 13px}.search-area{position:relative;margin-bottom:29px}.search-symbol{position:absolute;left:13px;top:4px;font-size:26px;color:#8195a3}#search{width:100%;background:#152731;color:#e6eaec;border:1px solid #30434e;border-radius:4px;height:44px;padding:0 12px 0 39px;outline:none;font-size:12px}#search::placeholder{color:#899da7}#search:focus{border-color:#ba9e6e}.search-results{position:absolute;top:47px;left:0;right:0;max-height:275px;overflow:auto;background:#172832;border:1px solid #556677;z-index:20;box-shadow:0 18px 25px #0008}.search-result{border:0;border-bottom:1px solid #2c414e;color:#ebeeee;background:transparent;padding:9px 11px;width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px}.search-result:hover{background:#28414d}.search-result small{color:#9babb4;font-size:10px}.hidden{display:none!important}.lens-heading{display:flex;justify-content:space-between}.heading-dot{height:5px;width:5px;background:var(--gold);display:inline-block}.lens-list{display:flex;flex-direction:column;gap:5px;margin-bottom:22px}.lens{height:44px;width:100%;display:flex;align-items:center;gap:12px;padding:0 9px;border:1px solid transparent;border-left:3px solid transparent;background:transparent;color:#95a8b1;text-align:left}.lens:hover{background:#1b2b37;color:#f4e7cd}.lens.active{background:#20303a;border-left-color:#e4c383;color:#f3deb0}.lens-icon{font-size:20px;width:24px;text-align:center}.lens-name{flex:1;font-size:12px;font-weight:650}.lens-shortcut{font-size:10px;opacity:.48}.sidebar-separator{border-top:1px solid #2d414d;margin:16px 3px 24px}.toggle-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 4px;font-size:12px;color:#a5b6bb;cursor:pointer}.toggle-row input{position:absolute;opacity:0;pointer-events:none}.toggle-ui{position:relative;width:34px;height:19px;border-radius:20px;background:#34464d;flex-shrink:0}.toggle-ui:before{content:"";position:absolute;top:3px;left:3px;width:13px;height:13px;background:#8599a0;border-radius:50%;transition:transform .2s}.toggle-row input:checked+.toggle-ui{background:#79683e}.toggle-row input:checked+.toggle-ui:before{transform:translateX(15px);background:#ead5a7}.toggle-row input:focus-visible+.toggle-ui{outline:2px solid var(--gold)}.coverage-card{background:#142530;border:1px solid #2c444f;padding:16px;margin:5px 0 30px}.coverage-value strong{font-size:27px;color:#e7dcc5;font-weight:700}.coverage-value span{color:#8da1aa;font-size:10px}.coverage-sub{margin-top:7px;font-size:11px;color:#acc1ca}.coverage-sub strong{color:#e0c38d}.coverage-progress{height:4px;margin:15px 0;background:#334750}.coverage-progress i{display:block;width:2.5%;height:100%;background:#d6b878}.coverage-card p{font-size:10px;line-height:1.55;color:#768e99;margin:0}.sidebar-foot{font-size:9px;letter-spacing:.1em;color:#5d7685;line-height:1.8}.sidebar-foot span{color:var(--gold);padding:0 4px}.map-stage{position:relative;min-width:0;background:#0b1b26;display:flex;flex-direction:column;overflow:hidden}.map-head{padding:28px 29px 14px;display:flex;justify-content:space-between;gap:10px}.eyebrow{font-size:10px;letter-spacing:.21em;font-weight:800;color:#d6bb83}.eyebrow-diamond{margin:0 8px;color:#667d88}.map-head h1{font-family:Georgia,"Times New Roman",serif;font-size:31px;letter-spacing:.01em;font-weight:400;margin:12px 0 0;color:#eef0eb}.accent-dot{color:var(--gold)}.map-head-right{display:flex;align-items:end;gap:9px;flex-direction:column;justify-content:center}.status-pill{font-size:9px;letter-spacing:.1em;background:#16312f;border:1px solid #406256;color:#9fcfba;padding:7px 8px}.status-pill i{width:5px;height:5px}.map-head-right #map-coords{font-family:monospace;font-size:10px;color:#8196a4;white-space:nowrap}.map-viewport{position:relative;overflow:hidden;flex:1;min-height:280px;cursor:grab;touch-action:none;background:radial-gradient(ellipse at 47% 42%,#153142 0%,#102532 55%,#0b1b26 100%);outline:0}.map-viewport:active{cursor:grabbing}.map-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#33536524 1px,transparent 1px),linear-gradient(90deg,#33536524 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}#world-svg{position:absolute;inset:0;width:100%;height:100%;user-select:none;cursor:inherit}#map-countries path{stroke:#567482;stroke-width:.58;stroke-linejoin:round;vector-effect:non-scaling-stroke;fill:#294450;transition:fill .15s;cursor:pointer}#map-countries path:hover{fill:#b29663!important;stroke:#f3d5a5;stroke-width:1.25}#map-countries path.selected{stroke:#ffe0a0;stroke-width:1.5;fill:#8b7150!important;filter:drop-shadow(0 0 2px #f9dc8d)}#map-countries path.missing{fill:#1e3642}#map-countries path.available{fill:#335360}#map-countries path[data-lens-color]{fill:var(--lens-fill)}.city-dot{fill:#e1c48f;stroke:#20313b;stroke-width:2.1;vector-effect:non-scaling-stroke;cursor:pointer}.city-dot:hover{fill:#fff;stroke:#f1c67b}.unmapped-dot{fill:#476778;stroke:#c2c3ab;stroke-width:.65;vector-effect:non-scaling-stroke;cursor:pointer}.unmapped-dot:hover{fill:#c6a975}.selected-marker{fill:#ffdc91!important;stroke:#ffffff;stroke-width:2!important;filter:drop-shadow(0 0 4px #ffdda9)}.map-text{font-size:10px;letter-spacing:.065em;fill:#e6d8b4;font-family:Inter,sans-serif;stroke:#10212b;stroke-width:2.3px;paint-order:stroke;pointer-events:none}.city-text{font-size:9px;fill:#c8b99a}.map-toolbar{position:absolute;right:19px;bottom:25px;display:flex;flex-direction:column;background:#152732;border:1px solid #4a616b;box-shadow:0 10px 30px #0007;z-index:5}.map-toolbar button{width:36px;height:39px;background:transparent;color:#e7e7de;border:0;font-size:22px;line-height:1}.map-toolbar button:hover{background:#324957;color:var(--gold)}.zoom-line{height:1px;background:#334a53;margin:0 7px}.map-corner-label{position:absolute;left:28px;bottom:23px;font-size:10px;letter-spacing:.14em;color:#869daa;font-weight:750}.small-star{color:#dfc48e;font-size:18px;margin-right:8px}.map-watermark{position:absolute;right:80px;top:8px;opacity:.12;font-family:Georgia,serif;font-size:36px;pointer-events:none}.map-tooltip{position:absolute;left:0;top:0;z-index:10;background:#132833;border:1px solid #b79c69;padding:7px 11px;color:#f3e0b6;font-size:12px;box-shadow:0 8px 24px #0008;pointer-events:none;white-space:nowrap}.map-footer{height:46px;border-top:1px solid #29414c;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#8aa0aa;font-size:10px;letter-spacing:.05em;gap:10px}.legend-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 5px 0 12px}.legend-dot:first-child{margin-left:0}.legend-dot.known{background:#7fa1a4}.legend-dot.missing{background:#253b47;border:1px solid #75939b}.legend-dot.city{background:#edc788}.footer-instruction span{color:var(--gold);margin:0 7px}.detail-panel{background:#101f29;border-left:1px solid #354954;overflow:auto;scrollbar-width:thin;min-width:0}.detail-topline{height:49px;padding:0 21px;border-bottom:1px solid #344751;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#d3b781;letter-spacing:.2em;font-weight:800}.panel-close{width:27px;height:27px;font-size:14px}.detail-body{padding:24px}.detail-eyebrow{font-size:10px;color:#9baeb4;letter-spacing:.13em;font-weight:700}.detail-name{font-family:Georgia,serif;font-size:35px;font-weight:normal;line-height:1.03;margin:10px 0 8px;color:#fcf1d8}.detail-chip{display:inline-block;background:#34434a;color:#f3d49a;padding:5px 8px;font-size:10px;font-weight:750;letter-spacing:.08em}.detail-description{font-size:12px;color:#a7bac1;line-height:1.75;margin:13px 0 19px}.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}.stat-card{background:#172d39;border:1px solid #34515e;padding:12px;min-height:75px}.stat-label{font-size:9px;color:#9ab0b8;letter-spacing:.12em}.stat-number{font-size:21px;color:#f0e6d2;font-weight:700;margin-top:9px}.stat-note{font-size:10px;color:#94a9b3;margin-top:4px}.detail-rule{border:0;border-top:1px solid #364851;margin:18px 0}.section-label{color:#dabb87;font-size:10px;letter-spacing:.17em;font-weight:800;margin-bottom:9px}.fact-list{display:flex;flex-direction:column;gap:10px}.fact{display:flex;justify-content:space-between;gap:10px;padding-bottom:9px;border-bottom:1px solid #293e49;font-size:12px}.fact-label{color:#91a4ae}.fact-value{color:#e3e5df;text-align:right}.detail-tabs{display:flex;gap:5px;overflow-x:auto;padding:0 0 10px;margin:12px -4px 9px;scrollbar-width:thin}.detail-tabs button{padding:8px 10px;white-space:nowrap;border:1px solid #3d515c;background:#182b35;color:#9caeb8;font-size:10px;letter-spacing:.04em;border-radius:2px}.detail-tabs button.active{background:#554b36;border-color:#d4b778;color:#f8e8c5}.tab-content{font-size:12px;line-height:1.75;color:#c2d0d0}.tab-content p{margin-top:8px}.not-yet{border:1px dashed #54707a;color:#a4b3b7;padding:14px;line-height:1.65;background:#142732}.tag{display:inline-block;background:#263d45;border:1px solid #41606b;color:#d2e0dc;margin:4px 4px 0 0;padding:4px 8px;border-radius:2px;font-size:10px}.source-box{margin-top:18px;padding:11px 12px;background:#202e31;border-left:2px solid #d3b075;color:#aebdbd;font-size:10px;line-height:1.6}.source-box a{word-break:break-word}.empty-hero{margin:38px 0;text-align:center}.empty-compass{font-family:Georgia,serif;font-size:78px;color:#b69a66;margin-bottom:14px;opacity:.8}.empty-hero h2{font-family:Georgia,serif;font-size:24px;font-weight:400;color:#f0eadc;margin:0 0 13px}.empty-hero p{font-size:12px;line-height:1.8;color:#94a9b4;max-width:250px;margin:auto}.empty-hero .tiny-rule{height:1px;background:#60717a;width:55px;margin:25px auto}.empty-hero .shortcut{font-size:10px;color:#d8bf87;letter-spacing:.12em}.bottom-status{height:30px;min-height:30px;background:#07121a;border-top:1px solid #35434b;padding:0 19px;display:flex;justify-content:space-between;align-items:center;color:#7a929b;font-size:9px;letter-spacing:.09em}.green-dot{width:5px;height:5px}.bottom-status span:first-child{white-space:nowrap}dialog{background:#101e29;border:1px solid #947c53;max-width:min(490px,calc(100vw - 40px));padding:25px 28px;color:#c4d4d4;box-shadow:0 24px 140px #000c}dialog::backdrop{background:#01090dcc}.modal-heading{display:flex;justify-content:space-between}dialog h2{font-family:Georgia,serif;font-weight:normal;color:#f4e6c8;font-size:25px}dialog p{font-size:12px;line-height:1.8}dialog code{color:#e9c994}.primary-button{background:#be9c5b;border:0;color:#111d24;font-size:11px;font-weight:800;letter-spacing:.1em;padding:12px 16px;margin-top:14px}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 @media(max-width:1190px){.main-layout{grid-template-columns:215px minmax(260px,1fr) 315px}.sidebar{padding:22px 11px}.map-head{padding:25px 18px 10px}.map-head h1{font-size:27px}.map-footer{padding:0 18px}.detail-body{padding:20px}.header-middle{display:none}}
@@ -371,6 +371,10 @@
 .living-marker-text{font-size:9px;text-anchor:middle;dominant-baseline:central;fill:#101c23;font-weight:950;pointer-events:none;paint-order:stroke}.living-corridor-dot{stroke:#081923;stroke-width:2;vector-effect:non-scaling-stroke}
 @media(max-width:650px){.living-map-controls{top:11px;left:9px;gap:6px}#living-layer-launch{padding:0 9px;min-height:42px;font-size:12px}.living-not-live{font-size:8px;padding:7px 6px}.living-layer-drawer{left:7px;top:61px;width:calc(100% - 14px);max-height:min(67dvh,550px)}.living-inspector{left:8px;right:8px;bottom:8px;width:auto;max-height:min(54dvh,350px)}.living-marker-text{font-size:10px}.map-watermark{display:none}}
 @media(prefers-reduced-motion:reduce){.living-symbol,.living-route-path{animation:none!important}}
+
+/* ATLAS v1.1: map layers 2.0 — type/region filters, visible search and clustering */
+.living-filter-tools{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:2px 0 6px}.living-field{display:block;font-size:10px;color:#c9d3cb;font-weight:700;letter-spacing:.025em}.living-field select,.living-field input{display:block;width:100%;max-width:100%;min-width:0;margin-top:5px;border:1px solid #547079;border-radius:8px;background:#112d38;color:#f6ead2;padding:11px 9px;min-height:42px;font-size:12px;letter-spacing:0;outline-offset:2px}.living-field select:focus-visible,.living-field input:focus-visible{outline:2px solid #e7c481}.living-filter-note{font-size:10px;color:#c5c3ab;line-height:1.45;margin:3px 0 10px;background:#20353c;border-left:2px solid #bf9f63;padding:7px}.living-find-section{margin-top:12px}.living-find-section .living-field{margin:8px 0}.living-results-head{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#a8c3c5;font-size:11px;margin:4px 0}.living-results-head button{color:#efdbaf;border:1px solid #536d75;background:#18323a;border-radius:7px;padding:7px 10px;min-height:35px;font-size:10px}.living-results{display:grid;gap:6px;margin-top:7px}.living-results button{border:1px solid #355260;color:#e4edec;background:#14303b;display:flex;gap:8px;align-items:center;padding:8px 10px;border-radius:8px;text-align:left;min-height:42px;width:100%;font-size:11px}.living-results button[aria-pressed="true"]{border-color:#f1cf87;background:#314342}.living-results button small{display:block;color:#a5bdc3;margin-top:3px;font-size:9px}.living-results p{color:#a5bdc3;font-size:11px;margin:5px 0;line-height:1.55}.living-result-icon{font-size:17px;min-width:22px;text-align:center}.living-legend{border:1px solid #415b64;background:#122a34;border-radius:8px;padding:11px;margin-top:10px;font-size:11px}.living-legend summary{color:#f0c981;font-weight:800;cursor:pointer}.living-legend p{color:#c7d6d7;font-size:10px;line-height:1.55}.living-key{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.living-key span{font-size:10px;color:#d0ddd9;line-height:1.5}.living-key b{font-weight:600}.living-status-line{display:flex;flex-wrap:wrap;gap:6px;margin:5px 0 9px}.living-status-line span{display:inline-flex;align-items:center;padding:5px 8px;border-radius:5px;border:1px solid #796b4f;background:#352d24;color:#f5d7a3;font-weight:800;font-size:9px;letter-spacing:.07em}.living-selection-meta{border:1px solid #425867;border-radius:8px;padding:9px;color:#c6d7d5;font-size:10px;line-height:1.5;margin-top:10px}.living-cluster{cursor:pointer;vector-effect:non-scaling-stroke}.living-cluster:focus-visible{outline:none;filter:drop-shadow(0 0 3px #f1dcae)}.living-cluster .living-cluster-circle{stroke:#f6e0aa;stroke-width:2.6;fill:#245564;vector-effect:non-scaling-stroke}.living-cluster text{pointer-events:none;fill:#fff0ca;font-weight:900;text-anchor:middle;dominant-baseline:central}.living-selected-ring{stroke:#fff5c3!important;stroke-width:3.5!important;filter:drop-shadow(0 0 6px #ffe6a2)}.living-route-selected{stroke:#fff4b3!important;stroke-width:4!important;opacity:1!important}.living-cluster-list{display:grid;gap:7px}.living-cluster-list button{width:100%;min-height:43px;background:#14323e;color:#eaf1ec;border:1px solid #536c78;border-radius:8px;text-align:left;padding:8px 10px}.living-cluster-list small{display:block;color:#b4c6c9;font-size:10px;padding-top:4px}.living-empty-states{color:#adbec0;font-size:11px;line-height:1.5}.living-drawer-status{font-size:10px;line-height:1.45;color:#e9d8ac;margin:6px 0}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+@media(max-width:650px){.living-layer-drawer{max-height:min(72dvh,610px)}.living-filter-tools{gap:7px}.living-field select{font-size:11px}.living-results button{min-height:45px}.living-cluster-list button{min-height:46px}} 
 </style>
 </head>
 <body>
@@ -445,12 +449,19 @@
             <span class="living-not-live">DEMO · NOT LIVE</span>
           </div>
           <div id="living-layer-drawer" class="living-layer-drawer" hidden aria-label="Map overlay layers">
-            <div class="living-head"><div><small>ATLAS / 1.0 · WORLD LAYERS</small><h3>What do you want to see?</h3></div><button id="living-layer-close" aria-label="Close world layers" type="button">✕</button></div>
+            <div class="living-head"><div><small>ATLAS / 1.1 · LAYER EXPLORER</small><h3>What do you want to see?</h3></div><button id="living-layer-close" aria-label="Close world layers" type="button">✕</button></div>
             <p class="living-warning">ALL TRAFFIC, CORRIDORS AND MILITARY PINS ARE FICTIONAL UI EXAMPLES. No live AIS, ADS-B or military database is connected.</p>
+            <div class="living-filter-tools" aria-label="Map feature filters">
+              <label class="living-field">Focus area <select id="living-focus" aria-label="Filter example map features by associated country"><option value="all">All demonstration regions</option><option value="USA">United States (scenario)</option><option value="DEU">Germany (scenario)</option><option value="IND">India (scenario)</option><option value="BRA">Brazil (scenario)</option><option value="NGA">Nigeria (scenario)</option><option value="CHN">China (scenario)</option></select></label>
+              <label class="living-field">Marker class <select id="living-class" aria-label="Filter map features by type"><option value="all">All marker classes</option><option value="maritime">Maritime / ports / trade</option><option value="defense">Public defense design</option><option value="aviation">Civil aviation demo</option></select></label>
+            </div>
+            <p class="living-filter-note">Country focus shows **scenario-associated** records only; it does not identify a ship's flag, ownership, port of call, or actual trade.</p>
             <div id="living-checks" class="living-checks"></div>
+            <div class="living-drawer-section living-find-section"><strong>Find a demonstration marker</strong><label class="living-field" for="living-search"><span class="sr-only">Search layer markers</span><input id="living-search" type="search" placeholder="Ship, airport, defense, port…" autocomplete="off"/></label><div class="living-results-head"><span id="living-visible-count">0 shown</span><button type="button" id="living-clear-filters">Clear filters</button></div><div id="living-results" class="living-results" aria-live="polite"></div></div>
+            <details class="living-legend"><summary>Symbol and evidence legend</summary><div class="living-key"><span>⛴ <b>Commercial shipping</b></span><span>✈ <b>Civilian aircraft</b></span><span>⚓ <b>Port / logistics</b></span><span>◆ <b>Defense research slot</b></span><span>▣ <b>National forces reference</b></span><span>✦ <b>Close markers cluster</b></span><span>〰 <b>Symbolic trade corridor</b></span></div><p><strong>DEMO / SOURCE NONE:</strong> invented UI record; no observation timestamp or external feed. Later, real records will show original source, last-observed UTC, type and confidence. A missing track never implies no traffic.</p></details>
             <div class="living-playback"><div><strong>Movement preview</strong><span id="living-frame-label">Frame 0 / 100 · simulated</span></div><input id="living-frame" type="range" min="0" max="100" value="0" aria-label="Move demonstration traffic along synthetic routes"/><div class="living-actions"><button id="living-play" type="button">▶ Play demo</button><button id="living-reset" type="button">Reset layers</button></div></div>
             <div class="living-drawer-section"><strong>Explore a demonstration corridor</strong><div id="living-route-list"></div></div>
-            <div class="living-foot">Circle = civilian vehicle · Anchor = example port · Diamond = broad military reference. Every marker explains its source status. Unknown does not mean zero.</div>
+            <div class="living-foot">Markers cluster when close together. Location tags, trade routes and all vehicle movements are UI fixtures, not current data. Unknown does not mean zero.</div>
           </div>
           <section id="living-inspector" class="living-inspector" hidden aria-label="Map layer item details">
             <div class="living-inspector-head"><span id="living-inspector-type">◈ MAP RECORD</span><button id="living-inspector-close" aria-label="Close map record" type="button">✕</button></div>
@@ -1414,38 +1425,38 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
     {id:'aircraft',icon:'✈',name:'Civilian aviation',note:'Three simulated positions · NOT live ADS-B'}
   ];
   const LIVING_CORRIDORS=[
-    {id:'corr-1',label:'Pacific freight connection · concept',points:[[-119,33],[-155,26],[174,30],[121,32]],description:'An invented country-to-country corridor to demonstrate future commercial route geometry and port-linked trade statistics.'},
-    {id:'corr-2',label:'North Atlantic corridor · concept',points:[[-74,40],[-44,47],[-9,51],[9,53]],description:'Conceptual trans-Atlantic line. Actual sea-lane routing and reported trade values would require independently sourced datasets.'},
-    {id:'corr-3',label:'Indian Ocean logistics · concept',points:[[73,19],[66,12],[80,1],[103,2]],description:'Fictional geometry to preview port, freight and customs report joins; not a tracked voyage.'},
-    {id:'corr-4',label:'South Atlantic corridor · concept',points:[[-45,-23],[-20,-27],[5,-31],[18,-34]],description:'Symbolic trade-design example. No shipping movement, importer/exporter or cargo amount is claimed.'}
+    {id:'corr-1',label:'Pacific freight connection · concept',focus:['USA','CHN'],points:[[-119,33],[-155,26],[174,30],[121,32]],description:'An invented country-to-country corridor to demonstrate future commercial route geometry and port-linked trade statistics.'},
+    {id:'corr-2',label:'North Atlantic corridor · concept',focus:['USA','DEU'],points:[[-74,40],[-44,47],[-9,51],[9,53]],description:'Conceptual trans-Atlantic line. Actual sea-lane routing and reported trade values would require independently sourced datasets.'},
+    {id:'corr-3',label:'Indian Ocean logistics · concept',focus:['IND','CHN'],points:[[73,19],[66,12],[80,1],[103,2]],description:'Fictional geometry to preview port, freight and customs report joins; not a tracked voyage.'},
+    {id:'corr-4',label:'South Atlantic corridor · concept',focus:['BRA','NGA'],points:[[-45,-23],[-20,-27],[5,-31],[18,-34]],description:'Symbolic trade-design example. No shipping movement, importer/exporter or cargo amount is claimed.'}
   ];
   const LIVING_SHIPS=[
-    {id:'ship-1',name:'Sample cargo vessel A',category:'Container vessel concept',points:[[-125,34],[-157,29],[175,31],[142,30]],kind:'ships'},
-    {id:'ship-2',name:'Sample tanker B',category:'Tanker concept',points:[[-59,36],[-38,43],[-17,47],[4,51]],kind:'ships'},
-    {id:'ship-3',name:'Sample bulk carrier C',category:'Bulk carrier concept',points:[[71,20],[65,6],[82,1],[106,0]],kind:'ships'},
-    {id:'ship-4',name:'Sample coastal trader D',category:'Freight vessel concept',points:[[-39,-24],[-23,-28],[-3,-33],[18,-34]],kind:'ships'}
+    {id:'ship-1',name:'Sample cargo vessel A',focus:['USA','CHN'],category:'Container vessel concept',points:[[-125,34],[-157,29],[175,31],[142,30]],kind:'ships'},
+    {id:'ship-2',name:'Sample tanker B',focus:['USA','DEU'],category:'Tanker concept',points:[[-59,36],[-38,43],[-17,47],[4,51]],kind:'ships'},
+    {id:'ship-3',name:'Sample bulk carrier C',focus:['IND','CHN'],category:'Bulk carrier concept',points:[[71,20],[65,6],[82,1],[106,0]],kind:'ships'},
+    {id:'ship-4',name:'Sample coastal trader D',focus:['BRA'],category:'Freight vessel concept',points:[[-39,-24],[-23,-28],[-3,-33],[18,-34]],kind:'ships'}
   ];
   const LIVING_AIR=[
-    {id:'air-1',name:'Sample commercial flight A',category:'Civil aviation concept',points:[[-97,39],[-59,47],[-31,52],[8,51]],kind:'aircraft'},
-    {id:'air-2',name:'Sample commercial flight B',category:'Civil aviation concept',points:[[73,19],[87,22],[111,27],[139,36]],kind:'aircraft'},
-    {id:'air-3',name:'Sample commercial flight C',category:'Civil aviation concept',points:[[-47,-23],[-34,-18],[-10,1],[4,7]],kind:'aircraft'}
+    {id:'air-1',name:'Sample commercial flight A',focus:['USA','DEU'],category:'Civil aviation concept',points:[[-97,39],[-59,47],[-31,52],[8,51]],kind:'aircraft'},
+    {id:'air-2',name:'Sample commercial flight B',focus:['IND','CHN'],category:'Civil aviation concept',points:[[73,19],[87,22],[111,27],[139,36]],kind:'aircraft'},
+    {id:'air-3',name:'Sample commercial flight C',focus:['BRA','NGA'],category:'Civil aviation concept',points:[[-47,-23],[-34,-18],[-10,1],[4,7]],kind:'aircraft'}
   ];
   const LIVING_SITES=[
-    {id:'port-1',name:'Los Angeles maritime area · example',category:'Port / logistics',lon:-118.3,lat:33.7,kind:'ports',region:'USA · broad coastal area'},
-    {id:'port-2',name:'Hamburg waterfront · example',category:'Port / logistics',lon:10,lat:53.55,kind:'ports',region:'Germany · city-wide example'},
-    {id:'port-3',name:'Singapore port area · example',category:'Port / logistics',lon:104,lat:1.27,kind:'ports',region:'Singapore · city-wide example'},
-    {id:'port-4',name:'Mumbai commercial port zone · example',category:'Port / logistics',lon:72.9,lat:18.96,kind:'ports',region:'India · city-wide example'},
-    {id:'port-5',name:'Santos coastal port zone · example',category:'Port / logistics',lon:-46.3,lat:-23.9,kind:'ports',region:'Brazil · city-wide example'},
-    {id:'base-1',name:'U.S. coastal defense facility · research slot',category:'Military facility prototype',lon:-119,lat:35,kind:'bases',region:'USA · western region (illustrative)'},
-    {id:'base-2',name:'German defense installation · research slot',category:'Military facility prototype',lon:9.7,lat:49.8,kind:'bases',region:'Germany · broad central region (illustrative)'},
-    {id:'base-3',name:'Indian defense facility · research slot',category:'Military facility prototype',lon:76,lat:29,kind:'bases',region:'India · broad north region (illustrative)'},
-    {id:'base-4',name:'Brazilian defense facility · research slot',category:'Military facility prototype',lon:-49,lat:-20,kind:'bases',region:'Brazil · broad southeast region (illustrative)'},
-    {id:'base-5',name:'Nigerian defense facility · research slot',category:'Military facility prototype',lon:5,lat:8,kind:'bases',region:'Nigeria · broad central region (illustrative)'},
-    {id:'force-1',name:'United States public-force record slot',category:'National force structure',lon:-101,lat:40,kind:'forces',region:'USA · country-scale anchor, NOT a unit location'},
-    {id:'force-2',name:'German public-force record slot',category:'National force structure',lon:10,lat:51,kind:'forces',region:'Germany · country-scale anchor, NOT a unit location'},
-    {id:'force-3',name:'Indian public-force record slot',category:'National force structure',lon:79,lat:22,kind:'forces',region:'India · country-scale anchor, NOT a unit location'},
-    {id:'force-4',name:'Brazilian public-force record slot',category:'National force structure',lon:-51,lat:-13,kind:'forces',region:'Brazil · country-scale anchor, NOT a unit location'},
-    {id:'force-5',name:'Nigerian public-force record slot',category:'National force structure',lon:8,lat:10,kind:'forces',region:'Nigeria · country-scale anchor, NOT a unit location'}
+    {id:'port-1',name:'Los Angeles maritime area · example',category:'Port / logistics',lon:-118.3,lat:33.7,kind:'ports',region:'USA · broad coastal area',focus:['USA']},
+    {id:'port-2',name:'Hamburg waterfront · example',category:'Port / logistics',lon:10,lat:53.55,kind:'ports',region:'Germany · city-wide example',focus:['DEU']},
+    {id:'port-3',name:'Singapore port area · example',category:'Port / logistics',lon:104,lat:1.27,kind:'ports',region:'Singapore · city-wide example',focus:[]},
+    {id:'port-4',name:'Mumbai commercial port zone · example',category:'Port / logistics',lon:72.9,lat:18.96,kind:'ports',region:'India · city-wide example',focus:['IND']},
+    {id:'port-5',name:'Santos coastal port zone · example',category:'Port / logistics',lon:-46.3,lat:-23.9,kind:'ports',region:'Brazil · city-wide example',focus:['BRA']},
+    {id:'base-1',name:'U.S. coastal defense facility · research slot',category:'Military facility prototype',lon:-119,lat:35,kind:'bases',region:'USA · western region (illustrative)',focus:['USA']},
+    {id:'base-2',name:'German defense installation · research slot',category:'Military facility prototype',lon:9.7,lat:49.8,kind:'bases',region:'Germany · broad central region (illustrative)',focus:['DEU']},
+    {id:'base-3',name:'Indian defense facility · research slot',category:'Military facility prototype',lon:76,lat:29,kind:'bases',region:'India · broad north region (illustrative)',focus:['IND']},
+    {id:'base-4',name:'Brazilian defense facility · research slot',category:'Military facility prototype',lon:-49,lat:-20,kind:'bases',region:'Brazil · broad southeast region (illustrative)',focus:['BRA']},
+    {id:'base-5',name:'Nigerian defense facility · research slot',category:'Military facility prototype',lon:5,lat:8,kind:'bases',region:'Nigeria · broad central region (illustrative)',focus:['NGA']},
+    {id:'force-1',name:'United States public-force record slot',category:'National force structure',lon:-101,lat:40,kind:'forces',region:'USA · country-scale anchor, NOT a unit location',focus:['USA']},
+    {id:'force-2',name:'German public-force record slot',category:'National force structure',lon:10,lat:51,kind:'forces',region:'Germany · country-scale anchor, NOT a unit location',focus:['DEU']},
+    {id:'force-3',name:'Indian public-force record slot',category:'National force structure',lon:79,lat:22,kind:'forces',region:'India · country-scale anchor, NOT a unit location',focus:['IND']},
+    {id:'force-4',name:'Brazilian public-force record slot',category:'National force structure',lon:-51,lat:-13,kind:'forces',region:'Brazil · country-scale anchor, NOT a unit location',focus:['BRA']},
+    {id:'force-5',name:'Nigerian public-force record slot',category:'National force structure',lon:8,lat:10,kind:'forces',region:'Nigeria · country-scale anchor, NOT a unit location',focus:['NGA']}
   ];
   const LIVING_ALL=[...LIVING_CORRIDORS,...LIVING_SHIPS,...LIVING_AIR,...LIVING_SITES];
   let livingOn=new Set(['ships','corridors','bases']),livingFrame=0,livingPlaying=false,livingTick=null,livingSelected=null;
@@ -1463,49 +1474,116 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
     // Break across the antimeridian; don't draw straight lines over the whole world.
     let d='',lastLon=null;for(const [lon,lat] of points){const p=geoXY(lon,lat);const cmd=lastLon===null||Math.abs(lon-lastLon)>170?'M':'L';d+=`${cmd}${p.x.toFixed(1)},${p.y.toFixed(1)} `;lastLon=lon;}return d;
   }
-  function livingLinkInfo(item){
-    const fixtureTitle=html(item.name||item.label||'Demonstration item');
-    let kind=item.kind||'corridors',position= item.points?livingBetween(item,livingFrame/100):[item.lon,item.lat];
-    const movement=kind==='ships'||kind==='aircraft';
-    return `<h3>${fixtureTitle}</h3><p>${html(item.description || (movement?'A simulated moving marker to test future public transport tracking. No genuine position or vehicle exists for this sample.':'A demonstration-only reference marker; the position is indicative of a broad region and does not identify a verified installation, unit, or operating site.'))}</p><div class="living-meta"><div>RECORD CATEGORY<strong>${html(item.category|| (kind==='corridors'?'Symbolic trade corridor':kind))}</strong></div><div>GEOGRAPHIC PRECISION<strong>${kind==='forces'?'National anchor only':kind==='bases'?'Broad region (mock)':movement?'Simulated coordinate':'Conceptual/approximate'}</strong></div><div>OBSERVATION TIME<strong>No real observation</strong></div><div>FEED STATUS<strong>Not connected</strong></div></div><p style="font-size:11px;color:#a9c6c7">${movement?'Playback frame: '+livingFrame+'/100 (fictional movement). ':''}${html(item.region||'No reported cargo, country trade value, military unit deployment or transport position is being asserted.')}</p><div class="living-evidence">EVIDENCE: MOCK FIXTURE · SOURCE: NONE · VERIFIED FACTS: NONE. For production, this card will require a reliable publisher, precise definitions, observation date and independent QA.</div>`;
+  // Focus tags are artificial relationships for testing UI queries. They must
+  // never be read as a ship's country, a port-of-call, or military deployment.
+  let livingFocus='all', livingClass='all', livingQuery='';
+  const LIVING_CATEGORY={ships:'maritime',corridors:'maritime',ports:'maritime',bases:'defense',forces:'defense',aircraft:'aviation'};
+  const LIVING_GLYPHS={ships:'⛴',aircraft:'✈',ports:'⚓',bases:'◆',forces:'▣',corridors:'〰'};
+  const LIVING_COLORS={ships:'#85d9db',aircraft:'#d9e69a',ports:'#e0c37f',bases:'#ecac79',forces:'#bb97e3'};
+  function livingAllowed(item){
+    const kind=item.kind||'corridors';
+    if(!livingOn.has(kind))return false;
+    if(livingClass!=='all' && LIVING_CATEGORY[kind]!==livingClass)return false;
+    if(livingFocus!=='all' && !(item.focus||[]).includes(livingFocus))return false;
+    if(livingQuery && ![item.name,item.label,item.category,item.region,kind].some(v=>String(v||'').toLowerCase().includes(livingQuery)))return false;
+    return true;
   }
-  function livingClose(){livingSelected=null;$('living-inspector').hidden=true;}
-  function livingSelect(item){livingSelected=item;closeDetails();const panel=$('living-inspector');$('living-inspector-type').textContent=`◆ ${item.kind==='aircraft'?'CIVIL AVIATION':item.kind==='ships'?'COMMERCIAL VESSEL':item.kind==='bases'?'MILITARY FACILITY':item.kind==='forces'?'PUBLIC FORCE DATA':item.kind==='ports'?'PORT / LOGISTICS':'TRADE CORRIDOR'} · DEMO ONLY`;$('living-inspector-body').innerHTML=livingLinkInfo(item);panel.hidden=false;const drawer=$('living-layer-drawer');drawer.hidden=true;$('living-layer-launch').setAttribute('aria-expanded','false');}
+  function livingFiltered(){return LIVING_ALL.filter(livingAllowed);}
+  function livingMeta(item){
+    const kind=item.kind||'corridors';
+    return `<div class="living-status-line"><span>DEMO · NOT LIVE</span><span>UNVERIFIED / SOURCE NONE</span><span>NO OBSERVATION TIME</span></div><div class="living-meta"><div>RECORD CLASS<strong>${html(item.category||(kind==='corridors'?'Conceptual freight corridor':kind))}</strong></div><div>MAP PRECISION<strong>${kind==='forces'?'National anchor (demo)':kind==='bases'?'Broad zone (demo)':kind==='corridors'?'Fictional route sketch':kind==='ships'||kind==='aircraft'?'Simulated point':'General reference area'}</strong></div><div>ORIGINAL SOURCE<strong>None · mock fixture</strong></div><div>LAST OBSERVED (UTC)<strong>Not available</strong></div></div>`;
+  }
+  function livingLinkInfo(item){
+    const kind=item.kind||'corridors';
+    const movement=kind==='ships'||kind==='aircraft';
+    return `<h3>${html(item.name||item.label||'Demonstration item')}</h3>${livingMeta(item)}<p>${html(item.description||(movement?'This is a simulated moving marker used to test how licensed civilian transport feeds might render. No real vehicle or observation is represented.':'This is an approximate, fictional research placeholder, not a verified military or commercial location.'))}</p><div class="living-selection-meta">${movement?'Playback frame '+livingFrame+'/100 is an invented animation frame, NOT an observation time. ':''}${html(item.region||'Country focus denotes only fictional scenario associations; it does not identify cargo, flag state, physical transit, units or equipment.')}</div><div class="living-evidence">DATA REQUIRED LATER: trustworthy provider/publisher, observation or publication timestamp, precise scope, lawful display rights and quality review. Unknown data must not be interpreted as zero.</div>`;
+  }
+  function livingClusterInfo(cluster){
+    return `<h3>${cluster.items.length} nearby demo markers</h3><div class="living-status-line"><span>DEMO CLUSTER</span><span>SOURCE NONE</span></div><p>Markers grouped at this zoom for easier selection. Tap a row to inspect one. This cluster contains no verified installation, aircraft or vessel information.</p><div class="living-cluster-list">${cluster.items.map(v=>`<button type="button" data-living-cluster-item="${html(v.id)}">${html(LIVING_GLYPHS[v.kind]||'•')} ${html(v.name)}<small>${html(v.category||v.kind)} · DEMO only</small></button>`).join('')}</div>`;
+  }
+  function livingClose(){livingSelected=null;$('living-inspector').hidden=true;livingDraw();}
+  function livingSelect(item){
+    livingSelected=item;closeDetails();
+    const panel=$('living-inspector');
+    $('living-inspector-type').textContent=item.isCluster?`✦ ${item.items.length} GROUPED MAP RECORDS · DEMO`: `◆ ${item.kind==='aircraft'?'CIVIL AVIATION':item.kind==='ships'?'COMMERCIAL VESSEL':item.kind==='bases'?'MILITARY FACILITY':item.kind==='forces'?'PUBLIC FORCE DATA':item.kind==='ports'?'PORT / LOGISTICS':'TRADE CORRIDOR'} · DEMO`;
+    $('living-inspector-body').innerHTML=item.isCluster?livingClusterInfo(item):livingLinkInfo(item);
+    panel.hidden=false;
+    $('living-layer-drawer').hidden=true;
+    $('living-layer-launch').setAttribute('aria-expanded','false');
+    livingDraw();
+  }
+  function livingPixelScale(){
+    const box=svg.getBoundingClientRect(),w=box.width/Math.max(1,state.view.w),h=box.height/Math.max(1,state.view.h);
+    return Math.max(.001,window.innerWidth<=650?Math.max(w,h):Math.min(w,h));
+  }
+  function livingMakeClusters(items){
+    // Work in projected coordinates but cluster using the actual CSS-pixel size.
+    // The smaller a feature set is, the more useful a stable nearest-neighbor rule.
+    const threshold=Math.min(45,Math.max(14,42/livingPixelScale()));
+    const clusters=[];
+    for(const item of items){
+      const loc=item.points?livingBetween(item,livingFrame/100):[item.lon,item.lat],p=geoXY(loc[0],loc[1]);
+      let found=clusters.find(g=>Math.hypot(g.x-p.x,g.y-p.y)<=threshold);
+      if(found){found.items.push(item);found.x=found.items.reduce((a,v)=>a+geoXY(...(v.points?livingBetween(v,livingFrame/100):[v.lon,v.lat])).x,0)/found.items.length;found.y=found.items.reduce((a,v)=>a+geoXY(...(v.points?livingBetween(v,livingFrame/100):[v.lon,v.lat])).y,0)/found.items.length;}
+      else clusters.push({x:p.x,y:p.y,items:[item]});
+    }
+    return clusters;
+  }
   function livingDraw(){
     if(!livingPointGroup||!livingCorridorGroup)return;
     livingPointGroup.innerHTML='';livingCorridorGroup.innerHTML='';
-    let z=Math.max(1,1200/state.view.w),r=7.0/z;
-    if(livingOn.has('corridors')){
-      for(const item of LIVING_CORRIDORS){
-        const p=el('path',{d:livingPath(item.points),fill:'none',stroke:'#e5bd7b','stroke-width':'2.3',class:'living-route-path'});livingCorridorGroup.appendChild(p);
-        const hit=el('path',{d:livingPath(item.points),class:'living-route-hit',role:'button',tabindex:'0','aria-label':`${item.label}, fictional corridor`});
-        hit.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect(item);});hit.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect(item);}});livingCorridorGroup.appendChild(hit);
+    const z=Math.max(1,1200/state.view.w),r=7.0/z;
+    const filtered=livingFiltered();
+    const routes=filtered.filter(v=>(v.kind||'corridors')==='corridors');
+    for(const item of routes){
+      const p=el('path',{d:livingPath(item.points),fill:'none',stroke:'#e5bd7b','stroke-width':'2.3',class:'living-route-path'+(livingSelected?.id===item.id?' living-route-selected':'')});livingCorridorGroup.appendChild(p);
+      const hit=el('path',{d:livingPath(item.points),class:'living-route-hit',role:'button',tabindex:'0','aria-label':`${item.label}, fictional corridor`});
+      hit.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect(item);});hit.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect(item);}});livingCorridorGroup.appendChild(hit);
+    }
+    const pointItems=filtered.filter(v=>v.kind&&v.kind!=='corridors');
+    // At high zoom, markers resolve individually. Close fixtures are grouped at lower zooms.
+    const groups=livingMakeClusters(pointItems);
+    for(const cluster of groups){
+      const {x,y,items}=cluster;
+      if(items.length>1){
+        const g=el('g',{class:'living-cluster',role:'button',tabindex:0,'aria-label':`${items.length} overlapping demo markers, open group`});
+        const ring=el('circle',{cx:x,cy:y,r:12.5/z,class:'living-cluster-circle'});g.appendChild(ring);
+        const glyph=el('text',{x,y,'font-size':Math.max(3.6,11/z)});glyph.textContent=String(items.length);g.appendChild(glyph);
+        g.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect({...cluster,isCluster:true});});
+        g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect({...cluster,isCluster:true});}});
+        livingPointGroup.appendChild(g);
+      }else{
+        const item=items[0],name=item.name||item.label||'Marker';
+        const ring=el('circle',{cx:x,cy:y,r:r*1.55,fill:LIVING_COLORS[item.kind]||'#b9b8a1',stroke:'#091b24','stroke-width':1.8,class:'living-symbol'+(livingSelected?.id===item.id?' living-selected-ring':''),role:'button',tabindex:0,'aria-label':`${name} · demonstration only`});
+        ring.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect(item);});
+        ring.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect(item);}});
+        ring.addEventListener('pointermove',e=>tooltip(e,name+' · DEMO'));
+        ring.addEventListener('pointerleave',hideTooltip);
+        const title=el('title');title.textContent=`${name} · DEMO, not live`;ring.appendChild(title);
+        livingPointGroup.appendChild(ring);
+        const glyph=el('text',{x,y,'font-size':Math.max(2.5,10/z),class:'living-marker-text'});glyph.textContent=LIVING_GLYPHS[item.kind]||'•';livingPointGroup.appendChild(glyph);
       }
     }
-    for(const item of [...LIVING_SHIPS,...LIVING_AIR,...LIVING_SITES]){
-      if(!livingOn.has(item.kind))continue;
-      const [lon,lat]=item.points?livingBetween(item,livingFrame/100):[item.lon,item.lat];
-      const p=geoXY(lon,lat),colors={ships:'#85d9db',aircraft:'#d9e69a',ports:'#e0c37f',bases:'#ecac79',forces:'#bb97e3'};
-      const ring=el('circle',{cx:p.x,cy:p.y,r:r*1.35,fill:colors[item.kind],stroke:'#091b24','stroke-width':1.5,class:'living-symbol',role:'button',tabindex:0,'aria-label':`${item.name} · demonstration only`});
-      ring.addEventListener('click',e=>{e.stopPropagation();if(Date.now()-state.lastDrag<250)return;livingSelect(item);});
-      ring.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();livingSelect(item);}});
-      ring.addEventListener('pointermove',e=>tooltip(e,item.name+' · DEMO'));
-      ring.addEventListener('pointerleave',hideTooltip);
-      const title=el('title');title.textContent=`${item.name} · DEMO, no real feed`;ring.appendChild(title);
-      livingPointGroup.appendChild(ring);
-      const txt=el('text',{x:p.x,y:p.y,'font-size':Math.max(2.2,9/z),class:'living-marker-text'});
-      txt.textContent={ships:'⛴',aircraft:'✈',ports:'⚓',bases:'◆',forces:'▣'}[item.kind]||'•';livingPointGroup.appendChild(txt);
+    if(livingSelected && !$('living-inspector').hidden){
+      $('living-inspector-body').innerHTML=livingSelected.isCluster?livingClusterInfo(livingSelected):livingLinkInfo(livingSelected);
     }
-    if(livingSelected && !$('living-inspector').hidden)$('living-inspector-body').innerHTML=livingLinkInfo(livingSelected);
   }
   function livingCounts(){return LIVING_DEFS.filter(x=>livingOn.has(x.id)).length;}
   function livingRefreshDrawer(){
     $('living-layer-count').textContent=livingCounts()+' on';
+    $('living-focus').value=livingFocus;$('living-class').value=livingClass;
     $('living-checks').innerHTML=LIVING_DEFS.map(item=>`<label class="living-check-row"><input type="checkbox" data-living-layer="${item.id}" ${livingOn.has(item.id)?'checked':''}/><span class="living-kind">${item.icon}</span><span><strong>${item.name}</strong><small>${item.note}</small></span></label>`).join('');
     $('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;
     $('living-frame').value=String(Math.round(livingFrame));
     $('living-play').textContent=livingPlaying?'Ⅱ Pause demo':'▶ Play demo';
-    $('living-route-list').innerHTML=LIVING_CORRIDORS.map(item=>`<button class="living-route-item" data-living-route="${item.id}" type="button">${html(item.label)}<small>Tap to inspect · fictional geometry</small></button>`).join('');
+    const filtered=livingFiltered();
+    $('living-visible-count').textContent=`${filtered.length} demo records in filters`;
+    $('living-results').innerHTML=filtered.slice(0,20).map(item=>`<button type="button" data-living-result="${item.id}" aria-pressed="${livingSelected?.id===item.id}"><span class="living-result-icon">${LIVING_GLYPHS[item.kind||'corridors']||'•'}</span><span>${html(item.name||item.label)}<small>${html(item.category||item.kind||'Trade corridor')} · DEMO</small></span></button>`).join('')||'<p>No records match. Try another country, type, or enabled layer.</p>';
+    $('living-route-list').innerHTML=LIVING_CORRIDORS.filter(livingAllowed).map(item=>`<button class="living-route-item" data-living-route="${item.id}" type="button">${html(item.label)}<small>Inspect concept · fictional geometry</small></button>`).join('')||'<p class="living-empty-states">No routes match your current filters.</p>';
+  }
+  function livingUpdateFiltering(){
+    if(livingSelected && !livingSelected.isCluster && !livingAllowed(livingSelected)){$('living-inspector').hidden=true;livingSelected=null;}
+    livingRefreshDrawer();livingDraw();
   }
   function livingPause(){if(livingTick!==null)clearInterval(livingTick);livingTick=null;livingPlaying=false;$('living-play').textContent='▶ Play demo';}
   function livingToggleDrawer(show){const open=typeof show==='boolean'?show:$('living-layer-drawer').hidden;$('living-layer-drawer').hidden=!open;$('living-layer-launch').setAttribute('aria-expanded',String(open));if(open){livingClose();livingRefreshDrawer();}}
@@ -1515,13 +1593,19 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
   for(const id of ['living-layer-drawer','living-inspector','living-layer-launch']){
     const node=$(id);node.addEventListener('pointerdown',e=>e.stopPropagation());node.addEventListener('pointermove',e=>e.stopPropagation());node.addEventListener('pointerup',e=>e.stopPropagation());node.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});
   }
-  $('living-checks').addEventListener('change',e=>{const id=e.target.dataset.livingLayer;if(!id)return;if(e.target.checked)livingOn.add(id);else livingOn.delete(id);livingRefreshDrawer();livingDraw();});
-  $('living-reset').addEventListener('click',()=>{livingPause();livingOn=new Set(['ships','corridors','bases']);livingFrame=0;livingClose();livingRefreshDrawer();livingDraw();});
+  $('living-checks').addEventListener('change',e=>{const id=e.target.dataset.livingLayer;if(!id)return;if(e.target.checked)livingOn.add(id);else livingOn.delete(id);livingUpdateFiltering();});
+  $('living-focus').addEventListener('change',e=>{livingFocus=e.target.value;livingUpdateFiltering();});
+  $('living-class').addEventListener('change',e=>{livingClass=e.target.value;livingUpdateFiltering();});
+  $('living-search').addEventListener('input',e=>{livingQuery=e.target.value.trim().toLowerCase();livingUpdateFiltering();});
+  $('living-clear-filters').addEventListener('click',()=>{livingFocus='all';livingClass='all';livingQuery='';$('living-search').value='';livingUpdateFiltering();});
+  $('living-results').addEventListener('click',e=>{const btn=e.target.closest('[data-living-result]');if(!btn)return;const item=LIVING_ALL.find(v=>v.id===btn.dataset.livingResult);if(item&&livingAllowed(item))livingSelect(item);});
+  $('living-inspector-body').addEventListener('click',e=>{const btn=e.target.closest('[data-living-cluster-item]');if(!btn)return;const item=LIVING_ALL.find(v=>v.id===btn.dataset.livingClusterItem);if(item)livingSelect(item);});
+  $('living-reset').addEventListener('click',()=>{livingPause();livingOn=new Set(['ships','corridors','bases']);livingFocus='all';livingClass='all';livingQuery='';$('living-search').value='';livingFrame=0;livingClose();livingUpdateFiltering();});
   $('living-frame').addEventListener('input',e=>{livingFrame=Number(e.target.value);$('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;livingDraw();});
-  $('living-play').addEventListener('click',()=>{if(livingPlaying){livingPause();return;}livingPlaying=true;$('living-play').textContent='Ⅱ Pause demo';livingTick=setInterval(()=>{livingFrame=(livingFrame+1)%101;$('living-frame').value=String(Math.round(livingFrame));$('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;livingDraw();},300);});
-  $('living-route-list').addEventListener('click',e=>{const item=e.target.closest('[data-living-route]');if(!item)return;const route=LIVING_CORRIDORS.find(x=>x.id===item.dataset.livingRoute);if(route){livingOn.add('corridors');livingDraw();livingSelect(route);}});
+  $('living-play').addEventListener('click',()=>{if(livingPlaying){livingPause();return;}if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){livingFrame=(livingFrame+5)%101;$('living-frame').value=String(livingFrame);livingDraw();return;}livingPlaying=true;$('living-play').textContent='Ⅱ Pause demo';livingTick=setInterval(()=>{livingFrame=(livingFrame+1)%101;$('living-frame').value=String(Math.round(livingFrame));$('living-frame-label').textContent=`Frame ${Math.round(livingFrame)} / 100 · simulated`;livingDraw();},300);});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&livingPlaying)livingPause();});
+  $('living-route-list').addEventListener('click',e=>{const btn=e.target.closest('[data-living-route]');if(!btn)return;const item=LIVING_CORRIDORS.find(v=>v.id===btn.dataset.livingRoute);if(item&&livingAllowed(item))livingSelect(item);});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){livingClose();livingToggleDrawer(false);}});
-  // Never force the layer drawer closed merely because map background is tapped.
   livingRefreshDrawer();
 
   syncDetails();

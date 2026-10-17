@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b141d" />
   <meta name="description" content="Explore a Civilization-inspired world atlas with clickable countries, cities and source-aware country profiles." />
   <title>Atlas of Nations | World Strategy Map</title>
-  <meta name="app-revision" content="1.4.0-connected-world-ui" />
+  <meta name="app-revision" content="1.5.0-time-history-ui" />
   <style>
 :root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9ebea;background:#09141c;font-size:14px;font-synthesis:none;--gold:#e7c481;--muted:#90a2a9;--line:#293942;--panel:#0d1b23;--dark:#08121a}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}a{color:var(--gold)}.app-shell{height:100dvh;display:flex;flex-direction:column;min-height:530px;background:#0a151d}.topbar{height:78px;min-height:78px;background:#101e28;border-bottom:1px solid #3a4850;display:flex;align-items:center;justify-content:space-between;padding:0 26px;gap:16px}.brand{display:flex;align-items:center;gap:13px;min-width:max-content}.brand-mark{width:44px;height:44px;border:1px solid #aa8b57;display:grid;place-items:center;font-size:29px;color:var(--gold);transform:rotate(45deg)}.brand-mark:first-letter{transform:rotate(-45deg)}.brand-title{font-size:19px;letter-spacing:.19em;font-weight:800;color:#f3e5c3}.brand-title span{font-weight:400;color:#f2f1e7}.brand-subtitle{margin-top:4px;font-size:9px;letter-spacing:.24em;font-weight:650;color:#94a5ae}.brand-version{color:#657e8b}.header-middle{font-size:10px;letter-spacing:.13em;color:#879ba7;text-align:center}.pulse-dot,.green-dot,.status-pill i{width:7px;height:7px;border-radius:50%;display:inline-block;background:#81c7a5;box-shadow:0 0 9px #81c7a575;margin-right:7px}.header-divider{margin:0 12px;color:#556a74}.header-actions{display:flex;gap:12px;align-items:center}.icon-button,.panel-close{border:1px solid #465861;background:transparent;color:#c7d2d2;width:32px;height:32px;border-radius:4px;font-size:19px}.icon-button:hover,.panel-close:hover{color:var(--gold);border-color:var(--gold)}.notion-link{font-size:10px;color:#cdb581;border:1px solid #65583e;padding:11px 12px;text-decoration:none;letter-spacing:.08em;font-weight:750;white-space:nowrap}.notion-link:hover{background:#3a3327}.main-layout{display:grid;grid-template-columns:252px minmax(250px,1fr) 355px;min-height:0;flex:1}.sidebar{position:relative;background:#0b1822;border-right:1px solid var(--line);padding:27px 17px;overflow-y:auto;scrollbar-width:thin}.sidebar-heading{font-size:10px;color:#728e9d;letter-spacing:.17em;font-weight:800;margin:0 6px 13px}.search-area{position:relative;margin-bottom:29px}.search-symbol{position:absolute;left:13px;top:4px;font-size:26px;color:#8195a3}#search{width:100%;background:#152731;color:#e6eaec;border:1px solid #30434e;border-radius:4px;height:44px;padding:0 12px 0 39px;outline:none;font-size:12px}#search::placeholder{color:#899da7}#search:focus{border-color:#ba9e6e}.search-results{position:absolute;top:47px;left:0;right:0;max-height:275px;overflow:auto;background:#172832;border:1px solid #556677;z-index:20;box-shadow:0 18px 25px #0008}.search-result{border:0;border-bottom:1px solid #2c414e;color:#ebeeee;background:transparent;padding:9px 11px;width:100%;text-align:left;display:flex;justify-content:space-between;gap:10px}.search-result:hover{background:#28414d}.search-result small{color:#9babb4;font-size:10px}.hidden{display:none!important}.lens-heading{display:flex;justify-content:space-between}.heading-dot{height:5px;width:5px;background:var(--gold);display:inline-block}.lens-list{display:flex;flex-direction:column;gap:5px;margin-bottom:22px}.lens{height:44px;width:100%;display:flex;align-items:center;gap:12px;padding:0 9px;border:1px solid transparent;border-left:3px solid transparent;background:transparent;color:#95a8b1;text-align:left}.lens:hover{background:#1b2b37;color:#f4e7cd}.lens.active{background:#20303a;border-left-color:#e4c383;color:#f3deb0}.lens-icon{font-size:20px;width:24px;text-align:center}.lens-name{flex:1;font-size:12px;font-weight:650}.lens-shortcut{font-size:10px;opacity:.48}.sidebar-separator{border-top:1px solid #2d414d;margin:16px 3px 24px}.toggle-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 4px;font-size:12px;color:#a5b6bb;cursor:pointer}.toggle-row input{position:absolute;opacity:0;pointer-events:none}.toggle-ui{position:relative;width:34px;height:19px;border-radius:20px;background:#34464d;flex-shrink:0}.toggle-ui:before{content:"";position:absolute;top:3px;left:3px;width:13px;height:13px;background:#8599a0;border-radius:50%;transition:transform .2s}.toggle-row input:checked+.toggle-ui{background:#79683e}.toggle-row input:checked+.toggle-ui:before{transform:translateX(15px);background:#ead5a7}.toggle-row input:focus-visible+.toggle-ui{outline:2px solid var(--gold)}.coverage-card{background:#142530;border:1px solid #2c444f;padding:16px;margin:5px 0 30px}.coverage-value strong{font-size:27px;color:#e7dcc5;font-weight:700}.coverage-value span{color:#8da1aa;font-size:10px}.coverage-sub{margin-top:7px;font-size:11px;color:#acc1ca}.coverage-sub strong{color:#e0c38d}.coverage-progress{height:4px;margin:15px 0;background:#334750}.coverage-progress i{display:block;width:2.5%;height:100%;background:#d6b878}.coverage-card p{font-size:10px;line-height:1.55;color:#768e99;margin:0}.sidebar-foot{font-size:9px;letter-spacing:.1em;color:#5d7685;line-height:1.8}.sidebar-foot span{color:var(--gold);padding:0 4px}.map-stage{position:relative;min-width:0;background:#0b1b26;display:flex;flex-direction:column;overflow:hidden}.map-head{padding:28px 29px 14px;display:flex;justify-content:space-between;gap:10px}.eyebrow{font-size:10px;letter-spacing:.21em;font-weight:800;color:#d6bb83}.eyebrow-diamond{margin:0 8px;color:#667d88}.map-head h1{font-family:Georgia,"Times New Roman",serif;font-size:31px;letter-spacing:.01em;font-weight:400;margin:12px 0 0;color:#eef0eb}.accent-dot{color:var(--gold)}.map-head-right{display:flex;align-items:end;gap:9px;flex-direction:column;justify-content:center}.status-pill{font-size:9px;letter-spacing:.1em;background:#16312f;border:1px solid #406256;color:#9fcfba;padding:7px 8px}.status-pill i{width:5px;height:5px}.map-head-right #map-coords{font-family:monospace;font-size:10px;color:#8196a4;white-space:nowrap}.map-viewport{position:relative;overflow:hidden;flex:1;min-height:280px;cursor:grab;touch-action:none;background:radial-gradient(ellipse at 47% 42%,#153142 0%,#102532 55%,#0b1b26 100%);outline:0}.map-viewport:active{cursor:grabbing}.map-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#33536524 1px,transparent 1px),linear-gradient(90deg,#33536524 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}#world-svg{position:absolute;inset:0;width:100%;height:100%;user-select:none;cursor:inherit}#map-countries path{stroke:#567482;stroke-width:.58;stroke-linejoin:round;vector-effect:non-scaling-stroke;fill:#294450;transition:fill .15s;cursor:pointer}#map-countries path:hover{fill:#b29663!important;stroke:#f3d5a5;stroke-width:1.25}#map-countries path.selected{stroke:#ffe0a0;stroke-width:1.5;fill:#8b7150!important;filter:drop-shadow(0 0 2px #f9dc8d)}#map-countries path.missing{fill:#1e3642}#map-countries path.available{fill:#335360}#map-countries path[data-lens-color]{fill:var(--lens-fill)}.city-dot{fill:#e1c48f;stroke:#20313b;stroke-width:2.1;vector-effect:non-scaling-stroke;cursor:pointer}.city-dot:hover{fill:#fff;stroke:#f1c67b}.unmapped-dot{fill:#476778;stroke:#c2c3ab;stroke-width:.65;vector-effect:non-scaling-stroke;cursor:pointer}.unmapped-dot:hover{fill:#c6a975}.selected-marker{fill:#ffdc91!important;stroke:#ffffff;stroke-width:2!important;filter:drop-shadow(0 0 4px #ffdda9)}.map-text{font-size:10px;letter-spacing:.065em;fill:#e6d8b4;font-family:Inter,sans-serif;stroke:#10212b;stroke-width:2.3px;paint-order:stroke;pointer-events:none}.city-text{font-size:9px;fill:#c8b99a}.map-toolbar{position:absolute;right:19px;bottom:25px;display:flex;flex-direction:column;background:#152732;border:1px solid #4a616b;box-shadow:0 10px 30px #0007;z-index:5}.map-toolbar button{width:36px;height:39px;background:transparent;color:#e7e7de;border:0;font-size:22px;line-height:1}.map-toolbar button:hover{background:#324957;color:var(--gold)}.zoom-line{height:1px;background:#334a53;margin:0 7px}.map-corner-label{position:absolute;left:28px;bottom:23px;font-size:10px;letter-spacing:.14em;color:#869daa;font-weight:750}.small-star{color:#dfc48e;font-size:18px;margin-right:8px}.map-watermark{position:absolute;right:80px;top:8px;opacity:.12;font-family:Georgia,serif;font-size:36px;pointer-events:none}.map-tooltip{position:absolute;left:0;top:0;z-index:10;background:#132833;border:1px solid #b79c69;padding:7px 11px;color:#f3e0b6;font-size:12px;box-shadow:0 8px 24px #0008;pointer-events:none;white-space:nowrap}.map-footer{height:46px;border-top:1px solid #29414c;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#8aa0aa;font-size:10px;letter-spacing:.05em;gap:10px}.legend-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 5px 0 12px}.legend-dot:first-child{margin-left:0}.legend-dot.known{background:#7fa1a4}.legend-dot.missing{background:#253b47;border:1px solid #75939b}.legend-dot.city{background:#edc788}.footer-instruction span{color:var(--gold);margin:0 7px}.detail-panel{background:#101f29;border-left:1px solid #354954;overflow:auto;scrollbar-width:thin;min-width:0}.detail-topline{height:49px;padding:0 21px;border-bottom:1px solid #344751;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#d3b781;letter-spacing:.2em;font-weight:800}.panel-close{width:27px;height:27px;font-size:14px}.detail-body{padding:24px}.detail-eyebrow{font-size:10px;color:#9baeb4;letter-spacing:.13em;font-weight:700}.detail-name{font-family:Georgia,serif;font-size:35px;font-weight:normal;line-height:1.03;margin:10px 0 8px;color:#fcf1d8}.detail-chip{display:inline-block;background:#34434a;color:#f3d49a;padding:5px 8px;font-size:10px;font-weight:750;letter-spacing:.08em}.detail-description{font-size:12px;color:#a7bac1;line-height:1.75;margin:13px 0 19px}.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}.stat-card{background:#172d39;border:1px solid #34515e;padding:12px;min-height:75px}.stat-label{font-size:9px;color:#9ab0b8;letter-spacing:.12em}.stat-number{font-size:21px;color:#f0e6d2;font-weight:700;margin-top:9px}.stat-note{font-size:10px;color:#94a9b3;margin-top:4px}.detail-rule{border:0;border-top:1px solid #364851;margin:18px 0}.section-label{color:#dabb87;font-size:10px;letter-spacing:.17em;font-weight:800;margin-bottom:9px}.fact-list{display:flex;flex-direction:column;gap:10px}.fact{display:flex;justify-content:space-between;gap:10px;padding-bottom:9px;border-bottom:1px solid #293e49;font-size:12px}.fact-label{color:#91a4ae}.fact-value{color:#e3e5df;text-align:right}.detail-tabs{display:flex;gap:5px;overflow-x:auto;padding:0 0 10px;margin:12px -4px 9px;scrollbar-width:thin}.detail-tabs button{padding:8px 10px;white-space:nowrap;border:1px solid #3d515c;background:#182b35;color:#9caeb8;font-size:10px;letter-spacing:.04em;border-radius:2px}.detail-tabs button.active{background:#554b36;border-color:#d4b778;color:#f8e8c5}.tab-content{font-size:12px;line-height:1.75;color:#c2d0d0}.tab-content p{margin-top:8px}.not-yet{border:1px dashed #54707a;color:#a4b3b7;padding:14px;line-height:1.65;background:#142732}.tag{display:inline-block;background:#263d45;border:1px solid #41606b;color:#d2e0dc;margin:4px 4px 0 0;padding:4px 8px;border-radius:2px;font-size:10px}.source-box{margin-top:18px;padding:11px 12px;background:#202e31;border-left:2px solid #d3b075;color:#aebdbd;font-size:10px;line-height:1.6}.source-box a{word-break:break-word}.empty-hero{margin:38px 0;text-align:center}.empty-compass{font-family:Georgia,serif;font-size:78px;color:#b69a66;margin-bottom:14px;opacity:.8}.empty-hero h2{font-family:Georgia,serif;font-size:24px;font-weight:400;color:#f0eadc;margin:0 0 13px}.empty-hero p{font-size:12px;line-height:1.8;color:#94a9b4;max-width:250px;margin:auto}.empty-hero .tiny-rule{height:1px;background:#60717a;width:55px;margin:25px auto}.empty-hero .shortcut{font-size:10px;color:#d8bf87;letter-spacing:.12em}.bottom-status{height:30px;min-height:30px;background:#07121a;border-top:1px solid #35434b;padding:0 19px;display:flex;justify-content:space-between;align-items:center;color:#7a929b;font-size:9px;letter-spacing:.09em}.green-dot{width:5px;height:5px}.bottom-status span:first-child{white-space:nowrap}dialog{background:#101e29;border:1px solid #947c53;max-width:min(490px,calc(100vw - 40px));padding:25px 28px;color:#c4d4d4;box-shadow:0 24px 140px #000c}dialog::backdrop{background:#01090dcc}.modal-heading{display:flex;justify-content:space-between}dialog h2{font-family:Georgia,serif;font-weight:normal;color:#f4e6c8;font-size:25px}dialog p{font-size:12px;line-height:1.8}dialog code{color:#e9c994}.primary-button{background:#be9c5b;border:0;color:#111d24;font-size:11px;font-weight:800;letter-spacing:.1em;padding:12px 16px;margin-top:14px}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 @media(max-width:1190px){.main-layout{grid-template-columns:215px minmax(260px,1fr) 315px}.sidebar{padding:22px 11px}.map-head{padding:25px 18px 10px}.map-head h1{font-size:27px}.map-footer{padding:0 18px}.detail-body{padding:20px}.header-middle{display:none}}
@@ -471,6 +471,56 @@
 @media(max-width:650px){.living-map-controls{gap:5px;max-width:calc(100% - 14px)}#living-layer-launch{font-size:10px;padding:0 6px}#geo-launch{font-size:10px;padding:0 7px}#cw-launch{font-size:10px;padding:0 7px;min-height:43px}.cw-drawer{left:7px;top:63px;width:calc(100% - 14px);max-height:65dvh}.cw-inspector{left:8px;right:8px;bottom:10px;width:auto;max-height:54dvh}#cw-map-tag{font-size:8px;bottom:74px;right:9px}}
 @media(max-width:365px){#living-layer-count{display:none}#cw-launch{padding:0 6px}}
 
+
+/* Atlas v1.5 — historical time interface; sources and demo events stay visually distinct */
+#time-launch{display:flex;align-items:center;justify-content:center;gap:6px;min-height:45px;padding:0 12px;border:1px solid #bda16f;background:#342b24ed;color:#ffebbb;border-radius:9px;font-weight:850;font-size:12px;touch-action:manipulation;white-space:nowrap;box-shadow:0 5px 15px #07131cb0}
+#time-launch[aria-expanded="true"]{border-color:#ffe1a1;background:#4b3528}
+.time-drawer{position:absolute;top:66px;left:12px;z-index:68;width:min(426px,calc(100% - 24px));max-height:min(76dvh,720px);overflow:auto;overscroll-behavior:contain;touch-action:pan-y;border:1px solid #b4a37c;background:linear-gradient(158deg,#172d38fa,#0c202afb);color:#eff5ee;border-radius:14px;box-shadow:0 18px 48px #020b11ec;padding:14px}
+.time-drawer[hidden],.time-inspector[hidden],#time-map-tag[hidden]{display:none!important}
+.time-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:9px}
+.time-head small,.time-kicker{display:block;color:#dec08e;font-weight:900;letter-spacing:.13em;font-size:9px}
+.time-head h3{margin:5px 0 0;font:25px Georgia,serif;color:#f7e3bd}
+.time-close{border:1px solid #6f8181;color:#fff7e7;background:#1e343c;border-radius:8px;width:37px;height:37px;min-width:37px;font-size:17px;cursor:pointer}
+.time-note{color:#bed3d8;font-size:11px;line-height:1.5;margin:8px 0 13px}
+.time-safe{border:1px solid #7b6742;background:#302d22;color:#f9d7a0;padding:8px 10px;border-radius:8px;font-size:10px;line-height:1.5;font-weight:650;margin:10px 0}
+.time-group{border:1px solid #435b63;border-radius:10px;background:#0f2730bb;padding:11px;margin:9px 0}
+.time-group-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}
+.time-group-head strong{font-size:12px;color:#ead5a6}.time-year-big{font:26px Georgia,serif;color:#f6d393;line-height:1}
+.time-scrub{display:block;width:100%;min-height:34px;accent-color:#e7c481;touch-action:pan-x}
+.time-controls{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin:9px 0 2px}
+.time-controls button,.time-small-button{min-height:37px;border:1px solid #877d62;color:#f6e6c6;background:#26383c;padding:6px 11px;border-radius:8px;font-weight:750;cursor:pointer}
+.time-controls button:disabled{opacity:.4;cursor:not-allowed}
+.time-years-row{display:flex;justify-content:space-between;color:#9fbbc1;font-size:10px}
+.time-compact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.time-drawer label.time-select-label{display:flex;flex-direction:column;gap:5px;min-width:0;color:#bed1cf;font-size:10px;letter-spacing:.04em}
+.time-drawer select{border:1px solid #526d77;background:#152e39;color:#f0e9d8;border-radius:8px;min-height:42px;max-width:100%;width:100%;font-size:12px;padding:5px}
+.time-metric-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.time-metric-buttons button{font-size:10px;min-height:40px;border:1px solid #536b70;background:#1b3540;color:#c8dfde;border-radius:7px;padding:5px;line-height:1.3}
+.time-metric-buttons button[aria-pressed="true"]{background:#5b4a30;color:#fff0c4;border-color:#e3bf77}
+.time-results{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}
+.time-result{padding:9px;border:1px solid #405963;border-radius:8px;min-width:0;background:#142e37}
+.time-result small{font-size:10px;color:#b8cdd0;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.time-result strong{display:block;color:#ffe4a8;font-size:16px;margin:5px 0 2px;overflow-wrap:anywhere}
+.time-result span{font-size:10px;color:#a6c0c3}
+.time-graph{display:block;width:100%;height:auto;margin-top:10px;border:1px solid #435a62;border-radius:8px;background:#0e222b}
+.time-key{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;color:#b7cdd0;font-size:10px}
+.time-key i{display:inline-block;width:14px;height:3px;margin-right:4px;vertical-align:middle}
+.time-event-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;color:#f6dab0}
+.time-event-controls input{width:20px;height:20px;accent-color:#e8c581}
+.time-event-row{display:block;width:100%;border:1px solid #53656b;background:#152d35;color:#dde8e6;text-align:left;padding:9px 10px;border-radius:9px;margin:7px 0;cursor:pointer}
+.time-event-row strong{display:block;color:#f8deb2;margin:3px 0 4px;font-size:12px}.time-event-row small{display:block;color:#bed1ce;font-size:10px;line-height:1.4}
+.time-empty{color:#b6cbd0;font-size:11px;line-height:1.5;margin:5px 0}
+.time-verified-zero{font-weight:750;color:#c7d8d7;font-size:10px;line-height:1.6}
+.time-marker{cursor:pointer;stroke:#0c2029;stroke-width:1.8;paint-order:stroke;vector-effect:non-scaling-stroke}.time-marker:focus-visible{outline:none;stroke:#fff2c7;stroke-width:3}
+.time-marker-ring{fill:#efcb86;stroke:#6f5633;stroke-width:2;vector-effect:non-scaling-stroke}.time-marker-text{font-family:ui-sans-serif,sans-serif;font-size:10px;font-weight:900;fill:#102530;text-anchor:middle;dominant-baseline:middle;pointer-events:none}
+#time-map-tag{position:absolute;bottom:92px;left:12px;z-index:33;border:1px solid #b8995b;border-radius:7px;padding:6px 8px;background:#3c2d20ef;color:#ffdf9f;pointer-events:none;font-size:9px;font-weight:900;letter-spacing:.06em}
+.time-inspector{position:absolute;right:12px;bottom:90px;z-index:70;background:#122a33fb;color:#edf3ee;border:1px solid #b89c65;border-radius:12px;padding:12px;width:min(344px,calc(100% - 24px));max-height:50dvh;overflow:auto;touch-action:pan-y;box-shadow:0 12px 35px #0009}
+.time-inspector h3{font:21px Georgia,serif;color:#ffdf9b;margin:9px 0}.time-inspector p{font-size:11px;color:#c4d8d9;line-height:1.5}
+.time-timeline-source{margin-top:9px;color:#bbd0d1;font-size:10px;line-height:1.55}
+@media(max-width:650px){.living-map-controls{flex-wrap:wrap;row-gap:4px;right:8px;max-width:calc(100% - 16px)}#living-layer-count{display:none}#time-launch{min-height:40px;padding:0 7px;font-size:10px}#living-layer-launch,#geo-launch,#cw-launch{min-height:40px}.time-drawer{left:7px;top:63px;width:calc(100% - 14px);max-height:min(68dvh,620px);padding:11px}.time-inspector{left:8px;right:8px;bottom:10px;width:auto;max-height:45dvh}#time-map-tag{bottom:76px;left:10px;font-size:8px}}
+@media(min-width:410px) and (max-width:650px){.time-drawer{top:63px}}
+@media(min-width:651px){.living-map-controls{flex-wrap:wrap}}
+@media(max-width:365px){#time-launch{padding:0 6px}.time-head h3{font-size:22px}.time-metric-buttons button{font-size:9px}}
 </style>
 </head>
 <body>
@@ -531,7 +581,7 @@
         <div class="sidebar-separator"></div>
         <div class="sidebar-heading">CURRENT COVERAGE</div>
         <div class="coverage-card"><div class="coverage-value"><strong id="mapped-total">—</strong><span> / territories mapped</span></div><div class="coverage-sub"><strong>6</strong> illustrative 2025 profiles · <strong>139</strong> mapped historical series · <span id="wdi-covered">0 WDI profiles loaded</span></div><div class="coverage-progress"><i></i></div><p>Unresearched places remain selectable. Blank data does not mean zero.</p></div>
-        <div class="sidebar-foot">ATLAS 1.3 <span>◆</span> SOURCES & STATUS ALWAYS VISIBLE & SOURCE-DATED</div>
+        <div class="sidebar-foot">ATLAS 1.5 <span>◆</span> SOURCES & STATUS ALWAYS VISIBLE & SOURCE-DATED</div>
       </aside>
       <section class="map-stage" aria-label="Interactive world map">
         <div class="map-head">
@@ -543,7 +593,7 @@
           <div class="living-map-controls">
             <button id="living-layer-launch" type="button" aria-expanded="false" aria-controls="living-layer-drawer"><span aria-hidden="true">◫</span> World Layers <span id="living-layer-count">3 on</span></button>
             <button id="geo-launch" type="button" aria-controls="geo-drawer" aria-expanded="false">≋ Geography</button>
-            <button id="cw-launch" type="button" aria-controls="cw-drawer" aria-expanded="false">⤳ Connected</button><span class="living-not-live">DEMO · NOT LIVE</span>
+            <button id="cw-launch" type="button" aria-controls="cw-drawer" aria-expanded="false">⤳ Connected</button><button id="time-launch" type="button" aria-controls="time-drawer" aria-expanded="false">◷ Timeline</button><span class="living-not-live">DEMO · NOT LIVE</span>
           </div>
           <div id="living-layer-drawer" class="living-layer-drawer" hidden aria-label="Map overlay layers">
             <div class="living-head"><div><small>ATLAS / 1.1 · LAYER EXPLORER</small><h3>What do you want to see?</h3></div><button id="living-layer-close" aria-label="Close world layers" type="button">✕</button></div>
@@ -561,6 +611,35 @@
             <div class="living-foot">Markers cluster when close together. Location tags, trade routes and all vehicle movements are UI fixtures, not current data. Unknown does not mean zero.</div>
           </div>
 
+
+          <section id="time-drawer" class="time-drawer" hidden aria-label="Historical timeline explorer">
+            <div class="time-head"><div><small>ATLAS / 1.5 · HISTORICAL WORLD</small><h3>Explore through time</h3></div><button id="time-close" class="time-close" aria-label="Close timeline explorer" type="button">✕</button></div>
+            <p class="time-note">Explore <strong>1952–2007</strong> historical country observations, compare two countries at the same year, and preview how dated map events will work.</p>
+            <div class="time-group">
+              <div class="time-group-head"><strong>HISTORICAL OBSERVATION YEAR</strong><span id="time-year-big" class="time-year-big">2007</span></div>
+              <input id="time-year-range" class="time-scrub" type="range" min="0" max="11" value="11" step="1" aria-label="Choose Gapminder historical observation year"/>
+              <div class="time-years-row"><span>1952</span><span>Every 5 years · sample</span><span>2007</span></div>
+              <div class="time-controls"><button id="time-prev" type="button" aria-label="Previous historical year">← Previous</button><button id="time-next" type="button" aria-label="Next historical year">Next →</button><button id="time-play" type="button" aria-pressed="false">▶ Play years</button></div>
+              <p class="time-timeline-source">Actual historic values come from the locally bundled Gapminder / Plotly sample. The sample ends in 2007; the figures are not current and have not been audited against each original source series.</p>
+            </div>
+            <div class="time-group"><div class="time-group-head"><strong>COLOR MAP BY</strong><span class="time-kicker">HISTORICAL SERIES</span></div>
+              <div class="time-metric-buttons" role="group" aria-label="Choose a historical map color layer"><button type="button" data-time-lens="population">Population</button><button type="button" data-time-lens="economy">GDP / person</button><button type="button" data-time-lens="lifespan">Life expectancy</button></div>
+            </div>
+            <div class="time-group"><div class="time-group-head"><strong>COMPARE TWO COUNTRIES</strong><span class="time-kicker">MATCHED YEAR</span></div>
+              <div class="time-compact-grid"><label class="time-select-label">Country A<select id="time-country-a" aria-label="First country"></select></label><label class="time-select-label">Country B<select id="time-country-b" aria-label="Second country"></select></label></div>
+              <div id="time-comparison" aria-live="polite"></div>
+            </div>
+            <div class="time-group"><div class="time-event-controls"><label for="time-show-events">◉ Show dated event pins · DEMO</label><input id="time-show-events" type="checkbox"/></div>
+              <p class="time-note">Event pins are <strong>fictional UI fixtures</strong>, NOT historical claims. The real event catalog is empty until checked against original evidence.</p>
+              <div class="time-verified-zero">Verified historical events in this prototype: 0</div>
+              <div id="time-events-list" aria-live="polite"></div>
+            </div>
+            <div class="time-safe"><strong>Three different clocks:</strong> historical observation year (here), fictional ship/plane playback frame (World Layers), and future dated news events. They never imply the same timestamp.</div>
+          </section>
+          <section id="time-inspector" class="time-inspector" hidden aria-label="Historical event demo information">
+            <div class="time-head"><div><small>FICTIONAL TIMELINE EXAMPLE</small><strong>Event inspector</strong></div><button id="time-inspector-close" class="time-close" type="button" aria-label="Close event details">✕</button></div><div id="time-inspector-body"></div>
+          </section>
+          <div id="time-map-tag" hidden>FICTIONAL EVENT PINS · NOT VERIFIED HISTORY</div>
           <section id="cw-drawer" class="cw-drawer" hidden aria-label="Connected World explorer">
             <div class="cw-header"><div><small>ATLAS / 1.4 · CONNECTED WORLD</small><h3>Follow the connections</h3></div><button id="cw-close" class="cw-close" type="button" aria-label="Close connected world">✕</button></div>
             <p class="cw-note"><strong>FICTIONAL CONCEPT NETWORK.</strong> Arrows and stages demonstrate how resources, industries, ports and markets could connect. They are NOT verified shipments, value chains, trade routes, locations or volumes.</p>
@@ -622,6 +701,7 @@
             <g id="cw-links" aria-label="Fictional conceptual supply links"></g>
             <g id="cw-nodes" aria-label="Selectable fictional supply chain stages"></g>
             <g id="living-points" aria-label="Demonstration map-layer markers"></g>
+            <g id="time-event-pins" aria-label="Fictional historical event pins"></g>
             <g id="map-trade-demo" aria-label="Fictional trade connections demonstration" pointer-events="none"></g>
             <g id="map-labels"></g>
           </svg>
@@ -968,7 +1048,7 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
   }
   function tooltip(ev,name){if(state.dragging)return;const rect=vp.getBoundingClientRect();const t=$('map-tooltip');t.textContent=name;t.style.left=Math.min(rect.width-190,ev.clientX-rect.left+13)+'px';t.style.top=Math.max(8,ev.clientY-rect.top-38)+'px';t.classList.remove('hidden');}
   function hideTooltip(){$('map-tooltip').classList.add('hidden');}
-  function redraw(){geoDraw();cwDraw();svg.setAttribute('preserveAspectRatio',window.innerWidth<=650?'xMidYMid slice':'xMidYMid meet');svg.setAttribute('viewBox',`${state.view.x} ${state.view.y} ${state.view.w} ${state.view.h}`);drawMarkers();livingDraw();}
+  function redraw(){geoDraw();cwDraw();timeDrawPins();svg.setAttribute('preserveAspectRatio',window.innerWidth<=650?'xMidYMid slice':'xMidYMid meet');svg.setAttribute('viewBox',`${state.view.x} ${state.view.y} ${state.view.w} ${state.view.h}`);drawMarkers();livingDraw();}
   function viewClamp(){
     // A portrait viewport uses SVG "slice": the visible map is much narrower
     // than its 1200-unit viewBox. Constrain the VISIBLE rectangle, not the
@@ -1978,10 +2058,9 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
     const links=cwEl('cw-links'),nodes=cwEl('cw-nodes');if(!links||!nodes)return;
     links.replaceChildren();nodes.replaceChildren();cwEl('cw-map-tag').hidden=!cwState.enabled;
     if(!cwState.enabled)return;
-    const chains=cwVisible().filter(ch=>cwState.view!=='focus'||!cwState.selected||ch.nodes.includes(cwState.selected)),scale=1/Math.max(1,1200/state.view.w),done=new Set();
+    const chains=cwVisible(),scale=1/Math.max(1,1200/state.view.w),done=new Set();
     for(const ch of chains){
       for(let i=1;i<ch.nodes.length;i++){
-        if(cwState.view==='focus'&&cwState.selected&&!([ch.nodes[i-1],ch.nodes[i]].includes(cwState.selected)))continue;
         const a=CW_NODES[ch.nodes[i-1]],b=CW_NODES[ch.nodes[i]],d=cwMapPath(a,b);
         const highlighted=cwState.selected&&(ch.nodes[i-1]===cwState.selected||ch.nodes[i]===cwState.selected);
         const path=el('path',{d,class:'cw-map-edge'+(cwState.selected?(highlighted?' selected':' dim'):''),stroke:ch.color});links.appendChild(path);
@@ -1991,7 +2070,7 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
       }
       ch.nodes.forEach(id=>{
         if(done.has(id))return;done.add(id);const n=CW_NODES[id];if(cwState.kind!=='all'&&cwState.kind!==n.kind)return;
-        if(cwState.view==='focus'&&cwState.selected&&Math.abs(ch.nodes.indexOf(id)-ch.nodes.indexOf(cwState.selected))>1)return;
+        if(cwState.view==='focus'&&cwState.selected&&cwState.selected!==id){const chain=CW_CHAINS.find(c=>c.nodes.includes(cwState.selected));if(chain&&!chain.nodes.includes(id))return;}
         const p=geoXY(n.lon,n.lat),g=el('g',{class:'cw-map-node'+(cwState.selected===id?' selected':''),role:'button',tabindex:0,'aria-label':`${n.name}, fictional ${n.kind} stage`});
         g.appendChild(el('circle',{cx:p.x,cy:p.y,r:Math.max(3,8*scale),fill:ch.color}));
         const t=el('text',{x:p.x,y:p.y,'font-size':Math.max(3,10*scale)});t.textContent=CW_TYPES[n.kind];g.appendChild(t);
@@ -2060,6 +2139,100 @@ window.ATLAS_HISTORICAL_DATA = {"AFG":{"name":"Afghanistan","continent":"Asia","
   cwEl('geo-launch').addEventListener('click',cwCloseDrawer);
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){cwCloseDrawer();cwCloseInspector();}});
   cwRender();cwDraw();
+
+
+  /* Atlas 1.5: explicitly separate historical observations from fictional event/map fixtures
+   * and entirely independent ship/plane simulation frames. Never assign one clock to another.
+   */
+  const timeEvents=[
+    {id:'ev-demo-1952',year:1952,country:'USA',lon:-101,lat:40,type:'Infrastructure',label:'Example transport announcement'},
+    {id:'ev-demo-1962',year:1962,country:'IND',lon:77,lat:23,type:'Policy',label:'Example public-service proposal'},
+    {id:'ev-demo-1972',year:1972,country:'BRA',lon:-51,lat:-14,type:'Environment',label:'Example conservation program'},
+    {id:'ev-demo-1982',year:1982,country:'NGA',lon:7.5,lat:9.0,type:'Energy',label:'Example grid investment notice'},
+    {id:'ev-demo-1992',year:1992,country:'DEU',lon:10,lat:51,type:'Trade',label:'Example customs agreement proposal'},
+    {id:'ev-demo-2002',year:2002,country:'CHN',lon:112,lat:34,type:'Science',label:'Example research expansion announcement'},
+    {id:'ev-demo-2007',year:2007,country:'USA',lon:-104.8,lat:39.6,type:'Public works',label:'Example metro infrastructure review'}
+  ];
+  const timeState={open:false,showEvents:false,a:'USA',b:'CAN',playing:false,selected:null,timer:null};
+  const timeRoot=$('time-drawer'),timeBtn=$('time-launch'),timePins=$('time-event-pins');
+  const timeOptions=Object.keys(HISTORICAL).filter(id=>index.has(id)).sort((a,b)=>index.get(a).name.localeCompare(index.get(b).name));
+  const timeMetricFmt=(v,metric)=>!Number.isFinite(v)?'No data':metric===1?Math.round(v).toLocaleString('en-US')+' people':metric===2?'$'+Math.round(v).toLocaleString('en-US')+' / person':v.toFixed(1)+' years';
+  const timeCurrentYearIndex=()=>Math.max(0,HIST_YEARS.indexOf(state.histYear));
+  const timeRow=(id)=>histRow(id,state.histYear);
+  function timeStop(){if(timeState.timer!==null){clearInterval(timeState.timer);timeState.timer=null;}timeState.playing=false;}
+  function timeClose(){timeRoot.hidden=true;timeState.open=false;timeBtn.setAttribute('aria-expanded','false');timeStop();}
+  function timeOpen(){const isOpen=timeRoot.hidden;timeClose();if(!isOpen)return;
+    geoCloseDrawer();cwCloseDrawer();$('living-layer-drawer').hidden=true;$('living-layer-launch').setAttribute('aria-expanded','false');
+    $('living-inspector').hidden=true;$('geo-inspector').hidden=true;$('cw-inspector').hidden=true;
+    closeDetails();timeState.open=true;timeRoot.hidden=false;timeBtn.setAttribute('aria-expanded','true');timeRender();
+  }
+  function timeSetYear(year){const next=Number(year);if(!HIST_YEARS.includes(next))return;
+    state.histYear=next;$('historic-year').value=String(next);updateLens();timeRender();timeDrawPins();
+  }
+  function timeStep(d){const idx=HIST_YEARS.indexOf(state.histYear);const next=Math.max(0,Math.min(HIST_YEARS.length-1,idx+d));if(d>0&&idx===HIST_YEARS.length-1){timeStop();timeRender();return;}timeSetYear(HIST_YEARS[next]);if(next===HIST_YEARS.length-1&&d>0)timeStop();}
+  function timeCompareMarkup(){const a=index.get(timeState.a),b=index.get(timeState.b);const ra=timeRow(timeState.a),rb=timeRow(timeState.b);
+    const metric=(label,i)=>`<div class="time-results"><div class="time-result"><small>${html(a?.name||timeState.a)} · ${html(label)}</small><strong>${html(timeMetricFmt(ra?.[i],i))}</strong><span>${ra?'Historical estimate · '+state.histYear:'Not collected'}</span></div><div class="time-result"><small>${html(b?.name||timeState.b)} · ${html(label)}</small><strong>${html(timeMetricFmt(rb?.[i],i))}</strong><span>${rb?'Historical estimate · '+state.histYear:'Not collected'}</span></div></div>`;
+    const aRows=HISTORICAL[timeState.a]?.values||[],bRows=HISTORICAL[timeState.b]?.values||[];
+    const max=Math.max(1,...aRows.map(r=>r[3]||0),...bRows.map(r=>r[3]||0));
+    const mkLine=rows=>rows.length?rows.map((r,i)=>`${(14+i*26.4).toFixed(1)},${(94-(r[3]/max)*72).toFixed(1)}`).join(' '):'';
+    return `<p class="time-note">Same observation year: <strong>${state.histYear}</strong>. Missing is not zero. This is a historical teaching series, not current World Bank GDP.</p>${metric('Population',1)}${metric('GDP / person',2)}${metric('Life expectancy',3)}
+    <svg class="time-graph" viewBox="0 0 318 104" role="img" aria-label="Historical life expectancy comparison lines 1952 to 2007"><line x1="12" y1="95" x2="306" y2="95" stroke="#516c70"/><polyline points="${mkLine(aRows)}" fill="none" stroke="#e8c481" stroke-width="2.5"/><polyline points="${mkLine(bRows)}" fill="none" stroke="#76bfc6" stroke-width="2.5"/><line x1="${14+timeCurrentYearIndex()*26.4}" y1="12" x2="${14+timeCurrentYearIndex()*26.4}" y2="95" stroke="#edf1e1" stroke-dasharray="3 4" opacity=".7"/><text x="13" y="101" font-size="8" fill="#abc2c4">1952</text><text x="286" y="101" font-size="8" fill="#abc2c4">2007</text></svg>
+    <div class="time-key"><span><i style="background:#e8c481"></i>${html(a?.name||timeState.a)}</span><span><i style="background:#76bfc6"></i>${html(b?.name||timeState.b)}</span><span>Life expectancy · historical years</span></div>`;
+  }
+  function timeRender(){if(!timeRoot)return;
+    $('time-year-big').textContent=String(state.histYear);$('time-year-range').value=String(timeCurrentYearIndex());
+    $('time-prev').disabled=timeCurrentYearIndex()===0;$('time-next').disabled=timeCurrentYearIndex()===HIST_YEARS.length-1;
+    $('time-play').textContent=timeState.playing?'Ⅱ Pause years':'▶ Play years';$('time-play').setAttribute('aria-pressed',String(timeState.playing));
+    $('time-show-events').checked=timeState.showEvents;
+    ['a','b'].forEach(key=>{const select=$('time-country-'+key);select.value=timeState[key];});
+    document.querySelectorAll('[data-time-lens]').forEach(button=>button.setAttribute('aria-pressed',String(state.lens===button.dataset.timeLens)));
+    $('time-comparison').innerHTML=timeCompareMarkup();
+    const events=timeEvents.filter(e=>e.year===state.histYear);
+    $('time-events-list').innerHTML=events.length?events.map(e=>`<button class="time-event-row" type="button" data-time-event="${html(e.id)}"><small>${e.year} · FICTIONAL UI DEMONSTRATION · SOURCE NONE</small><strong>${html(e.label)}</strong><small>${html(index.get(e.country)?.name||e.country)} · ${html(e.type)} · This event did not come from historical research.</small></button>`).join(''):'<p class="time-empty">No fictional example is assigned to this year. Real event history has not been imported.</p>';
+  }
+  function timeDrawPins(){if(!timePins)return;timePins.innerHTML='';$('time-map-tag').hidden=!timeState.showEvents;
+    if(!timeState.showEvents)return;
+    const z=Math.max(1,1200/state.view.w),size=Math.max(2.6,9/z);
+    for(const e of timeEvents.filter(e=>e.year===state.histYear)){
+      const p=geoXY(e.lon,e.lat),g=el('g',{class:'time-marker',role:'button',tabindex:'0','aria-label':`FICTIONAL example event · ${e.label} · ${e.year}`});
+      g.appendChild(el('circle',{cx:p.x,cy:p.y,r:size,class:'time-marker-ring'}));
+      const label=el('text',{x:p.x,y:p.y+.5/z,class:'time-marker-text','font-size':Math.max(3,10/z)});label.textContent='E';g.appendChild(label);
+      g.addEventListener('click',ev=>{ev.stopPropagation();if(Date.now()-state.lastDrag<250)return;timeInspect(e.id);});
+      g.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();timeInspect(e.id);}});
+      timePins.appendChild(g);
+    }
+  }
+  function timeInspect(id){const e=timeEvents.find(item=>item.id===id);if(!e)return;
+    timeState.selected=id;timeClose();const area=index.get(e.country)?.name||e.country;
+    $('time-inspector-body').innerHTML=`<h3>${html(e.label)}</h3><div class="time-safe">FICTIONAL DESIGN FIXTURE · NOT A REAL HISTORICAL EVENT</div><p><strong>Example year:</strong> ${e.year}<br><strong>Country label:</strong> ${html(area)}<br><strong>Illustrative category:</strong> ${html(e.type)}</p><p>Coordinates are generic map anchors for interaction testing, not source-verified locations or evidence of any event.</p><p><strong>Required before displaying a real event:</strong> publisher, original publication URL, event and observation date, jurisdiction, corroboration, geographic scope and editorial verification status.</p><div class="time-controls"><button id="time-inspect-browse" type="button">Back to timeline</button></div>`;
+    $('time-inspector').hidden=false;
+  }
+  const opt=timeOptions.map(id=>`<option value="${html(id)}">${html(index.get(id)?.name||id)}</option>`).join('');
+  $('time-country-a').innerHTML=opt;$('time-country-b').innerHTML=opt;
+  if(!timeOptions.includes(timeState.b))timeState.b=timeOptions.find(id=>id!==timeState.a)||timeState.a;
+  timeBtn.addEventListener('click',e=>{e.stopPropagation();timeOpen();});
+  $('time-close').addEventListener('click',timeClose);
+  $('time-inspector-close').addEventListener('click',()=>{$('time-inspector').hidden=true;});
+  $('time-inspector-body').addEventListener('click',e=>{if(e.target.closest('#time-inspect-browse')){ $('time-inspector').hidden=true;timeState.showEvents=true;timeOpen();}});
+  $('time-year-range').addEventListener('input',e=>{timeStop();timeSetYear(HIST_YEARS[Number(e.target.value)]);});
+  $('time-prev').addEventListener('click',()=>{timeStop();timeStep(-1);timeRender();});
+  $('time-next').addEventListener('click',()=>{timeStop();timeStep(1);timeRender();});
+  $('time-play').addEventListener('click',()=>{if(timeState.playing){timeStop();timeRender();return;}
+    if(timeCurrentYearIndex()>=HIST_YEARS.length-1)timeSetYear(HIST_YEARS[0]);
+    timeState.playing=true;timeRender();timeState.timer=setInterval(()=>{if(!timeState.open){timeStop();return;}timeStep(1);timeRender();},1300);
+  });
+  $('time-country-a').addEventListener('change',e=>{timeState.a=e.target.value;timeRender();});
+  $('time-country-b').addEventListener('change',e=>{timeState.b=e.target.value;timeRender();});
+  $('time-show-events').addEventListener('change',e=>{timeState.showEvents=e.target.checked;timeRender();timeDrawPins();});
+  $('time-events-list').addEventListener('click',e=>{const b=e.target.closest('[data-time-event]');if(b)timeInspect(b.dataset.timeEvent);});
+  document.querySelectorAll('[data-time-lens]').forEach(btn=>btn.addEventListener('click',()=>{state.lens=btn.dataset.timeLens;updateLens();timeRender();}));
+  for(const id of ['time-launch','time-drawer','time-inspector']){const node=$(id);for(const kind of ['pointerdown','pointermove','pointerup'])node.addEventListener(kind,e=>e.stopPropagation());node.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});}
+  $('geo-launch').addEventListener('click',timeClose);$('cw-launch').addEventListener('click',timeClose);$('living-layer-launch').addEventListener('click',timeClose);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){timeClose();$('time-inspector').hidden=true;}});
+  // Reconcile the existing history selector and in-dossier year controls.
+  $('historic-year').addEventListener('change',()=>{timeStop();timeRender();timeDrawPins();});
+  $('detail-content').addEventListener('change',e=>{if(e.target.matches('[data-history-year]')){timeStop();timeRender();timeDrawPins();}});
+  timeRender();timeDrawPins();
 
   syncDetails();
   drawCountries();redraw();renderDetails();ccTradeMapDraw();
